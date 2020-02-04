@@ -6,7 +6,7 @@
 
 #include <include.hpp>
 
-
+#include "Quote.h"
 
 namespace domain {
 
@@ -21,7 +21,7 @@ public:
     GETSET(Quotes, asks);
     GETSET(int, levels);
 
-    MarketData(const std::vector<std::string>& data, const int n_levels);
+    MarketData(const std::vector<std::string>& data);
     inline const Quote& askLevel(int level) const;
     
     inline const Quote& bidLevel(int level) const;

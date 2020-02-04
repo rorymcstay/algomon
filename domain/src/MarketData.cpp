@@ -4,14 +4,15 @@
 
 #include "MarketData.h"
 
+
 namespace domain
 {
-    MarketData::MarketData(const std::vector<std::string>& data, const int n_levels)
+    MarketData::MarketData(const std::vector<std::string>& data)
     {
         int level(1);
         int i(0);
-        _levels = n_levels;
-        while (level < n_levels)
+        _levels = 5;
+        while (level < _levels)
         {
             Quote ask = Quote();
             ask.setprice(std::stod(data[i]));

@@ -22,7 +22,7 @@ public:
     GETSET(domain::EventType, type);
     typename T::Ptr _data;
 
-    Event(std::shared_ptr<T> data_)
+    Event(const std::unique_ptr<T>& data_)
     :   _data(std::move(data_))
     {
     }
