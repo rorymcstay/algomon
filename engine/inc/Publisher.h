@@ -1,3 +1,6 @@
+#ifndef PUBLISHER_H
+#define PUBLISHER_H
+
 #include <string>
 #include <vector>
 
@@ -21,15 +24,16 @@ public:
 
 public:
 
-    Publisher()
+    Publisher(const std::string& connectionString)
     {
         _subscribers.clear();
+        _connectionString = connectionString;
     };
 
 
 
 public:
-    void run () const;
+    void run() const;
 
     void addSubscriber(Subscriber::Ptr subscriber)
     {
@@ -45,3 +49,6 @@ public:
     }
 };
 
+}
+
+#endif

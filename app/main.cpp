@@ -1,12 +1,13 @@
 #include <iostream>
-#include <logger.hpp>
+// engine
 #include <Publisher.h>
 
-using namespace publisher;
+using namespace engine;
 
-int main (void){
+int main (void)
+{
    LOG("hello");
-   Publisher publisher = Publisher();
-   publisher.dumpFile();
+   Publisher<domain::Data> publisher("string");
+   publisher.run();
 
 }

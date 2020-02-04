@@ -11,9 +11,6 @@
 #include <algorithm>    // copy
 #include <iterator>     // ostream_operator
 
-// projecy libraries
-#include <logger.hpp>
-
 // sources
 #include "Event.h"
 
@@ -23,15 +20,14 @@ namespace engine
 typedef boost::tokenizer<boost::escaped_list_separator<char>> Tokenizer;
 
 template<typename DataType>
-void Publisher::run(const str::string& file) const
+void Publisher<DataType>::run() const
 {
-
-
-    std::ifstream in(file.c_str());
+    std::ifstream in(_connectionString);
     if (!in.is_open()) return;
 
-    std::vector<std::string> vec;
-    thread_local vec.reserve(5);
+    thread_local std::vector<std::string> vec;
+
+    vec.reserve(5);
     std::string line;
 
     while (getline(in,line))
@@ -45,7 +41,6 @@ void Publisher::run(const str::string& file) const
 
         if (vec.size() < 3) continue;
 
-        LOG("----------------------");
     }
 }
 
