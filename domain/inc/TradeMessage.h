@@ -1,4 +1,5 @@
-#pragma once
+#ifndef TRADEMESSAGE_H
+#define TRADEMESSAGE_H
 
 namespace domain
 {
@@ -19,3 +20,5 @@ public:
     }
 };
 }
+
+#endif

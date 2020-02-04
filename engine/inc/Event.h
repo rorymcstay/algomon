@@ -1,40 +1,41 @@
+#ifndef EVENT_H
+#define EVENT_H
+
 #include <include.hpp>
 #include <iostream>
+#include <memory>
+
 #include <Enums.h>
-#include <Data.h>
 
 using namespace domain;
 
-namespace publisher
+namespace engine
 {
 
-template<Data DataType>
+template<typename T>
 class Event
 {
+
 public:
-    using Ptr = shared_ptr<Event>;
-    
-    GETSET(DataType data);
-    GETSET(MessageType, type);
+    using Ptr = std::shared_ptr<Event>;
+ 
+    GETSET(domain::EventType, type);
+    typename T::Ptr _data;
 
-    Event(DataType::Ptr dataPtr_)
+    Event(std::shared_ptr<T> data_)
+    :   _data(std::move(data_))
     {
-        _data = dataPtr_;
     }
 
-    std::ostream& operator <<(ostream& out)
+    std::ostream& operator <<(std::ostream& out)
     {
-        out << enum2str(type);
-    }
-    
-    const std::shared_ptr std::getPointer() const
-    {
-       return make_shared<Event>(this);
+        out << enum2str(_type);
     }
 
 };
 
 
 
-
 } //publisher
+
+#endif

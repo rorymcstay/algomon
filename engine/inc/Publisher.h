@@ -1,38 +1,46 @@
 #include <string>
-#include <boost/lockfree/queue.hpp>
+#include <vector>
+
 #include "include.hpp"
 #include "Subscriber.h"
+
 
 namespace engine
 {
 
-template<DataType>
+template<typename DataType>
 class Publisher
 {
 
 public:
+
+    using Subscribers = std::vector<Subscriber::Ptr>;
+    
+    GETSET(std::string, connectionString);
+    GETSET(Subscribers, subscribers);
+
+public:
+
     Publisher()
     {
-        _subsrcibers.clear();
+        _subscribers.clear();
     };
 
-    GETSET(std::string, connectionString);
-    GETSET(std::vector<Subscriber::Ptr>(5), subscribers);
+
 
 public:
     void run () const;
 
-    void addSubscriber(const Subscriber subscriber)
+    void addSubscriber(Subscriber::Ptr subscriber)
     {
-        Subscriber::Ptr subscriber;
-        _subscribers.push_back(subscriber);
+        _subscribers.push_back(std::move(subscriber));
     }
  
     void notifySubscribers(const Event<DataType>& event_)
     {
         for (auto& subscriber : _subscribers)
         {
-            _subscribers->onEvent(event_.getPointer());
+            subscriber->onEvent(event_.getPointer());
         }
     }
 };

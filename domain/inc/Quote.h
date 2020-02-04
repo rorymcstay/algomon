@@ -1,4 +1,5 @@
-#pragma once
+#ifndef QUOTE_H
+#define QUOTE_H
 
 #include <include.hpp>
 #include <iostream>
@@ -23,3 +24,4 @@ public:
 };
 }
 
+#endif 

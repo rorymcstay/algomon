@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MARKETDATA_H
+#define MARKETDATA_H
 
 #include <string>
 #include <vector>
@@ -31,3 +32,5 @@ public:
 };
 
 }
+
+#endif

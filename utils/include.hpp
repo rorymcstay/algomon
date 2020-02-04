@@ -1,3 +1,6 @@
+#ifndef UTILS_INCLUDE
+#define UTILS_INCLUDE
+
 #define GETSET(type, var)\
     private:\
        type _##var;\
@@ -16,12 +19,11 @@
 
 #define ENUM_MACRO_7(name, v1, v2, v3, v4, v5, v6, v7)\
     enum class name { v1, v2, v3, v4, v5, v6, v7};\
-    const char *name##Strings[] = { #v1, #v2, #v3, #v4, #v5, #v6, #v7};\
-    const char *enum2str(name value) { return name##Strings[(int)value]; }
+    inline const char *enum2str(name value) { const char *name##Strings[] = { #v1, #v2, #v3, #v4, #v5, #v6, #v7}; return name##Strings[(int)value]; }
 
 
 #define ENUM_MACRO_2(name, v1, v2)\
     enum class name {v1,v2};\
-    const char *name##Strings[]={#v1, #v2};\
-    const char *enum2str(name value){ return name##Strings[(int)value];}
-                
+    inline const char *enum2str(name value){ const char *name##Strings[]={#v1, #v2}; return name##Strings[(int)value];}
+        
+#endif

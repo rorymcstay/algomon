@@ -17,12 +17,12 @@
 // sources
 #include "Event.h"
 
-namespace publisher
+namespace engine
 {
 
 typedef boost::tokenizer<boost::escaped_list_separator<char>> Tokenizer;
 
-template<DataType>
+template<typename DataType>
 void Publisher::run(const str::string& file) const
 {
 
@@ -39,7 +39,8 @@ void Publisher::run(const str::string& file) const
         Tokenizer tok(line);
         vec.assign(tok.begin(),tok.end());
         DataType data(vec);
-        Event event(data.getdata());
+        Event<DataType> event(data.getdata());
+
         notifySubscribers(event);
 
         if (vec.size() < 3) continue;

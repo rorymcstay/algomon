@@ -1,6 +1,14 @@
+#ifndef SUBSCRIBER_H
+#define SUBSCRIBER_H
+
 #include <string>
-#include <boost/lockfree/queue.hpp>
-#include "include.hpp"
+#include <queue>
+#include <include.hpp>
+#include <Data.h>
+#include <logger.hpp>
+
+#include "Event.h"
+
 
 namespace engine
 {
@@ -8,27 +16,27 @@ class Subscriber
 {
 public:
     using Ptr = std::shared_ptr<Subscriber>;
- 
-    GETSET(Subscriptions, subscriptions);
+    using EventPtr = std::shared_ptr<Event<Data>>;
 
 private:
-    boost::queue<Event::Ptr> queue;
+    std::queue<EventPtr> queue;
 
-    void onEvent(const Event<DataType>::Ptr&, event_)
+    void onEvent(const EventPtr& event_)
     {
         LOG(event_);
         queue.push(event_);
     }
 
-    void handleEvent(const Event::Ptr& item)
+    void handleEvent(const EventPtr& item)
     {
-        switch(item->type_)
+        switch(item->gettype())
         {
-            case(EventType::MarketData)
+            case EventType::MarketData:
             {
                 LOG(item);
+                break;
             }
-            case(EventType::TradeMessage)
+            case EventType::TradeMessage:
             {
                 LOG(item);
             }
@@ -41,11 +49,13 @@ private:
         {
             if (!queue.empty())
             {
-                Event::Ptr item;
-                queue.pop(item);
+                const Event<Data>::Ptr& item = queue.front();
                 handleEvent(item);
+                queue.pop();
             }
         }
     }
 };
 }
+
+#endif
