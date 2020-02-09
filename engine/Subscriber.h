@@ -1,44 +1,50 @@
 #ifndef SUBSCRIBER_H
 #define SUBSCRIBER_H
 
+// STL
 #include <string>
 #include <queue>
+
+// Utils
 #include <include.hpp>
-#include <Data.h>
 #include <logger.hpp>
 
-#include "Event.h"
+// Domain
+#include <MarketData.h>
+#include <Event.h>
 
 
+using namespace domain;
 namespace engine
 {
+
 class Subscriber
 {
 public:
     using Ptr = std::shared_ptr<Subscriber>;
-    using EventPtr = std::shared_ptr<Event<Data>>;
 
 private:
-    std::queue<EventPtr> queue;
+    std::queue<Event::Ptr> queue;
 
-    void onEvent(const EventPtr& event_)
+public:
+    void onEvent(Event::Ptr event_)
     {
-        LOG(event_);
+        LOG(enum2str(event_->gettype()));
         queue.push(event_);
     }
 
-    void handleEvent(const EventPtr& item)
+    void handleEvent(const Event::Ptr& item)
     {
         switch(item->gettype())
         {
             case EventType::MarketData:
             {
-                LOG(item);
+                LOG(enum2str(item->gettype()));
                 break;
             }
             case EventType::TradeMessage:
             {
-                LOG(item);
+                LOG(enum2str(item->gettype()));
             }
         }
     }
@@ -49,7 +55,7 @@ private:
         {
             if (!queue.empty())
             {
-                const Event<Data>::Ptr& item = queue.front();
+                const Event::Ptr& item = queue.front();
                 handleEvent(item);
                 queue.pop();
             }

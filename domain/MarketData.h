@@ -7,11 +7,13 @@
 #include <include.hpp>
 
 #include "Quote.h"
+#include "Event.h"
 
 namespace domain {
 
-class MarketData
-    :public Data
+
+
+class MarketData : public Event
 {
 
 public:

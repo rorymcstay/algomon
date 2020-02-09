@@ -11,6 +11,7 @@
 #include <string>
 #include <algorithm>    // copy
 #include <iterator>     // ostream_operator
+#include <memory>
 
 // sources
 #include "Event.h"
@@ -22,7 +23,9 @@
 namespace engine
 {
 
-template<typename DataType>
+using namespace domain;
+
+template<class DataType>
 class Publisher
 {
 typedef boost::tokenizer<boost::escaped_list_separator<char>> Tokenizer;
@@ -44,7 +47,7 @@ public:
 
 
 public:
-    void run() const
+    void run()
     {
         std::ifstream in(_connectionString);
         if (!in.is_open()) return;
@@ -58,8 +61,7 @@ public:
         {
             Tokenizer tok(line);
             vec.assign(tok.begin(),tok.end());
-            std::unique_ptr<DataType> data = std::make_unique<DataType>(vec);
-            Event<DataType> event(data);
+            typename std::shared_ptr<DataType> event = std::make_shared<DataType>(vec);
 
             notifySubscribers(event);
 
@@ -73,11 +75,11 @@ public:
         _subscribers.push_back(std::move(subscriber));
     }
  
-    void notifySubscribers(Event<DataType> event_)
+    void notifySubscribers(const std::shared_ptr<DataType> event_)
     {
         for (auto& subscriber : _subscribers)
         {
-            subscriber->onEvent(event_.getPointer());
+            subscriber->onEvent(event_);
         }
     }
 };

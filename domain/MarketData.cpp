@@ -1,6 +1,5 @@
 #include "Enums.h"
 #include "Quote.h"
-#include "Data.h"
 
 #include "MarketData.h"
 

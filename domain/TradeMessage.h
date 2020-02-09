@@ -1,9 +1,11 @@
 #ifndef TRADEMESSAGE_H
 #define TRADEMESSAGE_H
 
+#include "Event.h"
+
 namespace domain
 {
-class TradeMessage: Data
+class TradeMessage: public Event
 {
     typedef int orderid_t;
     GETSET(MessageType, type);

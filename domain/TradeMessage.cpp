@@ -4,7 +4,6 @@
 #include <include.hpp>
 
 #include "Enums.h"
-#include "Data.h"
 #include "Quote.h"
 
 #include "TradeMessage.h"

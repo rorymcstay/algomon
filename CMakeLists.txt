@@ -40,9 +40,8 @@ add_subdirectory(utils)
 add_subdirectory(domain)
 add_subdirectory(engine)
 
-add_subdirectory(app)
 
-#set(DOMAIN_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/domain/inc)
-#set(UTILS_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_subdirectory(app)
 
 

@@ -3,6 +3,8 @@
 
 #include <include.hpp>
 #include <iostream>
+#include "Enums.h"
+
 
 namespace domain
 {
