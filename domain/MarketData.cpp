@@ -10,7 +10,9 @@ namespace domain
     {
         int level(1);
         int i(0);
-        _levels = 5;
+        _levels = 30;
+        _asks.reserve(_levels);
+        _bids.reserve(_levels);
         while (level < _levels)
         {
             Quote ask = Quote();
@@ -23,27 +25,11 @@ namespace domain
             bid.setquantity(std::stoi(data[i+3]));
             bid.setside(Side::Buy);
 
-            _asks[i] = ask;
-            _bids[i] = bid;
+            _asks[level - 1] = ask;
+            _bids[level - 1] = bid;
             level ++;
             i += 4;
         }
     }
-    inline const Quote& MarketData::askLevel(int level) const
-    {
-        return _asks[level];
-    }
 
-    inline const Quote& MarketData::bidLevel(int level) const
-    {
-        return _bids[level];
-    }
-    std::ostream& MarketData::operator<<(std::ostream& out)
-    {
-        int level = 1;
-        while (level <= _levels)
-        {
-            out << "level: " << level; 
-        }
-    }
 }

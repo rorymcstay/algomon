@@ -1,7 +1,10 @@
 
 set(LIB_SOURCES 
-        Publisher.cpp 
         Subscriber.cpp
+        Publisher.cpp
+        Task.cpp
+        Worker.cpp
+        ThreadPool.cpp
 )
 
 if(TARGET engine)

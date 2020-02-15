@@ -2,6 +2,7 @@
 #define TRADEMESSAGE_H
 
 #include "Event.h"
+#include "Quote.h"
 
 namespace domain
 {
@@ -16,11 +17,15 @@ class TradeMessage: public Event
 public:
     TradeMessage(std::vector<std::string> data_);
 
-    std::ostream& operator<<(std::ostream& out)
-    {
-        out << "Message type: " << enum2str(_type);
-    }
+
 };
+
+
+inline std::ostream& operator<<(std::ostream& out, const TradeMessage& msg)
+{
+    return out << "Message type: " << enum2str(msg.gettype());
+}
+
 }
 
 #endif

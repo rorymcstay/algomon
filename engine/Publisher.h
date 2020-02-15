@@ -18,7 +18,7 @@
 
 #include "include.hpp"
 #include "Subscriber.h"
-
+#include "ThreadPool.h"
 
 namespace engine
 {
@@ -29,24 +29,20 @@ template<class DataType>
 class Publisher
 {
 typedef boost::tokenizer<boost::escaped_list_separator<char>> Tokenizer;
-public:
 
-    using Subscribers = std::vector<Subscriber::Ptr>;
-    
+private:
     GETSET(std::string, connectionString);
-    GETSET(Subscribers, subscribers);
+    GETSET(std::shared_ptr<ThreadPool>, threadPool);
 
 public:
 
-    Publisher(const std::string& connectionString)
+    Publisher(std::shared_ptr<ThreadPool> threadPool_,const std::string& connectionString)
+    :   _threadPool(threadPool_)
+    ,   _connectionString(connectionString)
     {
-        _subscribers.clear();
-        _connectionString = connectionString;
     }
 
 
-
-public:
     void run()
     {
         std::ifstream in(_connectionString);
@@ -62,26 +58,14 @@ public:
             Tokenizer tok(line);
             vec.assign(tok.begin(),tok.end());
             typename std::shared_ptr<DataType> event = std::make_shared<DataType>(vec);
-
-            notifySubscribers(event);
+            Task task(event); 
+            _threadPool->queueEvent(task);
 
             if (vec.size() < 3) continue;
 
         }
     }
-
-    void addSubscriber(Subscriber::Ptr subscriber)
-    {
-        _subscribers.push_back(std::move(subscriber));
-    }
  
-    void notifySubscribers(const std::shared_ptr<DataType> event_)
-    {
-        for (auto& subscriber : _subscribers)
-        {
-            subscriber->onEvent(event_);
-        }
-    }
 };
 
 } // engine

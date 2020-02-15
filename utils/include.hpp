@@ -5,7 +5,7 @@
     private:\
        type _##var;\
     public:\
-       const type& get##var()\
+       const type& get##var() const\
        {\
           return _##var;\
        }\

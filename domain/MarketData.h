@@ -11,8 +11,6 @@
 
 namespace domain {
 
-
-
 class MarketData : public Event
 {
 
@@ -24,15 +22,27 @@ public:
     GETSET(int, levels);
 
     MarketData(const std::vector<std::string>& data);
-    inline const Quote& askLevel(int level) const;
-    
-    inline const Quote& bidLevel(int level) const;
-
-
-    std::ostream& operator<<(std::ostream& out);
-
+    inline const Quote& askLevel(int level) const 
+    {
+        return _asks[level];
+    }
+    inline const Quote& bidLevel(int level) const
+    {
+        return _bids[level];
+    }
 };
 
+inline std::ostream& operator << (std::ostream& out, const MarketData& md)
+{
+    int level = 1;
+    while (level <= md.getlevels())
+    {
+        out << "level: " << md.askLevel(level-1);
+        level++;
+    }
+    return out;
 }
+}
+
 
 #endif

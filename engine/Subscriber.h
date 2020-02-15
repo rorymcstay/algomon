@@ -13,54 +13,30 @@
 #include <MarketData.h>
 #include <Event.h>
 
+#include "Worker.h"
 
 using namespace domain;
+
 namespace engine
 {
 
-class Subscriber
+class Subscriber : public Worker
 {
+
 public:
     using Ptr = std::shared_ptr<Subscriber>;
 
-private:
-    std::queue<Event::Ptr> queue;
-
 public:
-    void onEvent(Event::Ptr event_)
-    {
-        LOG(enum2str(event_->gettype()));
-        queue.push(event_);
-    }
 
-    void handleEvent(const Event::Ptr& item)
+    void onEvent(const std::shared_ptr<domain::MarketData>& md)
     {
-        switch(item->gettype())
+        for (int i = 0; i < md->getlevels()-1; i++)
         {
-            case EventType::MarketData:
-            {
-                LOG(enum2str(item->gettype()));
-                break;
-            }
-            case EventType::TradeMessage:
-            {
-                LOG(enum2str(item->gettype()));
-            }
+            const Quote& quote = md->askLevel(i);
+            LOG("ask level " << i <<   ": " << quote);
         }
     }
 
-    void run()
-    {
-        while (true)
-        {
-            if (!queue.empty())
-            {
-                const Event::Ptr& item = queue.front();
-                handleEvent(item);
-                queue.pop();
-            }
-        }
-    }
 };
 }
 
