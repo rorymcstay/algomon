@@ -34,7 +34,7 @@ public:
         
     }
 
-    void onEvent(const std::shared_ptr<domain::MarketData>& md)
+    void onEvent(const std::shared_ptr<const domain::MarketData>& md) override
     {
         
         LOG(getname() << " doing MarketData on event ");
@@ -45,7 +45,7 @@ public:
         }
     }
 
-    void onEvent(const std::shared_ptr<domain::TradeMessage>& tm)
+    void onEvent(const std::shared_ptr<const domain::TradeMessage>& tm) override
     {
         LOG(tm);
     }

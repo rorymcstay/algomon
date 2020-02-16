@@ -34,17 +34,14 @@ typedef boost::tokenizer<boost::escaped_list_separator<char>> Tokenizer;
 private:
     std::thread _thread;
     std::shared_ptr<ThreadPool> _threadPool;
-    std::vector<DataType> _storage;
     GETSET(std::string, connectionString);
 
 public:
 
     Publisher(std::shared_ptr<ThreadPool> threadPool_,const std::string& connectionString)
     :   _threadPool(threadPool_)
-    ,   _storage(50000)
     ,   _connectionString(connectionString)
     {
-
         LOG("publisher for " << connectionString << " created.");
     }
 
@@ -53,8 +50,7 @@ private:
     {
         std::ifstream in(_connectionString);
         if (!in.is_open()) return;
-
-        
+    
         std::string line;
 
         while (getline(in,line))
@@ -62,10 +58,10 @@ private:
             std::vector<std::string> vec;
             Tokenizer tok(line);
             vec.assign(tok.begin(),tok.end());
-            _storage.emplace_back(vec);
-            _threadPool->queueEvent<DataType>(std::shared_ptr<DataType>(_storage.end()));
-    //        LOG(std::this_thread::get_id() <<" added event");
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            auto data = std::make_shared<const DataType>(vec);
+            _threadPool->queueEvent<DataType>(data);
+            LOG(std::this_thread::get_id() <<" added event");
+            std::this_thread::sleep_for(std::chrono::seconds(10));
 
             if (vec.size() < 3) continue;
 

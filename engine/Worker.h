@@ -20,27 +20,27 @@
 
 #define REGISTER_EVENT(eventType)\
 private:\
-    virtual void onEvent(const std::shared_ptr<eventType>& evt_)\
+    virtual void onEvent(const std::shared_ptr<const eventType>& evt_)\
     {\
         LOG(evt_);\
     }
 
 namespace engine
 {
+
 class Worker : public Threaded
 {
 private:
 
-    std::mutex _lock;
+    mutable std::mutex _queue_lock;
     std::queue<Task> _queue;
     std::thread _thread;
     GETSET(std::string, name)
     REGISTER_EVENT(domain::MarketData)
     REGISTER_EVENT(domain::TradeMessage)
     
-    void onEvent(const Task& evt)
+    void onNewTask(const Task& evt)
     {
-        LOG("onEvent");
         if (evt.md)
         {
             onEvent(evt.md);
@@ -57,35 +57,33 @@ public:
     :   _name(name_)
     {
     }
-    
+ 
     void init()
     {
     }
 
     std::mutex& getlock()
     {
-        return _lock;
+        return _queue_lock;
     }
 
-
-
     template<class DataType>
-    void addTask(const std::shared_ptr<DataType>& evt)
+    void addTask(const std::shared_ptr<const DataType>& evt)
     { 
         PREP_LOCK_DEBUG() 
-        std::lock_guard<std::mutex> lk1(_lock, std::adopt_lock);
-        LOCK_DEBUG();
+        std::lock_guard<std::mutex> lk1(_queue_lock, std::adopt_lock);
+        LOCK_DEBUG("Worker::addTask");
         _queue.emplace(evt);
-        std::this_thread::sleep_for(std::chrono::milliseconds(100000));
     }
 
     void handleEvent()
     {
         PREP_LOCK_DEBUG()
-        std::lock_guard<std::mutex> lck(_lock);
+        std::lock_guard<std::mutex> lck(_queue_lock, std::adopt_lock);
         LOCK_DEBUG("Worker::handleEvent");
         const Task& task = _queue.front();
-        onEvent(task);
+//        LOG("have  md "<< task.md <<" have tm " << task.tm << "queue is of length " << _queue.size());
+        onNewTask(task); 
         _queue.pop();
     }
 
@@ -97,7 +95,7 @@ public:
             {
                 handleEvent();
             }
-            std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+            std::this_thread::sleep_for(std::chrono::seconds(15));
         }
     }
 };

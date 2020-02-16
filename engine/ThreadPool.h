@@ -42,14 +42,10 @@ public:
     }
  
     template<class DataType>
-    void queueEvent(std::shared_ptr<DataType> event)
-    {   
-        std::lock_guard<std::mutex> queueLock(_lock);
+    void queueEvent(const std::shared_ptr<const DataType>& event)
+    {
         for (auto& worker : _workers)
         {
-            PREP_LOCK_DEBUG()
-            std::lock_guard<std::mutex> lock(worker.second->getlock(), std::adopt_lock);
-            LOCK_DEBUG()
             worker.second->addTask<DataType>(event);
         }
     }
