@@ -7,7 +7,7 @@
 #include <mutex>
 
 #include <include.hpp>
-#include <logger.hpp>
+#include <logger.h>
 
 //domain
 #include <MarketData.h>
@@ -22,7 +22,7 @@
 private:\
     virtual void onEvent(const std::shared_ptr<const eventType>& evt_)\
     {\
-        LOG(evt_);\
+        LOG_INFO(evt_);\
     }
 
 namespace engine
@@ -82,8 +82,8 @@ public:
         std::lock_guard<std::mutex> lck(_queue_lock, std::adopt_lock);
         LOCK_DEBUG("Worker::handleEvent");
         const Task& task = _queue.front();
-//        LOG("have  md "<< task.md <<" have tm " << task.tm << "queue is of length " << _queue.size());
-        onNewTask(task); 
+        LOG_DEBUG("have new task, queue is of length " << _queue.size());
+        onNewTask(task);
         _queue.pop();
     }
 
@@ -95,7 +95,6 @@ public:
             {
                 handleEvent();
             }
-            std::this_thread::sleep_for(std::chrono::seconds(15));
         }
     }
 };

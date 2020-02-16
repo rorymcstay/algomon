@@ -1,11 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+
 PROJECT(algomon C CXX)
 set (CMAKE_CXX_STANDARD 17)
-cmake_minimum_required(VERSION 3.10)
 
 set(CMAKE_BUILD_TYPE Debug)
 
 set(CMAKE_CXX_COMPILER /usr/bin/g++-8)
-add_compile_options(-Wall -gdwarf-2 -ggdb -g3)
+add_compile_options(
+    -Wall -gdwarf-2 -ggdb -g3 # debug flags
+    -DBOOST_LOG_DYN_LINK -lboost_log 
+    -lboost_thread -lboost_log_setup # boost loggin reqs
+    -lpthread -lboost_system 
+)
 find_package (Threads)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
@@ -48,9 +54,6 @@ SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/lib)
 add_subdirectory(utils)
 add_subdirectory(domain)
 add_subdirectory(engine)
-
-
-
 add_subdirectory(app)
 
 

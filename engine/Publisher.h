@@ -13,6 +13,8 @@
 #include <iterator>     // ostream_operator
 #include <memory>
 
+#include <logger.h>
+
 // sources
 #include "Event.h"
 
@@ -42,7 +44,7 @@ public:
     :   _threadPool(threadPool_)
     ,   _connectionString(connectionString)
     {
-        LOG("publisher for " << connectionString << " created.");
+        LOG_INFO("publisher for " << connectionString << " created.");
     }
 
 private:
@@ -60,8 +62,7 @@ private:
             vec.assign(tok.begin(),tok.end());
             auto data = std::make_shared<const DataType>(vec);
             _threadPool->queueEvent<DataType>(data);
-            LOG(std::this_thread::get_id() <<" added event");
-            std::this_thread::sleep_for(std::chrono::seconds(10));
+            LOG_DEBUG(std::this_thread::get_id() <<" added event");
 
             if (vec.size() < 3) continue;
 

@@ -6,13 +6,16 @@
 #include <mutex>
 #include <functional>
 #include <map>
+#include <memory>
 //#include <Event.h>
 
-#include <logger.hpp>
+#include <logger.h>
 #include <Event.h>
 #include <MarketData.h>
 #include <TradeMessage.h>
+
 #include "Worker.h"
+
 
 
 namespace engine
@@ -62,7 +65,7 @@ public:
     {
         for( auto& worker : _workers)
         {
-            LOG("Joining thread " << worker.first);
+            LOG_DEBUG("Joining thread " << worker.first);
             worker.second->join();
         }
     }

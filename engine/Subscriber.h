@@ -7,7 +7,7 @@
 
 // Utils
 #include <include.hpp>
-#include <logger.hpp>
+#include <logger.h>
 
 // Domain
 #include <MarketData.h>
@@ -31,23 +31,16 @@ public:
     Subscriber(const std::string& name_)
     :   Worker(name_)
     {
-        
     }
 
     void onEvent(const std::shared_ptr<const domain::MarketData>& md) override
-    {
-        
-        LOG(getname() << " doing MarketData on event ");
-        for (int i = 0; i < md->getlevels(); i++)
-        {
-            const Quote& quote = md->askLevel(i);
-            LOG("ask level " << i <<   ": " << quote);
-        }
+    { 
+        LOG_INFO(getname() << "best ask " << md->askLevel(0) << " best bid " << md->bidLevel(0));
     }
 
     void onEvent(const std::shared_ptr<const domain::TradeMessage>& tm) override
     {
-        LOG(tm);
+        LOG_INFO("trade message: " << tm);
     }
 };
 }
