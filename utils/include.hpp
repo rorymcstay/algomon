@@ -1,6 +1,10 @@
 #ifndef UTILS_INCLUDE
 #define UTILS_INCLUDE
 
+#include <string>
+#include <stdexcept>
+
+
 #define GETSET(type, var)\
     private:\
        type _##var;\
@@ -26,4 +30,39 @@
     enum class name {v1,v2};\
     inline const char *enum2str(name value){ const char *name##Strings[]={#v1, #v2}; return name##Strings[(int)value];}
         
+
+
+namespace utils
+{
+    template<typename T>
+    inline T fromString(std::string str_);
+
+    template<>
+    inline double fromString<double>(std::string str_)
+    {
+        try
+        {
+            return std::stod(str_);
+        }
+        catch (std::invalid_argument& e)
+        {
+            return double(-1.0);
+        }
+    }
+    
+    template<>
+    inline int fromString<int>(std::string str_)
+    {
+        try
+        {
+            return std::stoi(str_);
+        }
+        catch (std::invalid_argument& e)
+        {
+            return int(-1);
+        }
+    }
+
+}
+
 #endif

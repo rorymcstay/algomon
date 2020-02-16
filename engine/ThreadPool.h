@@ -3,9 +3,12 @@
 #include <thread>
 #include <queue>
 #include <vector>
+#include <mutex>
 #include <functional>
+#include <map>
 //#include <Event.h>
 
+#include <logger.hpp>
 #include <Event.h>
 #include <MarketData.h>
 #include <TradeMessage.h>
@@ -19,10 +22,11 @@ class ThreadPool
 {
 friend class Worker;
 private:
-    using Workers = std::vector<Worker::Ptr>;
+    
+    using Workers = std::map<std::string, Worker::Ptr>;
 
     int _numThreads;
-    std::shared_ptr<std::queue<Task>> _task_queue = std::make_shared<std::queue<Task>>();
+    std::mutex _lock;
     Workers _workers;
 
 public:
@@ -32,15 +36,39 @@ public:
         _numThreads = num_threads;
     }
 
-    void queueEvent(const Task& evt)
+    std::mutex& getlock()
     {
-        _task_queue->push(evt);
+        return _lock;
+    }
+ 
+    template<class DataType>
+    void queueEvent(std::shared_ptr<DataType> event)
+    {   
+        std::lock_guard<std::mutex> queueLock(_lock);
+        for (auto& worker : _workers)
+        {
+            PREP_LOCK_DEBUG()
+            std::lock_guard<std::mutex> lock(worker.second->getlock(), std::adopt_lock);
+            LOCK_DEBUG()
+            worker.second->addTask<DataType>(event);
+        }
     }
 
-    void initialiseWorker(Worker::Ptr& worker_)
+    template<class T>
+    void initialiseWorker(const std::string& name_)
     {
-        worker_->initialise(_task_queue);
-        _workers.push_back(std::move(worker_));
+        _workers.emplace(name_, std::make_unique<T>(name_));
+        _workers[name_]->init();
+        _workers[name_]->initalise();
+    }
+
+    void finalised()
+    {
+        for( auto& worker : _workers)
+        {
+            LOG("Joining thread " << worker.first);
+            worker.second->join();
+        }
     }
 
 };

@@ -28,15 +28,27 @@ public:
 
 public:
 
+    Subscriber(const std::string& name_)
+    :   Worker(name_)
+    {
+        
+    }
+
     void onEvent(const std::shared_ptr<domain::MarketData>& md)
     {
-        for (int i = 0; i < md->getlevels()-1; i++)
+        
+        LOG(getname() << " doing MarketData on event ");
+        for (int i = 0; i < md->getlevels(); i++)
         {
             const Quote& quote = md->askLevel(i);
             LOG("ask level " << i <<   ": " << quote);
         }
     }
 
+    void onEvent(const std::shared_ptr<domain::TradeMessage>& tm)
+    {
+        LOG(tm);
+    }
 };
 }
 

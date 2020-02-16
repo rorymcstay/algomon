@@ -42,6 +42,18 @@ inline std::ostream& operator << (std::ostream& out, const MarketData& md)
     }
     return out;
 }
+
+inline std::ostream& operator << (std::ostream& out, const MarketData* md)
+{
+    int level = 1;
+    while (level <= md->getlevels())
+    {
+        out << "level: " << md->askLevel(level-1);
+        level++;
+    }
+    return out;
+}
+
 }
 
 

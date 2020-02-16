@@ -7,10 +7,10 @@
 namespace engine
 {
 #define REGISTER_CONTEXT(type, name)\
-    std::shared_ptr<type> name;\
-    Task(std::shared_ptr<type> evt)\
+    std::shared_ptr<const type> name;\
+    Task(std::shared_ptr<const type> evt)\
+    :   name(evt)\
     {\
-        name = evt;\
     }
         
 struct Task

@@ -25,6 +25,10 @@ inline std::ostream& operator<<(std::ostream& out, const TradeMessage& msg)
 {
     return out << "Message type: " << enum2str(msg.gettype());
 }
+inline std::ostream& operator<<(std::ostream& out, const TradeMessage* msg)
+{
+    return out << "Message type: " << enum2str(msg->gettype());
+}
 
 }
 

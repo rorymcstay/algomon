@@ -18,7 +18,7 @@ private:
     Side _side;
 
 public:
-    const Side getside() const { return _side; }
+    Side getside() const { return _side; }
     void setside(Side side) { _side = side; }
 
 
@@ -27,6 +27,10 @@ public:
 inline std::ostream& operator<<(std::ostream& out, const Quote& qt )
 {
     return out << enum2str(qt.getside()) << qt.getquantity() << "@" << qt.getprice();
+}
+inline std::ostream& operator<<(std::ostream& out, const Quote* qt )
+{
+    return out << enum2str(qt->getside()) << qt->getquantity() << "@" << qt->getprice();
 }
 }
 

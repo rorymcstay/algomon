@@ -12,16 +12,16 @@ namespace domain
 {
     TradeMessage::TradeMessage(std::vector<std::string> data_)
     {
-        _type = (MessageType)std::stoi(data_[1]);
-        _oid = std::stoi(data_[3]);
-        _timestamp = std::stod(data_[0]);
+        _type = (MessageType)utils::fromString<int>(data_[1]);
+        _oid = utils::fromString<int>(data_[3]);
+        _timestamp = utils::fromString<double>(data_[0]);
 
         // Quote
         Quote qt = Quote();
-        qt.setprice(std::stod(data_[2]));
-        qt.setquantity(std::stoi(data_[4]));
+        qt.setprice(utils::fromString<double>(data_[2]));
+        qt.setquantity(utils::fromString<int>(data_[4]));
 
-        switch(std::stoi(data_[5]))
+        switch(utils::fromString<int>(data_[5]))
         {
             case 1:
             {

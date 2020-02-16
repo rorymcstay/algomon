@@ -1,7 +1,9 @@
 
 set(LIB_SOURCES 
         Subscriber.cpp
+        Threaded.cpp
         Publisher.cpp
+        PublisherController.cpp
         Task.cpp
         Worker.cpp
         ThreadPool.cpp

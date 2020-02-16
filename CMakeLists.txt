@@ -2,9 +2,10 @@ PROJECT(algomon C CXX)
 set (CMAKE_CXX_STANDARD 17)
 cmake_minimum_required(VERSION 3.10)
 
+set(CMAKE_BUILD_TYPE Debug)
 
 set(CMAKE_CXX_COMPILER /usr/bin/g++-8)
-add_compile_options(-Wall -Wextra )
+add_compile_options(-Wall -gdwarf-2 -ggdb -g3)
 find_package (Threads)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
