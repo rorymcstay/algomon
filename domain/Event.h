@@ -20,10 +20,14 @@ class Event
 public:
     using Ptr = std::shared_ptr<Event>;
  
+    Event(EventType type, TimeType tt)
+    :   _timeType(tt)
+    ,   _type(type)
+    {
+    }
+    
+    GETSET(TimeType, timeType);
     GETSET(EventType, type);
-
-public:
-
 
 };
 

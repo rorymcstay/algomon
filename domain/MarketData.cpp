@@ -7,6 +7,7 @@
 namespace domain
 {
     MarketData::MarketData(const std::vector<std::string>& data)
+    :   Event(EventType::MarketData, TimeType::Linked)
     {
         int level(1);
         int i(0);

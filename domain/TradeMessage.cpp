@@ -11,6 +11,7 @@
 namespace domain
 {
     TradeMessage::TradeMessage(std::vector<std::string> data_)
+    :   Event(EventType::TradeMessage, TimeType::Stamped)
     {
         _type = (MessageType)utils::fromString<int>(data_[1]);
         _oid = utils::fromString<int>(data_[3]);

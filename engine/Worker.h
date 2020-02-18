@@ -39,7 +39,7 @@ private:
     REGISTER_EVENT(domain::MarketData)
     REGISTER_EVENT(domain::TradeMessage)
     
-    void onNewTask(const Task& evt)
+    void onNewTask(Task evt)
     {
         if (evt.md)
         {
@@ -48,6 +48,32 @@ private:
         if (evt.tm)
         {
             onEvent(evt.tm);
+        }
+    }
+ 
+    void handleEvent()
+    {
+        std::lock_guard<std::mutex> lck(_queue_lock, std::adopt_lock);
+        const Task& task = _queue.front();
+        LOG_DEBUG("have new task, queue is of length " << _queue.size());
+        onNewTask(task);
+    }
+
+    void removeEvent()
+    {
+        std::lock_guard<std::mutex> lck(_queue_lock, std::adopt_lock);
+        _queue.pop();
+    }
+
+    void run()
+    {
+        while (true)
+        {
+            if (!_queue.empty())
+            {
+                handleEvent();
+                removeEvent();
+            }
         }
     }
 
@@ -70,33 +96,9 @@ public:
     template<class DataType>
     void addTask(const std::shared_ptr<const DataType>& evt)
     { 
-        PREP_LOCK_DEBUG() 
         std::lock_guard<std::mutex> lk1(_queue_lock, std::adopt_lock);
-        LOCK_DEBUG("Worker::addTask");
         _queue.emplace(evt);
-    }
-
-    void handleEvent()
-    {
-        PREP_LOCK_DEBUG()
-        std::lock_guard<std::mutex> lck(_queue_lock, std::adopt_lock);
-        LOCK_DEBUG("Worker::handleEvent");
-        const Task& task = _queue.front();
-        LOG_DEBUG("have new task, queue is of length " << _queue.size());
-        onNewTask(task);
-        _queue.pop();
-    }
-
-    void run()
-    {
-        while (true)
-        {
-            if (!_queue.empty())
-            {
-                handleEvent();
-            }
-        }
-    }
+    } 
 };
 }
 #endif

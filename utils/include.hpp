@@ -30,6 +30,9 @@
     enum class name {v1,v2};\
     inline const char *enum2str(name value){ const char *name##Strings[]={#v1, #v2}; return name##Strings[(int)value];}
         
+#define ENUM_MACRO_3(name, v1, v2, v3)\
+    enum class name {v1,v2, v3};\
+    inline const char *enum2str(name value){ const char *name##Strings[]={#v1, #v2, #v3}; return name##Strings[(int)value];}
 
 
 namespace utils
