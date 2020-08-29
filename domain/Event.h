@@ -26,8 +26,9 @@ public:
     {
     }
     
-    GETSET(TimeType, timeType);
-    GETSET(EventType, type);
+    GETSET(TimeType,    timeType);
+    GETSET(int,         timestamp);
+    GETSET(EventType,   type);
 
 };
 

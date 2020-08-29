@@ -17,9 +17,9 @@ class MarketData : public Event
 public:
     typedef std::vector<Quote> Quotes;
 
-    GETSET(Quotes, bids);
-    GETSET(Quotes, asks);
-    GETSET(int, levels);
+    GETSET(Quotes,      bids);
+    GETSET(Quotes,      asks);
+    GETSET(int,         levels);
 
     MarketData(const std::vector<std::string>& data);
     inline const Quote& askLevel(int level) const 

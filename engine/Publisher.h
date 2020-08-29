@@ -35,20 +35,21 @@ class Publisher : public Threaded
 typedef boost::tokenizer<boost::escaped_list_separator<char>> Tokenizer;
 
 private:
-    std::mutex _run_lock;
-    std::thread _thread;
-    std::shared_ptr<ThreadPool> _threadPool;
-    int _time;
-    std::shared_ptr<Publisher> _linkedPublisher = nullptr;
-    GETSET(std::string, connectionString);
-    GETSET(bool, paused);
-    GETSET(int, msgNum);
-    GETSET(int, increment);
+    std::mutex                      _run_lock;
+    std::thread                     _thread;
+    std::shared_ptr<ThreadPool>     _threadPool;
+    std::shared_ptr<Publisher>      _linkedPublisher = nullptr;
+    GETSET(std::string,             connectionString);
+    GETSET(bool,                    paused);
+    GETSET(int,                     time);
+    GETSET(int,                     msgNum);
+    GETSET(int,                     increment);
 
 
 public:
 
-    Publisher(std::shared_ptr<ThreadPool> threadPool_,const std::string& connectionString)
+    Publisher(std::shared_ptr<ThreadPool> threadPool_,
+              const std::string& connectionString)
     :   _threadPool(threadPool_)
     ,   _connectionString(connectionString)
     ,   _increment(1)
@@ -56,47 +57,63 @@ public:
     {
         LOG_INFO("publisher for " << connectionString << " created.");
     }
+    
 
 private:
-    void run()
-    {
-        std::ifstream in(_connectionString);
-        if (!in.is_open()) return;
- 
-        std::string line;
+    virtual const void updateSubscribers(const std::shared_ptr<const DataType>& data_)
+    { 
+        _threadPool->queueEvent<DataType>(data_);
+        LOG_DEBUG(std::this_thread::get_id() <<" added event");
+        _msgNum++;
+    }
 
+    virtual void recordTime(const std::shared_ptr<const DataType>& data_)
+    {
+        switch(data_->gettimeType())
+        {
+            case TimeType::Continuous:
+            {
+                setlatestTime(_msgNum*_increment);
+                break;
+            }
+            case TimeType::Linked:
+            {
+                setlatestTime(_linkedPublisher->gettime());
+                break;
+            }
+            case TimeType::Stamped:
+            {
+                setlatestTime(data_->gettimestamp());
+                break;
+            }
+        }
+    }
+
+    virtual bool connect()
+    {
+        return true;
+    }
+
+    virtual void run()
+    { 
+        std::string line;
+        std::ifstream in(_connectionString);
+        if (!in.is_open())
+        {
+            return;
+        }
         while (getline(in,line))
         {
-
             while (isPaused())
             {
-            // spin here if paused
+                // spin here if paused
             }
             std::vector<std::string> vec;
             Tokenizer tok(line);
             vec.assign(tok.begin(),tok.end());
             auto data = std::make_shared<const DataType>(vec);
-            switch(data->gettimeType)
-            {
-                case TimeType::Continuous:
-                {
-                    setlatestTime(_msgNum*_increment);                    
-                    break;
-                }
-                case TimeType::Linked:
-                {
-                    setlatestTime(_linkedPublisher->gettime());
-                    break;
-                }
-                case TimeType::Stamped:
-                {
-                    setlatestTime(data->gettimestamp());
-                    break;
-                }
-            }
-            _threadPool->queueEvent<DataType>(data);
-            LOG_DEBUG(std::this_thread::get_id() <<" added event");
-            _msgNum++;
+            updateSubscribers(data);
+            recordTime(data);
             if (vec.size() < 3) continue;
 
         }

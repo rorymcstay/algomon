@@ -1,0 +1,3 @@
+[submodule "iex_api"]
+	path = iex_api
+	url = git@github.com:rorymcstay/IEX_CPP_API.git

@@ -9,18 +9,17 @@ namespace domain
 class TradeMessage: public Event
 {
     typedef int orderid_t;
-    GETSET(MessageType, type);
-    GETSET(orderid_t, oid);
-    GETSET(double, timestamp);
-    GETSET(Quote, quote);
+
+    GETSET(MessageType,     type);
+    GETSET(orderid_t,       oid);
+    GETSET(Quote,           quote);
 
 public:
     TradeMessage(std::vector<std::string> data_);
 
-
 };
 
-
+// -------- logging ----------
 inline std::ostream& operator<<(std::ostream& out, const TradeMessage& msg)
 {
     return out << "Message type: " << enum2str(msg.gettype());

@@ -15,7 +15,7 @@ namespace domain
     {
         _type = (MessageType)utils::fromString<int>(data_[1]);
         _oid = utils::fromString<int>(data_[3]);
-        _timestamp = utils::fromString<double>(data_[0]);
+        settimestamp(utils::fromString<double>(data_[0]));
 
         // Quote
         Quote qt = Quote();

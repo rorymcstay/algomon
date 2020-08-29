@@ -32,10 +32,11 @@ class Worker : public Threaded
 {
 private:
 
-    mutable std::mutex _queue_lock;
-    std::queue<Task> _queue;
-    std::thread _thread;
-    GETSET(std::string, name)
+    mutable std::mutex      _queue_lock;
+    std::queue<Task>        _queue;
+    std::thread             _thread;
+    GETSET(std::string,     name)
+
     REGISTER_EVENT(domain::MarketData)
     REGISTER_EVENT(domain::TradeMessage)
     
