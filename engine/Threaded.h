@@ -2,6 +2,7 @@
 #define THREADED_H
 
 #include <thread>
+#include <pthread.h>
 #include <include.hpp>
 #include <mutex>
 
@@ -20,9 +21,11 @@ private:
 
     virtual void run() = 0;
 public:
-    void initalise()
+    void initalise(const std::string& name)
     {
         _thread = std::thread( &Threaded::run, this);
+        
+        pthread_setname_np(pthread_self(), name.c_str());
     }
 
     void join()
@@ -30,6 +33,14 @@ public:
         _thread.join();
     }
 
+    void setlinkedThread(std::shared_ptr<Threaded> pub_)
+    {
+        _linkedThread = pub_;
+    }
+    const std::shared_ptr<Threaded>& linkedThread()
+    {
+        return _linkedThread;
+    }
     void pause()
     {
         std::lock_guard<std::mutex> lk1(_lock, std::adopt_lock);

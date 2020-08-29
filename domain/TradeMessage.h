@@ -16,6 +16,7 @@ class TradeMessage: public Event
 
 public:
     TradeMessage(std::vector<std::string> data_);
+    ~TradeMessage(){}
 
 };
 

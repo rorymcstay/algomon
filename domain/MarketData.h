@@ -16,19 +16,35 @@ class MarketData : public Event
 
 public:
     typedef std::vector<Quote> Quotes;
+    Quote EMPTY_QUOTE;
 
     GETSET(Quotes,      bids);
     GETSET(Quotes,      asks);
     GETSET(int,         levels);
 
     MarketData(const std::vector<std::string>& data);
+    ~MarketData(){}
     inline const Quote& askLevel(int level) const 
     {
-        return _asks[level];
+        if (!_asks.empty() && _asks.size() <= level)
+        {
+            return _asks[level];
+        }
+        else
+        {
+            return EMPTY_QUOTE;
+        }
     }
     inline const Quote& bidLevel(int level) const
     {
-        return _bids[level];
+        if (!_bids.empty() && _bids.size() <= level)
+        {
+            return _bids[level];
+        }
+        else
+        {
+            return EMPTY_QUOTE;
+        }
     }
 };
 

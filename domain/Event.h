@@ -25,6 +25,7 @@ public:
     ,   _type(type)
     {
     }
+    ~Event(){}
     
     GETSET(TimeType,    timeType);
     GETSET(int,         timestamp);

@@ -58,7 +58,7 @@ public:
     {
         _workers.emplace(name_, std::make_unique<T>(name_));
         _workers[name_]->init();
-        _workers[name_]->initalise();
+        _workers[name_]->initalise(name_);
     }
 
     void finalised()

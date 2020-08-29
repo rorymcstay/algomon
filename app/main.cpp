@@ -26,6 +26,8 @@ int main (void)
    controller.addPublisher(marketData, EventType::MarketData);
    pool->initialiseWorker<Subscriber>("subscriber");
    controller.addPublisher(tradeMessages, EventType::TradeMessage);
+   //controller.linkPublishers(EventType::TradeMessage, EventType::MarketData);
+   controller.linkPublishers(EventType::MarketData, EventType::TradeMessage);
    controller.runPublishers();
    pool->finalised();
 

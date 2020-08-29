@@ -38,7 +38,6 @@ private:
     std::mutex                      _run_lock;
     std::thread                     _thread;
     std::shared_ptr<ThreadPool>     _threadPool;
-    std::shared_ptr<Publisher>      _linkedPublisher = nullptr;
     GETSET(std::string,             connectionString);
     GETSET(bool,                    paused);
     GETSET(int,                     time);
@@ -57,6 +56,8 @@ public:
     {
         LOG_INFO("publisher for " << connectionString << " created.");
     }
+
+
     
 
 private:
@@ -78,7 +79,7 @@ private:
             }
             case TimeType::Linked:
             {
-                setlatestTime(_linkedPublisher->gettime());
+                setlatestTime(linkedThread()->getlatestTime());
                 break;
             }
             case TimeType::Stamped:
@@ -114,9 +115,11 @@ private:
             auto data = std::make_shared<const DataType>(vec);
             updateSubscribers(data);
             recordTime(data);
-            if (vec.size() < 3) continue;
-
+            if (vec.size() < 3){
+                continue;
+            }
         }
+        LOG_INFO("Publisher finished");
     }
 };
 

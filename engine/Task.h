@@ -11,11 +11,16 @@ namespace engine
     Task(const std::shared_ptr<const type>& evt)\
     :   name(evt)\
     {\
-    }
-        
+    }\
+ 
 struct Task
 {
     REGISTER_CONTEXT(domain::MarketData, md)
     REGISTER_CONTEXT(domain::TradeMessage, tm)
+    ~Task()
+    {
+        md = nullptr;
+        tm = nullptr;
+    }
 };
 }

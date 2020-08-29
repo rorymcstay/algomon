@@ -34,7 +34,7 @@ public:
     }
 
     void onEvent(const std::shared_ptr<const domain::MarketData>& md) override
-    { 
+    {
         LOG_INFO(getname() << "best ask " << md->askLevel(0) << " best bid " << md->bidLevel(0));
     }
 

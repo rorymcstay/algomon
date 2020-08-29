@@ -1,0 +1,1603 @@
+0000001 | 2020-08-29, 19:01:12.758516 [info] - publisher for /home/rory/dev/algo/lobster_sample/AAPL_2012-06-21_34200000_37800000_orderbook_30.csv created.
+0000002 | 2020-08-29, 19:01:12.758622 [info] - publisher for /home/rory/dev/algo/lobster_sample/AAPL_2012-06-21_34200000_37800000_message_30.csv created.
+0000003 | 2020-08-29, 19:01:12.758789 [debug] - Joining thread subscriber
+0000004 | 2020-08-29, 19:01:12.758950 [debug] - 140552845686528 added event
+0000005 | 2020-08-29, 19:01:12.758982 [debug] - have new task, queue is of length 1
+0000006 | 2020-08-29, 19:01:12.759028 [info] - trade message: Message type: Cancel
+0000007 | 2020-08-29, 19:01:12.759034 [debug] - 140552845686528 added event
+0000008 | 2020-08-29, 19:01:12.759050 [debug] - have new task, queue is of length 1
+0000009 | 2020-08-29, 19:01:12.759067 [info] - trade message: Message type: Cancel
+0000010 | 2020-08-29, 19:01:12.759091 [debug] - have new task, queue is of length 1
+0000011 | 2020-08-29, 19:01:12.759092 [debug] - 140552845686528 added event
+0000012 | 2020-08-29, 19:01:12.759117 [info] - trade message: Message type: Cancel
+0000013 | 2020-08-29, 19:01:12.759164 [debug] - have new task, queue is of length 1
+0000014 | 2020-08-29, 19:01:12.759166 [debug] - 140552845686528 added event
+0000015 | 2020-08-29, 19:01:12.759184 [info] - trade message: Message type: Cancel
+0000016 | 2020-08-29, 19:01:12.759257 [debug] - have new task, queue is of length 1
+0000018 | 2020-08-29, 19:01:12.759276 [info] - trade message: Message type: Cancel
+0000017 | 2020-08-29, 19:01:12.759259 [debug] - 140552845686528 added event
+0000019 | 2020-08-29, 19:01:12.759361 [debug] - have new task, queue is of length 1
+0000020 | 2020-08-29, 19:01:12.759368 [debug] - 140552854079232 added event
+0000022 | 2020-08-29, 19:01:12.759399 [debug] - 140552845686528 added event
+0000021 | 2020-08-29, 19:01:12.759379 [info] - subscriberbest ask Buy0@0 best bid Buy0@0
+0000023 | 2020-08-29, 19:01:12.759445 [debug] - have new task, queue is of length 1
+0000024 | 2020-08-29, 19:01:12.759462 [info] - trade message: Message type: Cancel
+0000025 | 2020-08-29, 19:01:12.759467 [debug] - 140552845686528 added event
+0000026 | 2020-08-29, 19:01:12.759479 [debug] - have new task, queue is of length 1
+0000027 | 2020-08-29, 19:01:12.759494 [info] - trade message: Message type: Cancel
+0000028 | 2020-08-29, 19:01:12.759522 [debug] - have new task, queue is of length 1
+0000029 | 2020-08-29, 19:01:12.759523 [debug] - 140552845686528 added event
+0000030 | 2020-08-29, 19:01:12.759540 [info] - trade message: Message type: Execution
+0000031 | 2020-08-29, 19:01:12.759586 [debug] - have new task, queue is of length 1
+0000032 | 2020-08-29, 19:01:12.759587 [debug] - 140552845686528 added event
+0000033 | 2020-08-29, 19:01:12.759603 [info] - trade message: Message type: Execution
+0000034 | 2020-08-29, 19:01:12.759649 [debug] - have new task, queue is of length 1
+0000035 | 2020-08-29, 19:01:12.759650 [debug] - 140552845686528 added event
+0000036 | 2020-08-29, 19:01:12.759666 [info] - trade message: Message type: Execution
+0000037 | 2020-08-29, 19:01:12.759711 [debug] - have new task, queue is of length 1
+0000039 | 2020-08-29, 19:01:12.759730 [info] - trade message: Message type: Cancel
+0000038 | 2020-08-29, 19:01:12.759713 [debug] - 140552845686528 added event
+0000040 | 2020-08-29, 19:01:12.759797 [debug] - have new task, queue is of length 1
+0000041 | 2020-08-29, 19:01:12.759798 [debug] - 140552845686528 added event
+0000042 | 2020-08-29, 19:01:12.759816 [info] - trade message: Message type: Cancel
+0000043 | 2020-08-29, 19:01:12.759860 [debug] - have new task, queue is of length 1
+0000044 | 2020-08-29, 19:01:12.759861 [debug] - 140552845686528 added event
+0000045 | 2020-08-29, 19:01:12.759877 [info] - trade message: Message type: Execution
+0000047 | 2020-08-29, 19:01:12.759896 [debug] - have new task, queue is of length 1
+0000046 | 2020-08-29, 19:01:12.759893 [debug] - 140552854079232 added event
+0000048 | 2020-08-29, 19:01:12.759920 [info] - subscriberbest ask Buy0@0 best bid Buy0@0
+0000049 | 2020-08-29, 19:01:12.759939 [debug] - 140552845686528 added event
+0000051 | 2020-08-29, 19:01:12.760018 [debug] - 140552845686528 added event
+0000052 | 2020-08-29, 19:01:12.760075 [debug] - 140552845686528 added event
+0000050 | 2020-08-29, 19:01:12.759952 [debug] - have new task, queue is of length 1
+0000053 | 2020-08-29, 19:01:12.760124 [info] - trade message: Message type: Execution
+0000054 | 2020-08-29, 19:01:12.760130 [debug] - 140552845686528 added event
+0000055 | 2020-08-29, 19:01:12.760158 [debug] - have new task, queue is of length 3
+0000056 | 2020-08-29, 19:01:12.760177 [info] - trade message: Message type: Execution
+0000057 | 2020-08-29, 19:01:12.760193 [debug] - have new task, queue is of length 2
+0000058 | 2020-08-29, 19:01:12.760199 [debug] - 140552845686528 added event
+0000059 | 2020-08-29, 19:01:12.760208 [info] - trade message: Message type: Execution
+0000060 | 2020-08-29, 19:01:12.760252 [debug] - have new task, queue is of length 2
+0000061 | 2020-08-29, 19:01:12.760269 [info] - trade message: Message type: Execution
+0000062 | 2020-08-29, 19:01:12.760276 [debug] - 140552845686528 added event
+0000063 | 2020-08-29, 19:01:12.760287 [debug] - have new task, queue is of length 2
+0000064 | 2020-08-29, 19:01:12.760304 [info] - trade message: Message type: Cancel
+0000065 | 2020-08-29, 19:01:12.760322 [debug] - have new task, queue is of length 1
+0000066 | 2020-08-29, 19:01:12.760334 [debug] - 140552845686528 added event
+0000067 | 2020-08-29, 19:01:12.760339 [info] - trade message: Message type: Cancel
+0000068 | 2020-08-29, 19:01:12.760381 [debug] - have new task, queue is of length 1
+0000070 | 2020-08-29, 19:01:12.760400 [info] - trade message: Message type: Cancel
+0000071 | 2020-08-29, 19:01:12.760416 [debug] - 140552854079232 added event
+0000069 | 2020-08-29, 19:01:12.760394 [debug] - 140552845686528 added event
+0000072 | 2020-08-29, 19:01:12.760422 [debug] - have new task, queue is of length 2
+0000073 | 2020-08-29, 19:01:12.760495 [debug] - 140552845686528 added event
+0000074 | 2020-08-29, 19:01:12.760518 [info] - trade message: Message type: Cancel
+0000075 | 2020-08-29, 19:01:12.760550 [debug] - have new task, queue is of length 2
+0000076 | 2020-08-29, 19:01:12.760564 [debug] - 140552845686528 added event
+0000077 | 2020-08-29, 19:01:12.760567 [info] - subscriberbest ask Buy0@0 best bid Buy0@0
+0000078 | 2020-08-29, 19:01:12.760599 [debug] - have new task, queue is of length 2
+0000079 | 2020-08-29, 19:01:12.760616 [info] - trade message: Message type: Cancel
+0000080 | 2020-08-29, 19:01:12.760622 [debug] - 140552845686528 added event
+0000081 | 2020-08-29, 19:01:12.760634 [debug] - have new task, queue is of length 2
+0000082 | 2020-08-29, 19:01:12.760651 [info] - trade message: Message type: Cancel
+0000083 | 2020-08-29, 19:01:12.760669 [debug] - have new task, queue is of length 1
+0000085 | 2020-08-29, 19:01:12.760686 [info] - trade message: Message type: Cancel
+0000084 | 2020-08-29, 19:01:12.760680 [debug] - 140552845686528 added event
+0000086 | 2020-08-29, 19:01:12.760707 [debug] - have new task, queue is of length 1
+0000087 | 2020-08-29, 19:01:12.760724 [info] - trade message: Message type: Cancel
+0000088 | 2020-08-29, 19:01:12.760754 [debug] - have new task, queue is of length 1
+0000089 | 2020-08-29, 19:01:12.760755 [debug] - 140552845686528 added event
+0000090 | 2020-08-29, 19:01:12.760773 [info] - trade message: Message type: Cancel
+0000091 | 2020-08-29, 19:01:12.760822 [debug] - have new task, queue is of length 1
+0000092 | 2020-08-29, 19:01:12.760823 [debug] - 140552845686528 added event
+0000093 | 2020-08-29, 19:01:12.760840 [info] - trade message: Message type: Cancel
+0000094 | 2020-08-29, 19:01:12.760888 [debug] - have new task, queue is of length 1
+0000095 | 2020-08-29, 19:01:12.760889 [debug] - 140552845686528 added event
+0000096 | 2020-08-29, 19:01:12.760907 [info] - trade message: Message type: Cancel
+0000097 | 2020-08-29, 19:01:12.760932 [debug] - have new task, queue is of length 1
+0000098 | 2020-08-29, 19:01:12.760934 [debug] - 140552854079232 added event
+0000099 | 2020-08-29, 19:01:12.760953 [info] - subscriberbest ask Buy0@0 best bid Buy0@0
+0000100 | 2020-08-29, 19:01:12.760956 [debug] - 140552845686528 added event
+0000101 | 2020-08-29, 19:01:12.760994 [debug] - have new task, queue is of length 1
+0000102 | 2020-08-29, 19:01:12.761013 [info] - trade message: Message type: Cancel
+0000103 | 2020-08-29, 19:01:12.761038 [debug] - have new task, queue is of length 1
+0000104 | 2020-08-29, 19:01:12.761039 [debug] - 140552845686528 added event
+0000105 | 2020-08-29, 19:01:12.761056 [info] - trade message: Message type: Cancel
+0000106 | 2020-08-29, 19:01:12.761104 [debug] - have new task, queue is of length 1
+0000107 | 2020-08-29, 19:01:12.761105 [debug] - 140552845686528 added event
+0000108 | 2020-08-29, 19:01:12.761123 [info] - trade message: Message type: Cancel
+0000109 | 2020-08-29, 19:01:12.761168 [debug] - have new task, queue is of length 1
+0000110 | 2020-08-29, 19:01:12.761170 [debug] - 140552845686528 added event
+0000111 | 2020-08-29, 19:01:12.761186 [info] - trade message: Message type: Cancel
+0000112 | 2020-08-29, 19:01:12.761233 [debug] - have new task, queue is of length 1
+0000113 | 2020-08-29, 19:01:12.761235 [debug] - 140552845686528 added event
+0000114 | 2020-08-29, 19:01:12.761251 [info] - trade message: Message type: Cancel
+0000115 | 2020-08-29, 19:01:12.761298 [debug] - have new task, queue is of length 1
+0000116 | 2020-08-29, 19:01:12.761300 [debug] - 140552845686528 added event
+0000117 | 2020-08-29, 19:01:12.761316 [info] - trade message: Message type: Cancel
+0000118 | 2020-08-29, 19:01:12.761362 [debug] - have new task, queue is of length 1
+0000119 | 2020-08-29, 19:01:12.761364 [debug] - 140552845686528 added event
+0000120 | 2020-08-29, 19:01:12.761380 [info] - trade message: Message type: Cancel
+0000121 | 2020-08-29, 19:01:12.761427 [debug] - have new task, queue is of length 1
+0000122 | 2020-08-29, 19:01:12.761428 [debug] - 140552845686528 added event
+0000124 | 2020-08-29, 19:01:12.761445 [info] - trade message: Message type: Cancel
+0000123 | 2020-08-29, 19:01:12.761444 [debug] - 140552854079232 added event
+0000125 | 2020-08-29, 19:01:12.761466 [debug] - have new task, queue is of length 1
+0000126 | 2020-08-29, 19:01:12.761493 [debug] - 140552845686528 added event
+0000127 | 2020-08-29, 19:01:12.761497 [info] - subscriberbest ask Buy18@5.8531e+06 best bid Buy18@5.8531e+06
+0000128 | 2020-08-29, 19:01:12.761524 [debug] - have new task, queue is of length 1
+0000129 | 2020-08-29, 19:01:12.761540 [info] - trade message: Message type: Cancel
+0000130 | 2020-08-29, 19:01:12.761549 [debug] - 140552845686528 added event
+0000131 | 2020-08-29, 19:01:12.761558 [debug] - have new task, queue is of length 1
+0000132 | 2020-08-29, 19:01:12.761574 [info] - trade message: Message type: Execution
+0000133 | 2020-08-29, 19:01:12.761611 [debug] - have new task, queue is of length 1
+0000134 | 2020-08-29, 19:01:12.761613 [debug] - 140552845686528 added event
+0000135 | 2020-08-29, 19:01:12.761630 [info] - trade message: Message type: Execution
+0000136 | 2020-08-29, 19:01:12.761678 [debug] - have new task, queue is of length 1
+0000137 | 2020-08-29, 19:01:12.761680 [debug] - 140552845686528 added event
+0000138 | 2020-08-29, 19:01:12.761697 [info] - trade message: Message type: Execution
+0000139 | 2020-08-29, 19:01:12.761744 [debug] - have new task, queue is of length 1
+0000140 | 2020-08-29, 19:01:12.761745 [debug] - 140552845686528 added event
+0000141 | 2020-08-29, 19:01:12.761762 [info] - trade message: Message type: HiddenExecution
+0000142 | 2020-08-29, 19:01:12.761809 [debug] - have new task, queue is of length 1
+0000143 | 2020-08-29, 19:01:12.761810 [debug] - 140552845686528 added event
+0000144 | 2020-08-29, 19:01:12.761827 [info] - trade message: Message type: HiddenExecution
+0000145 | 2020-08-29, 19:01:12.761875 [debug] - have new task, queue is of length 1
+0000146 | 2020-08-29, 19:01:12.761876 [debug] - 140552845686528 added event
+0000147 | 2020-08-29, 19:01:12.761893 [info] - trade message: Message type: Cancel
+0000148 | 2020-08-29, 19:01:12.761938 [debug] - have new task, queue is of length 1
+0000149 | 2020-08-29, 19:01:12.761940 [debug] - 140552845686528 added event
+0000151 | 2020-08-29, 19:01:12.761962 [debug] - 140552854079232 added event
+0000150 | 2020-08-29, 19:01:12.761956 [info] - trade message: Message type: HiddenExecution
+0000152 | 2020-08-29, 19:01:12.762003 [debug] - have new task, queue is of length 1
+0000153 | 2020-08-29, 19:01:12.762014 [debug] - 140552845686528 added event
+0000154 | 2020-08-29, 19:01:12.762021 [info] - subscriberbest ask Buy300@5.8453e+06 best bid Buy300@5.8453e+06
+0000155 | 2020-08-29, 19:01:12.762045 [debug] - have new task, queue is of length 1
+0000156 | 2020-08-29, 19:01:12.762062 [info] - trade message: Message type: HiddenExecution
+0000157 | 2020-08-29, 19:01:12.762073 [debug] - 140552845686528 added event
+0000158 | 2020-08-29, 19:01:12.762079 [debug] - have new task, queue is of length 1
+0000159 | 2020-08-29, 19:01:12.762106 [info] - trade message: Message type: HiddenExecution
+0000160 | 2020-08-29, 19:01:12.762131 [debug] - have new task, queue is of length 1
+0000161 | 2020-08-29, 19:01:12.762132 [debug] - 140552845686528 added event
+0000162 | 2020-08-29, 19:01:12.762149 [info] - trade message: Message type: HiddenExecution
+0000164 | 2020-08-29, 19:01:12.762197 [debug] - 140552845686528 added event
+0000163 | 2020-08-29, 19:01:12.762197 [debug] - have new task, queue is of length 1
+0000165 | 2020-08-29, 19:01:12.762238 [info] - trade message: Message type: HiddenExecution
+0000166 | 2020-08-29, 19:01:12.762259 [debug] - 140552845686528 added event
+0000167 | 2020-08-29, 19:01:12.762261 [debug] - have new task, queue is of length 1
+0000168 | 2020-08-29, 19:01:12.762303 [info] - trade message: Message type: HiddenExecution
+0000169 | 2020-08-29, 19:01:12.762335 [debug] - have new task, queue is of length 1
+0000170 | 2020-08-29, 19:01:12.762337 [debug] - 140552845686528 added event
+0000171 | 2020-08-29, 19:01:12.762354 [info] - trade message: Message type: HiddenExecution
+0000172 | 2020-08-29, 19:01:12.762407 [debug] - have new task, queue is of length 1
+0000174 | 2020-08-29, 19:01:12.762430 [info] - trade message: Message type: HiddenExecution
+0000173 | 2020-08-29, 19:01:12.762408 [debug] - 140552845686528 added event
+0000175 | 2020-08-29, 19:01:12.762573 [debug] - have new task, queue is of length 1
+0000176 | 2020-08-29, 19:01:12.762577 [debug] - 140552854079232 added event
+0000177 | 2020-08-29, 19:01:12.762589 [info] - subscriberbest ask Buy409@5.8346e+06 best bid Buy409@5.8346e+06
+0000179 | 2020-08-29, 19:01:12.762629 [debug] - have new task, queue is of length 1
+0000178 | 2020-08-29, 19:01:12.762629 [debug] - 140552845686528 added event
+0000180 | 2020-08-29, 19:01:12.762652 [info] - trade message: Message type: TradingHalt
+0000182 | 2020-08-29, 19:01:12.762701 [debug] - 140552845686528 added event
+0000181 | 2020-08-29, 19:01:12.762701 [debug] - have new task, queue is of length 1
+0000183 | 2020-08-29, 19:01:12.762739 [info] - trade message: Message type: HiddenExecution
+0000184 | 2020-08-29, 19:01:12.762761 [debug] - 140552845686528 added event
+0000185 | 2020-08-29, 19:01:12.762766 [debug] - have new task, queue is of length 1
+0000186 | 2020-08-29, 19:01:12.762790 [info] - trade message: Message type: HiddenExecution
+0000188 | 2020-08-29, 19:01:12.762816 [debug] - 140552845686528 added event
+0000187 | 2020-08-29, 19:01:12.762816 [debug] - have new task, queue is of length 1
+0000189 | 2020-08-29, 19:01:12.762855 [info] - trade message: Message type: HiddenExecution
+0000190 | 2020-08-29, 19:01:12.762871 [debug] - 140552845686528 added event
+0000191 | 2020-08-29, 19:01:12.762883 [debug] - have new task, queue is of length 1
+0000192 | 2020-08-29, 19:01:12.762907 [info] - trade message: Message type: TradingHalt
+0000193 | 2020-08-29, 19:01:12.762927 [debug] - 140552845686528 added event
+0000194 | 2020-08-29, 19:01:12.762935 [debug] - have new task, queue is of length 1
+0000195 | 2020-08-29, 19:01:12.762959 [info] - trade message: Message type: TradingHalt
+0000196 | 2020-08-29, 19:01:12.762980 [debug] - 140552845686528 added event
+0000197 | 2020-08-29, 19:01:12.762990 [debug] - have new task, queue is of length 1
+0000198 | 2020-08-29, 19:01:12.763018 [info] - trade message: Message type: TradingHalt
+0000199 | 2020-08-29, 19:01:12.763036 [debug] - 140552845686528 added event
+0000200 | 2020-08-29, 19:01:12.763060 [debug] - have new task, queue is of length 1
+0000201 | 2020-08-29, 19:01:12.763087 [info] - trade message: Message type: TradingHalt
+0000202 | 2020-08-29, 19:01:12.763105 [debug] - 140552845686528 added event
+0000203 | 2020-08-29, 19:01:12.763114 [debug] - have new task, queue is of length 1
+0000204 | 2020-08-29, 19:01:12.763148 [info] - trade message: Message type: TradingHalt
+0000206 | 2020-08-29, 19:01:12.763173 [debug] - 140552845686528 added event
+0000207 | 2020-08-29, 19:01:12.763179 [debug] - have new task, queue is of length 2
+0000205 | 2020-08-29, 19:01:12.763164 [debug] - 140552854079232 added event
+0000208 | 2020-08-29, 19:01:12.763210 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000209 | 2020-08-29, 19:01:12.763233 [debug] - 140552845686528 added event
+0000210 | 2020-08-29, 19:01:12.763246 [debug] - have new task, queue is of length 2
+0000211 | 2020-08-29, 19:01:12.763264 [info] - trade message: Message type: HiddenExecution
+0000212 | 2020-08-29, 19:01:12.763282 [debug] - have new task, queue is of length 1
+0000213 | 2020-08-29, 19:01:12.763290 [debug] - 140552845686528 added event
+0000214 | 2020-08-29, 19:01:12.763298 [info] - trade message: Message type: Cancel
+0000215 | 2020-08-29, 19:01:12.763322 [debug] - have new task, queue is of length 1
+0000216 | 2020-08-29, 19:01:12.763339 [info] - trade message: Message type: Cancel
+0000217 | 2020-08-29, 19:01:12.763349 [debug] - 140552845686528 added event
+0000218 | 2020-08-29, 19:01:12.763357 [debug] - have new task, queue is of length 1
+0000219 | 2020-08-29, 19:01:12.763379 [info] - trade message: Message type: Cancel
+0000220 | 2020-08-29, 19:01:12.763406 [debug] - have new task, queue is of length 1
+0000221 | 2020-08-29, 19:01:12.763407 [debug] - 140552845686528 added event
+0000222 | 2020-08-29, 19:01:12.763425 [info] - trade message: Message type: Cancel
+0000223 | 2020-08-29, 19:01:12.763472 [debug] - have new task, queue is of length 1
+0000224 | 2020-08-29, 19:01:12.763473 [debug] - 140552845686528 added event
+0000225 | 2020-08-29, 19:01:12.763490 [info] - trade message: Message type: Execution
+0000226 | 2020-08-29, 19:01:12.763537 [debug] - have new task, queue is of length 1
+0000227 | 2020-08-29, 19:01:12.763538 [debug] - 140552845686528 added event
+0000228 | 2020-08-29, 19:01:12.763555 [info] - trade message: Message type: Execution
+0000229 | 2020-08-29, 19:01:12.763602 [debug] - have new task, queue is of length 1
+0000230 | 2020-08-29, 19:01:12.763603 [debug] - 140552845686528 added event
+0000231 | 2020-08-29, 19:01:12.763620 [info] - trade message: Message type: Execution
+0000232 | 2020-08-29, 19:01:12.763667 [debug] - have new task, queue is of length 1
+0000233 | 2020-08-29, 19:01:12.763668 [debug] - 140552845686528 added event
+0000234 | 2020-08-29, 19:01:12.763685 [info] - trade message: Message type: Execution
+0000235 | 2020-08-29, 19:01:12.763707 [debug] - have new task, queue is of length 1
+0000236 | 2020-08-29, 19:01:12.763709 [debug] - 140552854079232 added event
+0000237 | 2020-08-29, 19:01:12.763722 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000238 | 2020-08-29, 19:01:12.763732 [debug] - 140552845686528 added event
+0000239 | 2020-08-29, 19:01:12.763745 [debug] - have new task, queue is of length 1
+0000240 | 2020-08-29, 19:01:12.763762 [info] - trade message: Message type: Cancel
+0000241 | 2020-08-29, 19:01:12.763788 [debug] - have new task, queue is of length 1
+0000242 | 2020-08-29, 19:01:12.763789 [debug] - 140552845686528 added event
+0000243 | 2020-08-29, 19:01:12.763806 [info] - trade message: Message type: Cancel
+0000244 | 2020-08-29, 19:01:12.763853 [debug] - have new task, queue is of length 1
+0000245 | 2020-08-29, 19:01:12.763854 [debug] - 140552845686528 added event
+0000246 | 2020-08-29, 19:01:12.763871 [info] - trade message: Message type: Cancel
+0000247 | 2020-08-29, 19:01:12.763917 [debug] - have new task, queue is of length 1
+0000248 | 2020-08-29, 19:01:12.763918 [debug] - 140552845686528 added event
+0000249 | 2020-08-29, 19:01:12.763942 [info] - trade message: Message type: Cancel
+0000250 | 2020-08-29, 19:01:12.763989 [debug] - have new task, queue is of length 1
+0000251 | 2020-08-29, 19:01:12.763990 [debug] - 140552845686528 added event
+0000252 | 2020-08-29, 19:01:12.764007 [info] - trade message: Message type: Cancel
+0000253 | 2020-08-29, 19:01:12.764053 [debug] - have new task, queue is of length 1
+0000254 | 2020-08-29, 19:01:12.764054 [debug] - 140552845686528 added event
+0000255 | 2020-08-29, 19:01:12.764071 [info] - trade message: Message type: HiddenExecution
+0000256 | 2020-08-29, 19:01:12.764119 [debug] - have new task, queue is of length 1
+0000257 | 2020-08-29, 19:01:12.764120 [debug] - 140552845686528 added event
+0000258 | 2020-08-29, 19:01:12.764137 [info] - trade message: Message type: Cancel
+0000259 | 2020-08-29, 19:01:12.764184 [debug] - have new task, queue is of length 1
+0000260 | 2020-08-29, 19:01:12.764185 [debug] - 140552845686528 added event
+0000261 | 2020-08-29, 19:01:12.764202 [info] - trade message: Message type: Execution
+0000262 | 2020-08-29, 19:01:12.764204 [debug] - 140552854079232 added event
+0000263 | 2020-08-29, 19:01:12.764223 [debug] - have new task, queue is of length 1
+0000264 | 2020-08-29, 19:01:12.764256 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000265 | 2020-08-29, 19:01:12.764265 [debug] - 140552845686528 added event
+0000266 | 2020-08-29, 19:01:12.764275 [debug] - have new task, queue is of length 1
+0000267 | 2020-08-29, 19:01:12.764290 [info] - trade message: Message type: Execution
+0000268 | 2020-08-29, 19:01:12.764313 [debug] - have new task, queue is of length 1
+0000269 | 2020-08-29, 19:01:12.764313 [debug] - 140552845686528 added event
+0000270 | 2020-08-29, 19:01:12.764328 [info] - trade message: Message type: Execution
+0000271 | 2020-08-29, 19:01:12.764370 [debug] - have new task, queue is of length 1
+0000272 | 2020-08-29, 19:01:12.764371 [debug] - 140552845686528 added event
+0000273 | 2020-08-29, 19:01:12.764386 [info] - trade message: Message type: Cancel
+0000274 | 2020-08-29, 19:01:12.764430 [debug] - have new task, queue is of length 1
+0000275 | 2020-08-29, 19:01:12.764431 [debug] - 140552845686528 added event
+0000276 | 2020-08-29, 19:01:12.764446 [info] - trade message: Message type: Cancel
+0000277 | 2020-08-29, 19:01:12.764487 [debug] - have new task, queue is of length 1
+0000278 | 2020-08-29, 19:01:12.764488 [debug] - 140552845686528 added event
+0000279 | 2020-08-29, 19:01:12.764503 [info] - trade message: Message type: HiddenExecution
+0000280 | 2020-08-29, 19:01:12.764542 [debug] - have new task, queue is of length 1
+0000281 | 2020-08-29, 19:01:12.764543 [debug] - 140552845686528 added event
+0000282 | 2020-08-29, 19:01:12.764558 [info] - trade message: Message type: HiddenExecution
+0000283 | 2020-08-29, 19:01:12.764595 [debug] - have new task, queue is of length 1
+0000284 | 2020-08-29, 19:01:12.764596 [debug] - 140552845686528 added event
+0000285 | 2020-08-29, 19:01:12.764611 [info] - trade message: Message type: TradingHalt
+0000286 | 2020-08-29, 19:01:12.764648 [debug] - have new task, queue is of length 1
+0000287 | 2020-08-29, 19:01:12.764649 [debug] - 140552845686528 added event
+0000288 | 2020-08-29, 19:01:12.764663 [info] - trade message: Message type: TradingHalt
+0000289 | 2020-08-29, 19:01:12.764666 [debug] - 140552854079232 added event
+0000290 | 2020-08-29, 19:01:12.764682 [debug] - have new task, queue is of length 1
+0000291 | 2020-08-29, 19:01:12.764697 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000292 | 2020-08-29, 19:01:12.764704 [debug] - 140552845686528 added event
+0000293 | 2020-08-29, 19:01:12.764715 [debug] - have new task, queue is of length 1
+0000294 | 2020-08-29, 19:01:12.764730 [info] - trade message: Message type: HiddenExecution
+0000295 | 2020-08-29, 19:01:12.764752 [debug] - have new task, queue is of length 1
+0000296 | 2020-08-29, 19:01:12.764753 [debug] - 140552845686528 added event
+0000297 | 2020-08-29, 19:01:12.764768 [info] - trade message: Message type: Cancel
+0000298 | 2020-08-29, 19:01:12.764810 [debug] - have new task, queue is of length 1
+0000299 | 2020-08-29, 19:01:12.764810 [debug] - 140552845686528 added event
+0000300 | 2020-08-29, 19:01:12.764826 [info] - trade message: Message type: Execution
+0000301 | 2020-08-29, 19:01:12.764867 [debug] - have new task, queue is of length 1
+0000302 | 2020-08-29, 19:01:12.764868 [debug] - 140552845686528 added event
+0000303 | 2020-08-29, 19:01:12.764883 [info] - trade message: Message type: Cancel
+0000304 | 2020-08-29, 19:01:12.764924 [debug] - have new task, queue is of length 1
+0000305 | 2020-08-29, 19:01:12.764926 [debug] - 140552845686528 added event
+0000306 | 2020-08-29, 19:01:12.764940 [info] - trade message: Message type: Cancel
+0000307 | 2020-08-29, 19:01:12.764981 [debug] - have new task, queue is of length 1
+0000308 | 2020-08-29, 19:01:12.764982 [debug] - 140552845686528 added event
+0000309 | 2020-08-29, 19:01:12.764997 [info] - trade message: Message type: Cancel
+0000310 | 2020-08-29, 19:01:12.765038 [debug] - have new task, queue is of length 1
+0000311 | 2020-08-29, 19:01:12.765039 [debug] - 140552845686528 added event
+0000312 | 2020-08-29, 19:01:12.765054 [info] - trade message: Message type: Execution
+0000313 | 2020-08-29, 19:01:12.765094 [debug] - have new task, queue is of length 1
+0000314 | 2020-08-29, 19:01:12.765095 [debug] - 140552845686528 added event
+0000315 | 2020-08-29, 19:01:12.765110 [info] - trade message: Message type: Cancel
+0000316 | 2020-08-29, 19:01:12.765111 [debug] - 140552854079232 added event
+0000317 | 2020-08-29, 19:01:12.765128 [debug] - have new task, queue is of length 1
+0000318 | 2020-08-29, 19:01:12.765143 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000319 | 2020-08-29, 19:01:12.765151 [debug] - 140552845686528 added event
+0000320 | 2020-08-29, 19:01:12.765162 [debug] - have new task, queue is of length 1
+0000321 | 2020-08-29, 19:01:12.765176 [info] - trade message: Message type: Cancel
+0000322 | 2020-08-29, 19:01:12.765201 [debug] - have new task, queue is of length 1
+0000323 | 2020-08-29, 19:01:12.765202 [debug] - 140552845686528 added event
+0000324 | 2020-08-29, 19:01:12.765216 [info] - trade message: Message type: Execution
+0000325 | 2020-08-29, 19:01:12.765270 [debug] - have new task, queue is of length 1
+0000326 | 2020-08-29, 19:01:12.765271 [debug] - 140552845686528 added event
+0000327 | 2020-08-29, 19:01:12.765285 [info] - trade message: Message type: Execution
+0000328 | 2020-08-29, 19:01:12.765325 [debug] - have new task, queue is of length 1
+0000329 | 2020-08-29, 19:01:12.765326 [debug] - 140552845686528 added event
+0000330 | 2020-08-29, 19:01:12.765341 [info] - trade message: Message type: Cancel
+0000331 | 2020-08-29, 19:01:12.765380 [debug] - have new task, queue is of length 1
+0000332 | 2020-08-29, 19:01:12.765381 [debug] - 140552845686528 added event
+0000333 | 2020-08-29, 19:01:12.765395 [info] - trade message: Message type: Cancel
+0000334 | 2020-08-29, 19:01:12.765435 [debug] - have new task, queue is of length 1
+0000335 | 2020-08-29, 19:01:12.765436 [debug] - 140552845686528 added event
+0000336 | 2020-08-29, 19:01:12.765450 [info] - trade message: Message type: Cancel
+0000337 | 2020-08-29, 19:01:12.765490 [debug] - have new task, queue is of length 1
+0000338 | 2020-08-29, 19:01:12.765491 [debug] - 140552845686528 added event
+0000339 | 2020-08-29, 19:01:12.765505 [info] - trade message: Message type: Cancel
+0000340 | 2020-08-29, 19:01:12.765545 [debug] - have new task, queue is of length 1
+0000341 | 2020-08-29, 19:01:12.765546 [debug] - 140552845686528 added event
+0000342 | 2020-08-29, 19:01:12.765559 [debug] - 140552854079232 added event
+0000343 | 2020-08-29, 19:01:12.765561 [info] - trade message: Message type: Cancel
+0000344 | 2020-08-29, 19:01:12.765588 [debug] - have new task, queue is of length 1
+0000345 | 2020-08-29, 19:01:12.765601 [debug] - 140552845686528 added event
+0000346 | 2020-08-29, 19:01:12.765602 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000347 | 2020-08-29, 19:01:12.765631 [debug] - have new task, queue is of length 1
+0000348 | 2020-08-29, 19:01:12.765650 [info] - trade message: Message type: Cancel
+0000349 | 2020-08-29, 19:01:12.765651 [debug] - 140552845686528 added event
+0000350 | 2020-08-29, 19:01:12.765668 [debug] - have new task, queue is of length 1
+0000351 | 2020-08-29, 19:01:12.765682 [info] - trade message: Message type: Cancel
+0000352 | 2020-08-29, 19:01:12.765707 [debug] - have new task, queue is of length 1
+0000353 | 2020-08-29, 19:01:12.765708 [debug] - 140552845686528 added event
+0000354 | 2020-08-29, 19:01:12.765722 [info] - trade message: Message type: Cancel
+0000355 | 2020-08-29, 19:01:12.765760 [debug] - have new task, queue is of length 1
+0000356 | 2020-08-29, 19:01:12.765761 [debug] - 140552845686528 added event
+0000357 | 2020-08-29, 19:01:12.765776 [info] - trade message: Message type: HiddenExecution
+0000358 | 2020-08-29, 19:01:12.765815 [debug] - have new task, queue is of length 1
+0000359 | 2020-08-29, 19:01:12.765816 [debug] - 140552845686528 added event
+0000360 | 2020-08-29, 19:01:12.765830 [info] - trade message: Message type: Execution
+0000361 | 2020-08-29, 19:01:12.765870 [debug] - have new task, queue is of length 1
+0000362 | 2020-08-29, 19:01:12.765871 [debug] - 140552845686528 added event
+0000363 | 2020-08-29, 19:01:12.765886 [info] - trade message: Message type: Cancel
+0000364 | 2020-08-29, 19:01:12.765925 [debug] - have new task, queue is of length 1
+0000365 | 2020-08-29, 19:01:12.765926 [debug] - 140552845686528 added event
+0000366 | 2020-08-29, 19:01:12.765941 [info] - trade message: Message type: Execution
+0000367 | 2020-08-29, 19:01:12.765980 [debug] - have new task, queue is of length 2
+0000368 | 2020-08-29, 19:01:12.765981 [debug] - 140552845686528 added event
+0000370 | 2020-08-29, 19:01:12.765995 [info] - trade message: Message type: Cancel
+0000369 | 2020-08-29, 19:01:12.765982 [debug] - 140552854079232 added event
+0000371 | 2020-08-29, 19:01:12.766013 [debug] - have new task, queue is of length 1
+0000372 | 2020-08-29, 19:01:12.766027 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000373 | 2020-08-29, 19:01:12.766034 [debug] - 140552845686528 added event
+0000374 | 2020-08-29, 19:01:12.766045 [debug] - have new task, queue is of length 1
+0000375 | 2020-08-29, 19:01:12.766059 [info] - trade message: Message type: TradingHalt
+0000376 | 2020-08-29, 19:01:12.766081 [debug] - have new task, queue is of length 1
+0000377 | 2020-08-29, 19:01:12.766082 [debug] - 140552845686528 added event
+0000378 | 2020-08-29, 19:01:12.766097 [info] - trade message: Message type: Cancel
+0000379 | 2020-08-29, 19:01:12.766136 [debug] - have new task, queue is of length 1
+0000380 | 2020-08-29, 19:01:12.766137 [debug] - 140552845686528 added event
+0000381 | 2020-08-29, 19:01:12.766151 [info] - trade message: Message type: Cancel
+0000382 | 2020-08-29, 19:01:12.766191 [debug] - have new task, queue is of length 1
+0000383 | 2020-08-29, 19:01:12.766192 [debug] - 140552845686528 added event
+0000384 | 2020-08-29, 19:01:12.766206 [info] - trade message: Message type: Execution
+0000385 | 2020-08-29, 19:01:12.766247 [debug] - have new task, queue is of length 1
+0000386 | 2020-08-29, 19:01:12.766248 [debug] - 140552845686528 added event
+0000387 | 2020-08-29, 19:01:12.766275 [info] - trade message: Message type: Cancel
+0000388 | 2020-08-29, 19:01:12.766321 [debug] - have new task, queue is of length 1
+0000389 | 2020-08-29, 19:01:12.766322 [debug] - 140552845686528 added event
+0000390 | 2020-08-29, 19:01:12.766340 [info] - trade message: Message type: Execution
+0000391 | 2020-08-29, 19:01:12.766379 [debug] - have new task, queue is of length 1
+0000392 | 2020-08-29, 19:01:12.766380 [debug] - 140552845686528 added event
+0000393 | 2020-08-29, 19:01:12.766394 [info] - trade message: Message type: Cancel
+0000394 | 2020-08-29, 19:01:12.766433 [debug] - have new task, queue is of length 1
+0000395 | 2020-08-29, 19:01:12.766434 [debug] - 140552845686528 added event
+0000397 | 2020-08-29, 19:01:12.766448 [info] - trade message: Message type: Cancel
+0000396 | 2020-08-29, 19:01:12.766439 [debug] - 140552854079232 added event
+0000398 | 2020-08-29, 19:01:12.766465 [debug] - have new task, queue is of length 1
+0000400 | 2020-08-29, 19:01:12.766490 [debug] - 140552845686528 added event
+0000399 | 2020-08-29, 19:01:12.766487 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000401 | 2020-08-29, 19:01:12.766518 [debug] - have new task, queue is of length 1
+0000402 | 2020-08-29, 19:01:12.766531 [info] - trade message: Message type: Cancel
+0000403 | 2020-08-29, 19:01:12.766538 [debug] - 140552845686528 added event
+0000404 | 2020-08-29, 19:01:12.766546 [debug] - have new task, queue is of length 1
+0000405 | 2020-08-29, 19:01:12.766559 [info] - trade message: Message type: Execution
+0000406 | 2020-08-29, 19:01:12.766580 [debug] - have new task, queue is of length 1
+0000407 | 2020-08-29, 19:01:12.766580 [debug] - 140552845686528 added event
+0000408 | 2020-08-29, 19:01:12.766595 [info] - trade message: Message type: TradingHalt
+0000409 | 2020-08-29, 19:01:12.766630 [debug] - have new task, queue is of length 1
+0000410 | 2020-08-29, 19:01:12.766631 [debug] - 140552845686528 added event
+0000411 | 2020-08-29, 19:01:12.766644 [info] - trade message: Message type: TradingHalt
+0000412 | 2020-08-29, 19:01:12.766682 [debug] - have new task, queue is of length 1
+0000413 | 2020-08-29, 19:01:12.766683 [debug] - 140552845686528 added event
+0000414 | 2020-08-29, 19:01:12.766697 [info] - trade message: Message type: Execution
+0000415 | 2020-08-29, 19:01:12.766735 [debug] - have new task, queue is of length 1
+0000416 | 2020-08-29, 19:01:12.766736 [debug] - 140552845686528 added event
+0000417 | 2020-08-29, 19:01:12.766750 [info] - trade message: Message type: Execution
+0000418 | 2020-08-29, 19:01:12.766788 [debug] - have new task, queue is of length 1
+0000419 | 2020-08-29, 19:01:12.766789 [debug] - 140552845686528 added event
+0000420 | 2020-08-29, 19:01:12.766803 [info] - trade message: Message type: Execution
+0000421 | 2020-08-29, 19:01:12.766841 [debug] - have new task, queue is of length 1
+0000422 | 2020-08-29, 19:01:12.766842 [debug] - 140552845686528 added event
+0000423 | 2020-08-29, 19:01:12.766856 [info] - trade message: Message type: HiddenExecution
+0000424 | 2020-08-29, 19:01:12.766873 [debug] - have new task, queue is of length 1
+0000425 | 2020-08-29, 19:01:12.766875 [debug] - 140552854079232 added event
+0000426 | 2020-08-29, 19:01:12.766889 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000427 | 2020-08-29, 19:01:12.766896 [debug] - 140552845686528 added event
+0000428 | 2020-08-29, 19:01:12.766908 [debug] - have new task, queue is of length 1
+0000429 | 2020-08-29, 19:01:12.766922 [info] - trade message: Message type: Cancel
+0000430 | 2020-08-29, 19:01:12.766942 [debug] - have new task, queue is of length 1
+0000431 | 2020-08-29, 19:01:12.766942 [debug] - 140552845686528 added event
+0000432 | 2020-08-29, 19:01:12.766956 [info] - trade message: Message type: HiddenExecution
+0000433 | 2020-08-29, 19:01:12.766994 [debug] - have new task, queue is of length 1
+0000434 | 2020-08-29, 19:01:12.766995 [debug] - 140552845686528 added event
+0000435 | 2020-08-29, 19:01:12.767009 [info] - trade message: Message type: HiddenExecution
+0000436 | 2020-08-29, 19:01:12.767047 [debug] - have new task, queue is of length 1
+0000437 | 2020-08-29, 19:01:12.767047 [debug] - 140552845686528 added event
+0000438 | 2020-08-29, 19:01:12.767062 [info] - trade message: Message type: Cancel
+0000439 | 2020-08-29, 19:01:12.767100 [debug] - have new task, queue is of length 1
+0000440 | 2020-08-29, 19:01:12.767101 [debug] - 140552845686528 added event
+0000441 | 2020-08-29, 19:01:12.767115 [info] - trade message: Message type: Execution
+0000442 | 2020-08-29, 19:01:12.767154 [debug] - have new task, queue is of length 1
+0000443 | 2020-08-29, 19:01:12.767155 [debug] - 140552845686528 added event
+0000444 | 2020-08-29, 19:01:12.767169 [info] - trade message: Message type: Cancel
+0000445 | 2020-08-29, 19:01:12.767207 [debug] - have new task, queue is of length 1
+0000446 | 2020-08-29, 19:01:12.767208 [debug] - 140552845686528 added event
+0000447 | 2020-08-29, 19:01:12.767221 [info] - trade message: Message type: Execution
+0000448 | 2020-08-29, 19:01:12.767281 [debug] - have new task, queue is of length 1
+0000449 | 2020-08-29, 19:01:12.767282 [debug] - 140552845686528 added event
+0000450 | 2020-08-29, 19:01:12.767297 [info] - trade message: Message type: Cancel
+0000451 | 2020-08-29, 19:01:12.767303 [debug] - 140552854079232 added event
+0000452 | 2020-08-29, 19:01:12.767312 [debug] - have new task, queue is of length 1
+0000453 | 2020-08-29, 19:01:12.767325 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000454 | 2020-08-29, 19:01:12.767335 [debug] - 140552845686528 added event
+0000455 | 2020-08-29, 19:01:12.767342 [debug] - have new task, queue is of length 1
+0000456 | 2020-08-29, 19:01:12.767362 [info] - trade message: Message type: Execution
+0000457 | 2020-08-29, 19:01:12.767382 [debug] - have new task, queue is of length 1
+0000458 | 2020-08-29, 19:01:12.767383 [debug] - 140552845686528 added event
+0000459 | 2020-08-29, 19:01:12.767396 [info] - trade message: Message type: Cancel
+0000460 | 2020-08-29, 19:01:12.767434 [debug] - have new task, queue is of length 1
+0000461 | 2020-08-29, 19:01:12.767435 [debug] - 140552845686528 added event
+0000462 | 2020-08-29, 19:01:12.767448 [info] - trade message: Message type: Cancel
+0000463 | 2020-08-29, 19:01:12.767486 [debug] - have new task, queue is of length 1
+0000464 | 2020-08-29, 19:01:12.767487 [debug] - 140552845686528 added event
+0000465 | 2020-08-29, 19:01:12.767500 [info] - trade message: Message type: Execution
+0000466 | 2020-08-29, 19:01:12.767538 [debug] - have new task, queue is of length 1
+0000467 | 2020-08-29, 19:01:12.767539 [debug] - 140552845686528 added event
+0000468 | 2020-08-29, 19:01:12.767552 [info] - trade message: Message type: Cancel
+0000469 | 2020-08-29, 19:01:12.767589 [debug] - have new task, queue is of length 1
+0000470 | 2020-08-29, 19:01:12.767590 [debug] - 140552845686528 added event
+0000471 | 2020-08-29, 19:01:12.767603 [info] - trade message: Message type: Cancel
+0000472 | 2020-08-29, 19:01:12.767640 [debug] - have new task, queue is of length 1
+0000473 | 2020-08-29, 19:01:12.767641 [debug] - 140552845686528 added event
+0000474 | 2020-08-29, 19:01:12.767655 [info] - trade message: Message type: Cancel
+0000475 | 2020-08-29, 19:01:12.767691 [debug] - have new task, queue is of length 1
+0000477 | 2020-08-29, 19:01:12.767701 [debug] - 140552854079232 added event
+0000476 | 2020-08-29, 19:01:12.767691 [debug] - 140552845686528 added event
+0000478 | 2020-08-29, 19:01:12.767705 [info] - trade message: Message type: Cancel
+0000479 | 2020-08-29, 19:01:12.767737 [debug] - have new task, queue is of length 1
+0000480 | 2020-08-29, 19:01:12.767750 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000481 | 2020-08-29, 19:01:12.767758 [debug] - 140552845686528 added event
+0000482 | 2020-08-29, 19:01:12.767768 [debug] - have new task, queue is of length 1
+0000483 | 2020-08-29, 19:01:12.767781 [info] - trade message: Message type: Cancel
+0000484 | 2020-08-29, 19:01:12.767801 [debug] - have new task, queue is of length 1
+0000485 | 2020-08-29, 19:01:12.767802 [debug] - 140552845686528 added event
+0000486 | 2020-08-29, 19:01:12.767816 [info] - trade message: Message type: Cancel
+0000487 | 2020-08-29, 19:01:12.767853 [debug] - have new task, queue is of length 1
+0000488 | 2020-08-29, 19:01:12.767854 [debug] - 140552845686528 added event
+0000489 | 2020-08-29, 19:01:12.767867 [info] - trade message: Message type: Cancel
+0000490 | 2020-08-29, 19:01:12.767903 [debug] - have new task, queue is of length 1
+0000491 | 2020-08-29, 19:01:12.767904 [debug] - 140552845686528 added event
+0000492 | 2020-08-29, 19:01:12.767917 [info] - trade message: Message type: Cancel
+0000493 | 2020-08-29, 19:01:12.767955 [debug] - have new task, queue is of length 1
+0000494 | 2020-08-29, 19:01:12.767956 [debug] - 140552845686528 added event
+0000495 | 2020-08-29, 19:01:12.767969 [info] - trade message: Message type: Cancel
+0000496 | 2020-08-29, 19:01:12.768006 [debug] - have new task, queue is of length 1
+0000497 | 2020-08-29, 19:01:12.768007 [debug] - 140552845686528 added event
+0000498 | 2020-08-29, 19:01:12.768027 [info] - trade message: Message type: Cancel
+0000499 | 2020-08-29, 19:01:12.768064 [debug] - have new task, queue is of length 1
+0000500 | 2020-08-29, 19:01:12.768065 [debug] - 140552845686528 added event
+0000501 | 2020-08-29, 19:01:12.768079 [info] - trade message: Message type: Cancel
+0000502 | 2020-08-29, 19:01:12.768098 [debug] - have new task, queue is of length 1
+0000503 | 2020-08-29, 19:01:12.768099 [debug] - 140552854079232 added event
+0000505 | 2020-08-29, 19:01:12.768118 [debug] - 140552845686528 added event
+0000504 | 2020-08-29, 19:01:12.768112 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000506 | 2020-08-29, 19:01:12.768146 [debug] - have new task, queue is of length 1
+0000507 | 2020-08-29, 19:01:12.768160 [info] - trade message: Message type: Cancel
+0000508 | 2020-08-29, 19:01:12.768164 [debug] - 140552845686528 added event
+0000509 | 2020-08-29, 19:01:12.768174 [debug] - have new task, queue is of length 1
+0000510 | 2020-08-29, 19:01:12.768186 [info] - trade message: Message type: Cancel
+0000511 | 2020-08-29, 19:01:12.768208 [debug] - have new task, queue is of length 1
+0000512 | 2020-08-29, 19:01:12.768209 [debug] - 140552845686528 added event
+0000513 | 2020-08-29, 19:01:12.768222 [info] - trade message: Message type: Cancel
+0000514 | 2020-08-29, 19:01:12.768271 [debug] - have new task, queue is of length 1
+0000515 | 2020-08-29, 19:01:12.768272 [debug] - 140552845686528 added event
+0000516 | 2020-08-29, 19:01:12.768285 [info] - trade message: Message type: Cancel
+0000517 | 2020-08-29, 19:01:12.768321 [debug] - have new task, queue is of length 1
+0000518 | 2020-08-29, 19:01:12.768322 [debug] - 140552845686528 added event
+0000519 | 2020-08-29, 19:01:12.768335 [info] - trade message: Message type: Cancel
+0000520 | 2020-08-29, 19:01:12.768370 [debug] - have new task, queue is of length 1
+0000521 | 2020-08-29, 19:01:12.768371 [debug] - 140552845686528 added event
+0000522 | 2020-08-29, 19:01:12.768384 [info] - trade message: Message type: Cancel
+0000523 | 2020-08-29, 19:01:12.768419 [debug] - have new task, queue is of length 1
+0000524 | 2020-08-29, 19:01:12.768420 [debug] - 140552845686528 added event
+0000525 | 2020-08-29, 19:01:12.768433 [info] - trade message: Message type: Cancel
+0000526 | 2020-08-29, 19:01:12.768468 [debug] - have new task, queue is of length 1
+0000527 | 2020-08-29, 19:01:12.768469 [debug] - 140552845686528 added event
+0000528 | 2020-08-29, 19:01:12.768482 [info] - trade message: Message type: Cancel
+0000529 | 2020-08-29, 19:01:12.768507 [debug] - have new task, queue is of length 1
+0000530 | 2020-08-29, 19:01:12.768508 [debug] - 140552854079232 added event
+0000531 | 2020-08-29, 19:01:12.768519 [debug] - 140552845686528 added event
+0000532 | 2020-08-29, 19:01:12.768521 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000533 | 2020-08-29, 19:01:12.768546 [debug] - have new task, queue is of length 1
+0000534 | 2020-08-29, 19:01:12.768560 [info] - trade message: Message type: Cancel
+0000535 | 2020-08-29, 19:01:12.768565 [debug] - 140552845686528 added event
+0000536 | 2020-08-29, 19:01:12.768573 [debug] - have new task, queue is of length 1
+0000537 | 2020-08-29, 19:01:12.768586 [info] - trade message: Message type: Cancel
+0000538 | 2020-08-29, 19:01:12.768608 [debug] - have new task, queue is of length 1
+0000539 | 2020-08-29, 19:01:12.768608 [debug] - 140552845686528 added event
+0000540 | 2020-08-29, 19:01:12.768622 [info] - trade message: Message type: Cancel
+0000541 | 2020-08-29, 19:01:12.768658 [debug] - have new task, queue is of length 1
+0000542 | 2020-08-29, 19:01:12.768658 [debug] - 140552845686528 added event
+0000543 | 2020-08-29, 19:01:12.768672 [info] - trade message: Message type: Cancel
+0000544 | 2020-08-29, 19:01:12.768707 [debug] - have new task, queue is of length 1
+0000545 | 2020-08-29, 19:01:12.768708 [debug] - 140552845686528 added event
+0000546 | 2020-08-29, 19:01:12.768721 [info] - trade message: Message type: Cancel
+0000547 | 2020-08-29, 19:01:12.768758 [debug] - have new task, queue is of length 1
+0000548 | 2020-08-29, 19:01:12.768758 [debug] - 140552845686528 added event
+0000549 | 2020-08-29, 19:01:12.768773 [info] - trade message: Message type: Cancel
+0000550 | 2020-08-29, 19:01:12.768809 [debug] - have new task, queue is of length 1
+0000551 | 2020-08-29, 19:01:12.768809 [debug] - 140552845686528 added event
+0000552 | 2020-08-29, 19:01:12.768823 [info] - trade message: Message type: Cancel
+0000553 | 2020-08-29, 19:01:12.768858 [debug] - have new task, queue is of length 1
+0000554 | 2020-08-29, 19:01:12.768859 [debug] - 140552845686528 added event
+0000555 | 2020-08-29, 19:01:12.768872 [info] - trade message: Message type: Cancel
+0000556 | 2020-08-29, 19:01:12.768901 [debug] - have new task, queue is of length 1
+0000557 | 2020-08-29, 19:01:12.768902 [debug] - 140552854079232 added event
+0000558 | 2020-08-29, 19:01:12.768909 [debug] - 140552845686528 added event
+0000559 | 2020-08-29, 19:01:12.768915 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000560 | 2020-08-29, 19:01:12.768943 [debug] - have new task, queue is of length 1
+0000561 | 2020-08-29, 19:01:12.768957 [info] - trade message: Message type: Cancel
+0000562 | 2020-08-29, 19:01:12.768961 [debug] - 140552845686528 added event
+0000563 | 2020-08-29, 19:01:12.768970 [debug] - have new task, queue is of length 1
+0000564 | 2020-08-29, 19:01:12.768983 [info] - trade message: Message type: Cancel
+0000565 | 2020-08-29, 19:01:12.769005 [debug] - have new task, queue is of length 1
+0000566 | 2020-08-29, 19:01:12.769005 [debug] - 140552845686528 added event
+0000567 | 2020-08-29, 19:01:12.769019 [info] - trade message: Message type: Cancel
+0000568 | 2020-08-29, 19:01:12.769055 [debug] - have new task, queue is of length 1
+0000569 | 2020-08-29, 19:01:12.769056 [debug] - 140552845686528 added event
+0000570 | 2020-08-29, 19:01:12.769069 [info] - trade message: Message type: Execution
+0000571 | 2020-08-29, 19:01:12.769106 [debug] - have new task, queue is of length 1
+0000572 | 2020-08-29, 19:01:12.769106 [debug] - 140552845686528 added event
+0000573 | 2020-08-29, 19:01:12.769119 [info] - trade message: Message type: Cancel
+0000574 | 2020-08-29, 19:01:12.769156 [debug] - have new task, queue is of length 1
+0000575 | 2020-08-29, 19:01:12.769157 [debug] - 140552845686528 added event
+0000576 | 2020-08-29, 19:01:12.769170 [info] - trade message: Message type: Execution
+0000577 | 2020-08-29, 19:01:12.769206 [debug] - have new task, queue is of length 1
+0000578 | 2020-08-29, 19:01:12.769207 [debug] - 140552845686528 added event
+0000579 | 2020-08-29, 19:01:12.769220 [info] - trade message: Message type: Execution
+0000580 | 2020-08-29, 19:01:12.769256 [debug] - have new task, queue is of length 1
+0000581 | 2020-08-29, 19:01:12.769257 [debug] - 140552845686528 added event
+0000582 | 2020-08-29, 19:01:12.769270 [info] - trade message: Message type: Execution
+0000583 | 2020-08-29, 19:01:12.769295 [debug] - have new task, queue is of length 1
+0000584 | 2020-08-29, 19:01:12.769296 [debug] - 140552854079232 added event
+0000585 | 2020-08-29, 19:01:12.769307 [debug] - 140552845686528 added event
+0000586 | 2020-08-29, 19:01:12.769309 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000587 | 2020-08-29, 19:01:12.769335 [debug] - have new task, queue is of length 1
+0000588 | 2020-08-29, 19:01:12.769348 [info] - trade message: Message type: Cancel
+0000589 | 2020-08-29, 19:01:12.769351 [debug] - 140552845686528 added event
+0000590 | 2020-08-29, 19:01:12.769362 [debug] - have new task, queue is of length 1
+0000591 | 2020-08-29, 19:01:12.769374 [info] - trade message: Message type: HiddenExecution
+0000592 | 2020-08-29, 19:01:12.769393 [debug] - have new task, queue is of length 1
+0000593 | 2020-08-29, 19:01:12.769394 [debug] - 140552845686528 added event
+0000594 | 2020-08-29, 19:01:12.769407 [info] - trade message: Message type: HiddenExecution
+0000595 | 2020-08-29, 19:01:12.769442 [debug] - have new task, queue is of length 1
+0000596 | 2020-08-29, 19:01:12.769443 [debug] - 140552845686528 added event
+0000597 | 2020-08-29, 19:01:12.769456 [info] - trade message: Message type: HiddenExecution
+0000598 | 2020-08-29, 19:01:12.769498 [debug] - have new task, queue is of length 1
+0000599 | 2020-08-29, 19:01:12.769498 [debug] - 140552845686528 added event
+0000600 | 2020-08-29, 19:01:12.769513 [info] - trade message: Message type: HiddenExecution
+0000601 | 2020-08-29, 19:01:12.769548 [debug] - have new task, queue is of length 1
+0000602 | 2020-08-29, 19:01:12.769549 [debug] - 140552845686528 added event
+0000603 | 2020-08-29, 19:01:12.769562 [info] - trade message: Message type: HiddenExecution
+0000604 | 2020-08-29, 19:01:12.769596 [debug] - have new task, queue is of length 1
+0000605 | 2020-08-29, 19:01:12.769597 [debug] - 140552845686528 added event
+0000606 | 2020-08-29, 19:01:12.769610 [info] - trade message: Message type: HiddenExecution
+0000607 | 2020-08-29, 19:01:12.769645 [debug] - have new task, queue is of length 1
+0000608 | 2020-08-29, 19:01:12.769646 [debug] - 140552845686528 added event
+0000609 | 2020-08-29, 19:01:12.769659 [info] - trade message: Message type: HiddenExecution
+0000610 | 2020-08-29, 19:01:12.769686 [debug] - have new task, queue is of length 1
+0000612 | 2020-08-29, 19:01:12.769695 [debug] - 140552845686528 added event
+0000613 | 2020-08-29, 19:01:12.769699 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000611 | 2020-08-29, 19:01:12.769687 [debug] - 140552854079232 added event
+0000614 | 2020-08-29, 19:01:12.769719 [debug] - have new task, queue is of length 1
+0000615 | 2020-08-29, 19:01:12.769732 [info] - trade message: Message type: HiddenExecution
+0000616 | 2020-08-29, 19:01:12.769737 [debug] - 140552845686528 added event
+0000617 | 2020-08-29, 19:01:12.769746 [debug] - have new task, queue is of length 1
+0000618 | 2020-08-29, 19:01:12.769758 [info] - trade message: Message type: TradingHalt
+0000619 | 2020-08-29, 19:01:12.769781 [debug] - have new task, queue is of length 1
+0000620 | 2020-08-29, 19:01:12.769782 [debug] - 140552845686528 added event
+0000621 | 2020-08-29, 19:01:12.769795 [info] - trade message: Message type: Cancel
+0000622 | 2020-08-29, 19:01:12.769831 [debug] - have new task, queue is of length 1
+0000623 | 2020-08-29, 19:01:12.769832 [debug] - 140552845686528 added event
+0000624 | 2020-08-29, 19:01:12.769845 [info] - trade message: Message type: Cancel
+0000625 | 2020-08-29, 19:01:12.769882 [debug] - have new task, queue is of length 1
+0000626 | 2020-08-29, 19:01:12.769883 [debug] - 140552845686528 added event
+0000627 | 2020-08-29, 19:01:12.769896 [info] - trade message: Message type: Cancel
+0000628 | 2020-08-29, 19:01:12.769932 [debug] - have new task, queue is of length 1
+0000629 | 2020-08-29, 19:01:12.769933 [debug] - 140552845686528 added event
+0000630 | 2020-08-29, 19:01:12.769946 [info] - trade message: Message type: Cancel
+0000631 | 2020-08-29, 19:01:12.769982 [debug] - have new task, queue is of length 1
+0000632 | 2020-08-29, 19:01:12.769983 [debug] - 140552845686528 added event
+0000633 | 2020-08-29, 19:01:12.769996 [info] - trade message: Message type: Cancel
+0000634 | 2020-08-29, 19:01:12.770032 [debug] - have new task, queue is of length 1
+0000635 | 2020-08-29, 19:01:12.770033 [debug] - 140552845686528 added event
+0000636 | 2020-08-29, 19:01:12.770046 [info] - trade message: Message type: Cancel
+0000637 | 2020-08-29, 19:01:12.770082 [debug] - have new task, queue is of length 1
+0000638 | 2020-08-29, 19:01:12.770083 [debug] - 140552845686528 added event
+0000640 | 2020-08-29, 19:01:12.770100 [debug] - 140552854079232 added event
+0000639 | 2020-08-29, 19:01:12.770096 [info] - trade message: Message type: Cancel
+0000641 | 2020-08-29, 19:01:12.770127 [debug] - have new task, queue is of length 1
+0000642 | 2020-08-29, 19:01:12.770134 [debug] - 140552845686528 added event
+0000643 | 2020-08-29, 19:01:12.770140 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000644 | 2020-08-29, 19:01:12.770157 [debug] - have new task, queue is of length 1
+0000645 | 2020-08-29, 19:01:12.770169 [info] - trade message: Message type: Execution
+0000646 | 2020-08-29, 19:01:12.770178 [debug] - 140552845686528 added event
+0000647 | 2020-08-29, 19:01:12.770188 [debug] - have new task, queue is of length 1
+0000648 | 2020-08-29, 19:01:12.770201 [info] - trade message: Message type: Cancel
+0000649 | 2020-08-29, 19:01:12.770216 [debug] - have new task, queue is of length 1
+0000650 | 2020-08-29, 19:01:12.770217 [debug] - 140552845686528 added event
+0000651 | 2020-08-29, 19:01:12.770230 [info] - trade message: Message type: TradingHalt
+0000652 | 2020-08-29, 19:01:12.770266 [debug] - have new task, queue is of length 1
+0000653 | 2020-08-29, 19:01:12.770267 [debug] - 140552845686528 added event
+0000654 | 2020-08-29, 19:01:12.770280 [info] - trade message: Message type: Cancel
+0000655 | 2020-08-29, 19:01:12.770336 [debug] - have new task, queue is of length 1
+0000656 | 2020-08-29, 19:01:12.770336 [debug] - 140552845686528 added event
+0000657 | 2020-08-29, 19:01:12.770368 [info] - trade message: Message type: TradingHalt
+0000658 | 2020-08-29, 19:01:12.770405 [debug] - have new task, queue is of length 1
+0000659 | 2020-08-29, 19:01:12.770406 [debug] - 140552845686528 added event
+0000660 | 2020-08-29, 19:01:12.770419 [info] - trade message: Message type: Cancel
+0000661 | 2020-08-29, 19:01:12.770456 [debug] - have new task, queue is of length 1
+0000662 | 2020-08-29, 19:01:12.770457 [debug] - 140552845686528 added event
+0000663 | 2020-08-29, 19:01:12.770470 [info] - trade message: Message type: Execution
+0000664 | 2020-08-29, 19:01:12.770507 [debug] - have new task, queue is of length 1
+0000665 | 2020-08-29, 19:01:12.770507 [debug] - 140552845686528 added event
+0000667 | 2020-08-29, 19:01:12.770523 [debug] - 140552854079232 added event
+0000666 | 2020-08-29, 19:01:12.770520 [info] - trade message: Message type: Execution
+0000668 | 2020-08-29, 19:01:12.770551 [debug] - have new task, queue is of length 1
+0000669 | 2020-08-29, 19:01:12.770557 [debug] - 140552845686528 added event
+0000670 | 2020-08-29, 19:01:12.770564 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000671 | 2020-08-29, 19:01:12.770582 [debug] - have new task, queue is of length 1
+0000672 | 2020-08-29, 19:01:12.770595 [info] - trade message: Message type: Execution
+0000673 | 2020-08-29, 19:01:12.770601 [debug] - 140552845686528 added event
+0000674 | 2020-08-29, 19:01:12.770608 [debug] - have new task, queue is of length 1
+0000675 | 2020-08-29, 19:01:12.770620 [info] - trade message: Message type: Execution
+0000676 | 2020-08-29, 19:01:12.770644 [debug] - have new task, queue is of length 1
+0000677 | 2020-08-29, 19:01:12.770645 [debug] - 140552845686528 added event
+0000678 | 2020-08-29, 19:01:12.770658 [info] - trade message: Message type: Execution
+0000679 | 2020-08-29, 19:01:12.770694 [debug] - have new task, queue is of length 1
+0000680 | 2020-08-29, 19:01:12.770695 [debug] - 140552845686528 added event
+0000681 | 2020-08-29, 19:01:12.770708 [info] - trade message: Message type: Execution
+0000682 | 2020-08-29, 19:01:12.770744 [debug] - have new task, queue is of length 1
+0000683 | 2020-08-29, 19:01:12.770745 [debug] - 140552845686528 added event
+0000684 | 2020-08-29, 19:01:12.770758 [info] - trade message: Message type: Execution
+0000685 | 2020-08-29, 19:01:12.770794 [debug] - have new task, queue is of length 1
+0000686 | 2020-08-29, 19:01:12.770795 [debug] - 140552845686528 added event
+0000687 | 2020-08-29, 19:01:12.770808 [info] - trade message: Message type: Execution
+0000688 | 2020-08-29, 19:01:12.770844 [debug] - have new task, queue is of length 1
+0000689 | 2020-08-29, 19:01:12.770845 [debug] - 140552845686528 added event
+0000690 | 2020-08-29, 19:01:12.770858 [info] - trade message: Message type: Execution
+0000691 | 2020-08-29, 19:01:12.770894 [debug] - have new task, queue is of length 1
+0000692 | 2020-08-29, 19:01:12.770894 [debug] - 140552845686528 added event
+0000693 | 2020-08-29, 19:01:12.770908 [info] - trade message: Message type: Execution
+0000694 | 2020-08-29, 19:01:12.770912 [debug] - 140552854079232 added event
+0000695 | 2020-08-29, 19:01:12.770922 [debug] - have new task, queue is of length 1
+0000696 | 2020-08-29, 19:01:12.770940 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000697 | 2020-08-29, 19:01:12.770946 [debug] - 140552845686528 added event
+0000698 | 2020-08-29, 19:01:12.770960 [debug] - have new task, queue is of length 1
+0000699 | 2020-08-29, 19:01:12.770973 [info] - trade message: Message type: Execution
+0000700 | 2020-08-29, 19:01:12.770998 [debug] - have new task, queue is of length 1
+0000701 | 2020-08-29, 19:01:12.770999 [debug] - 140552845686528 added event
+0000702 | 2020-08-29, 19:01:12.771012 [info] - trade message: Message type: Execution
+0000703 | 2020-08-29, 19:01:12.771049 [debug] - have new task, queue is of length 1
+0000704 | 2020-08-29, 19:01:12.771050 [debug] - 140552845686528 added event
+0000705 | 2020-08-29, 19:01:12.771063 [info] - trade message: Message type: Cancel
+0000706 | 2020-08-29, 19:01:12.771099 [debug] - have new task, queue is of length 1
+0000707 | 2020-08-29, 19:01:12.771100 [debug] - 140552845686528 added event
+0000708 | 2020-08-29, 19:01:12.771113 [info] - trade message: Message type: Cancel
+0000709 | 2020-08-29, 19:01:12.771149 [debug] - have new task, queue is of length 1
+0000710 | 2020-08-29, 19:01:12.771150 [debug] - 140552845686528 added event
+0000711 | 2020-08-29, 19:01:12.771163 [info] - trade message: Message type: Execution
+0000712 | 2020-08-29, 19:01:12.771199 [debug] - have new task, queue is of length 1
+0000713 | 2020-08-29, 19:01:12.771200 [debug] - 140552845686528 added event
+0000714 | 2020-08-29, 19:01:12.771213 [info] - trade message: Message type: Cancel
+0000715 | 2020-08-29, 19:01:12.771250 [debug] - have new task, queue is of length 1
+0000716 | 2020-08-29, 19:01:12.771251 [debug] - 140552845686528 added event
+0000717 | 2020-08-29, 19:01:12.771264 [info] - trade message: Message type: Cancel
+0000718 | 2020-08-29, 19:01:12.771297 [debug] - have new task, queue is of length 1
+0000720 | 2020-08-29, 19:01:12.771301 [debug] - 140552845686528 added event
+0000721 | 2020-08-29, 19:01:12.771311 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000719 | 2020-08-29, 19:01:12.771298 [debug] - 140552854079232 added event
+0000722 | 2020-08-29, 19:01:12.771330 [debug] - have new task, queue is of length 1
+0000723 | 2020-08-29, 19:01:12.771343 [info] - trade message: Message type: Cancel
+0000724 | 2020-08-29, 19:01:12.771348 [debug] - 140552845686528 added event
+0000725 | 2020-08-29, 19:01:12.771356 [debug] - have new task, queue is of length 1
+0000726 | 2020-08-29, 19:01:12.771369 [info] - trade message: Message type: Cancel
+0000727 | 2020-08-29, 19:01:12.771391 [debug] - have new task, queue is of length 1
+0000728 | 2020-08-29, 19:01:12.771392 [debug] - 140552845686528 added event
+0000729 | 2020-08-29, 19:01:12.771405 [info] - trade message: Message type: Execution
+0000730 | 2020-08-29, 19:01:12.771441 [debug] - have new task, queue is of length 1
+0000731 | 2020-08-29, 19:01:12.771442 [debug] - 140552845686528 added event
+0000732 | 2020-08-29, 19:01:12.771455 [info] - trade message: Message type: Cancel
+0000733 | 2020-08-29, 19:01:12.771490 [debug] - have new task, queue is of length 1
+0000734 | 2020-08-29, 19:01:12.771491 [debug] - 140552845686528 added event
+0000735 | 2020-08-29, 19:01:12.771504 [info] - trade message: Message type: Cancel
+0000736 | 2020-08-29, 19:01:12.771541 [debug] - have new task, queue is of length 1
+0000737 | 2020-08-29, 19:01:12.771542 [debug] - 140552845686528 added event
+0000738 | 2020-08-29, 19:01:12.771555 [info] - trade message: Message type: Execution
+0000739 | 2020-08-29, 19:01:12.771591 [debug] - have new task, queue is of length 1
+0000740 | 2020-08-29, 19:01:12.771592 [debug] - 140552845686528 added event
+0000741 | 2020-08-29, 19:01:12.771605 [info] - trade message: Message type: Execution
+0000742 | 2020-08-29, 19:01:12.771641 [debug] - have new task, queue is of length 1
+0000743 | 2020-08-29, 19:01:12.771642 [debug] - 140552845686528 added event
+0000744 | 2020-08-29, 19:01:12.771655 [info] - trade message: Message type: Execution
+0000745 | 2020-08-29, 19:01:12.771691 [debug] - have new task, queue is of length 1
+0000746 | 2020-08-29, 19:01:12.771692 [debug] - 140552845686528 added event
+0000748 | 2020-08-29, 19:01:12.771710 [info] - trade message: Message type: Execution
+0000747 | 2020-08-29, 19:01:12.771706 [debug] - 140552854079232 added event
+0000749 | 2020-08-29, 19:01:12.771727 [debug] - have new task, queue is of length 1
+0000750 | 2020-08-29, 19:01:12.771739 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000751 | 2020-08-29, 19:01:12.771748 [debug] - 140552845686528 added event
+0000752 | 2020-08-29, 19:01:12.771756 [debug] - have new task, queue is of length 1
+0000753 | 2020-08-29, 19:01:12.771769 [info] - trade message: Message type: Cancel
+0000754 | 2020-08-29, 19:01:12.771792 [debug] - have new task, queue is of length 1
+0000755 | 2020-08-29, 19:01:12.771793 [debug] - 140552845686528 added event
+0000756 | 2020-08-29, 19:01:12.771806 [info] - trade message: Message type: Cancel
+0000757 | 2020-08-29, 19:01:12.771842 [debug] - have new task, queue is of length 1
+0000758 | 2020-08-29, 19:01:12.771843 [debug] - 140552845686528 added event
+0000759 | 2020-08-29, 19:01:12.771856 [info] - trade message: Message type: Cancel
+0000760 | 2020-08-29, 19:01:12.771893 [debug] - have new task, queue is of length 1
+0000761 | 2020-08-29, 19:01:12.771894 [debug] - 140552845686528 added event
+0000762 | 2020-08-29, 19:01:12.771907 [info] - trade message: Message type: Cancel
+0000763 | 2020-08-29, 19:01:12.771943 [debug] - have new task, queue is of length 1
+0000764 | 2020-08-29, 19:01:12.771944 [debug] - 140552845686528 added event
+0000765 | 2020-08-29, 19:01:12.771957 [info] - trade message: Message type: Cancel
+0000766 | 2020-08-29, 19:01:12.771993 [debug] - have new task, queue is of length 1
+0000767 | 2020-08-29, 19:01:12.771994 [debug] - 140552845686528 added event
+0000768 | 2020-08-29, 19:01:12.772007 [info] - trade message: Message type: Cancel
+0000769 | 2020-08-29, 19:01:12.772043 [debug] - have new task, queue is of length 1
+0000770 | 2020-08-29, 19:01:12.772044 [debug] - 140552845686528 added event
+0000771 | 2020-08-29, 19:01:12.772057 [info] - trade message: Message type: Cancel
+0000772 | 2020-08-29, 19:01:12.772094 [debug] - have new task, queue is of length 1
+0000774 | 2020-08-29, 19:01:12.772103 [debug] - 140552854079232 added event
+0000773 | 2020-08-29, 19:01:12.772095 [debug] - 140552845686528 added event
+0000775 | 2020-08-29, 19:01:12.772108 [info] - trade message: Message type: Cancel
+0000776 | 2020-08-29, 19:01:12.772139 [debug] - have new task, queue is of length 1
+0000777 | 2020-08-29, 19:01:12.772153 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000778 | 2020-08-29, 19:01:12.772160 [debug] - 140552845686528 added event
+0000779 | 2020-08-29, 19:01:12.772170 [debug] - have new task, queue is of length 1
+0000780 | 2020-08-29, 19:01:12.772182 [info] - trade message: Message type: Cancel
+0000781 | 2020-08-29, 19:01:12.772203 [debug] - have new task, queue is of length 1
+0000782 | 2020-08-29, 19:01:12.772204 [debug] - 140552845686528 added event
+0000783 | 2020-08-29, 19:01:12.772217 [info] - trade message: Message type: HiddenExecution
+0000784 | 2020-08-29, 19:01:12.772253 [debug] - have new task, queue is of length 1
+0000785 | 2020-08-29, 19:01:12.772253 [debug] - 140552845686528 added event
+0000786 | 2020-08-29, 19:01:12.772266 [info] - trade message: Message type: HiddenExecution
+0000787 | 2020-08-29, 19:01:12.772299 [debug] - have new task, queue is of length 1
+0000788 | 2020-08-29, 19:01:12.772300 [debug] - 140552845686528 added event
+0000789 | 2020-08-29, 19:01:12.772313 [info] - trade message: Message type: TradingHalt
+0000790 | 2020-08-29, 19:01:12.772349 [debug] - have new task, queue is of length 1
+0000791 | 2020-08-29, 19:01:12.772350 [debug] - 140552845686528 added event
+0000792 | 2020-08-29, 19:01:12.772363 [info] - trade message: Message type: Cancel
+0000793 | 2020-08-29, 19:01:12.772400 [debug] - have new task, queue is of length 1
+0000794 | 2020-08-29, 19:01:12.772400 [debug] - 140552845686528 added event
+0000795 | 2020-08-29, 19:01:12.772413 [info] - trade message: Message type: Execution
+0000796 | 2020-08-29, 19:01:12.772450 [debug] - have new task, queue is of length 1
+0000797 | 2020-08-29, 19:01:12.772451 [debug] - 140552845686528 added event
+0000798 | 2020-08-29, 19:01:12.772465 [info] - trade message: Message type: Execution
+0000799 | 2020-08-29, 19:01:12.772490 [debug] - have new task, queue is of length 1
+0000800 | 2020-08-29, 19:01:12.772491 [debug] - 140552854079232 added event
+0000802 | 2020-08-29, 19:01:12.772504 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000801 | 2020-08-29, 19:01:12.772502 [debug] - 140552845686528 added event
+0000803 | 2020-08-29, 19:01:12.772523 [debug] - have new task, queue is of length 1
+0000804 | 2020-08-29, 19:01:12.772536 [info] - trade message: Message type: Execution
+0000805 | 2020-08-29, 19:01:12.772557 [debug] - have new task, queue is of length 1
+0000806 | 2020-08-29, 19:01:12.772558 [debug] - 140552845686528 added event
+0000807 | 2020-08-29, 19:01:12.772571 [info] - trade message: Message type: Cancel
+0000808 | 2020-08-29, 19:01:12.772608 [debug] - have new task, queue is of length 1
+0000809 | 2020-08-29, 19:01:12.772608 [debug] - 140552845686528 added event
+0000810 | 2020-08-29, 19:01:12.772621 [info] - trade message: Message type: Cancel
+0000811 | 2020-08-29, 19:01:12.772658 [debug] - have new task, queue is of length 1
+0000812 | 2020-08-29, 19:01:12.772658 [debug] - 140552845686528 added event
+0000813 | 2020-08-29, 19:01:12.772672 [info] - trade message: Message type: Cancel
+0000814 | 2020-08-29, 19:01:12.772708 [debug] - have new task, queue is of length 1
+0000815 | 2020-08-29, 19:01:12.772709 [debug] - 140552845686528 added event
+0000816 | 2020-08-29, 19:01:12.772722 [info] - trade message: Message type: Cancel
+0000817 | 2020-08-29, 19:01:12.772755 [debug] - have new task, queue is of length 1
+0000818 | 2020-08-29, 19:01:12.772756 [debug] - 140552845686528 added event
+0000819 | 2020-08-29, 19:01:12.772769 [info] - trade message: Message type: TradingHalt
+0000820 | 2020-08-29, 19:01:12.772805 [debug] - have new task, queue is of length 1
+0000821 | 2020-08-29, 19:01:12.772806 [debug] - 140552845686528 added event
+0000822 | 2020-08-29, 19:01:12.772819 [info] - trade message: Message type: Execution
+0000823 | 2020-08-29, 19:01:12.772855 [debug] - have new task, queue is of length 1
+0000824 | 2020-08-29, 19:01:12.772856 [debug] - 140552845686528 added event
+0000825 | 2020-08-29, 19:01:12.772869 [info] - trade message: Message type: Execution
+0000827 | 2020-08-29, 19:01:12.772884 [debug] - have new task, queue is of length 1
+0000826 | 2020-08-29, 19:01:12.772883 [debug] - 140552854079232 added event
+0000828 | 2020-08-29, 19:01:12.772898 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000829 | 2020-08-29, 19:01:12.772907 [debug] - 140552845686528 added event
+0000830 | 2020-08-29, 19:01:12.772915 [debug] - have new task, queue is of length 1
+0000831 | 2020-08-29, 19:01:12.772928 [info] - trade message: Message type: Execution
+0000832 | 2020-08-29, 19:01:12.772949 [debug] - have new task, queue is of length 1
+0000833 | 2020-08-29, 19:01:12.772950 [debug] - 140552845686528 added event
+0000834 | 2020-08-29, 19:01:12.772963 [info] - trade message: Message type: Execution
+0000835 | 2020-08-29, 19:01:12.772999 [debug] - have new task, queue is of length 1
+0000836 | 2020-08-29, 19:01:12.773000 [debug] - 140552845686528 added event
+0000837 | 2020-08-29, 19:01:12.773013 [info] - trade message: Message type: Execution
+0000838 | 2020-08-29, 19:01:12.773050 [debug] - have new task, queue is of length 1
+0000839 | 2020-08-29, 19:01:12.773050 [debug] - 140552845686528 added event
+0000840 | 2020-08-29, 19:01:12.773063 [info] - trade message: Message type: Cancel
+0000841 | 2020-08-29, 19:01:12.773100 [debug] - have new task, queue is of length 1
+0000842 | 2020-08-29, 19:01:12.773101 [debug] - 140552845686528 added event
+0000843 | 2020-08-29, 19:01:12.773114 [info] - trade message: Message type: Cancel
+0000844 | 2020-08-29, 19:01:12.773150 [debug] - have new task, queue is of length 1
+0000845 | 2020-08-29, 19:01:12.773151 [debug] - 140552845686528 added event
+0000846 | 2020-08-29, 19:01:12.773168 [info] - trade message: Message type: Execution
+0000847 | 2020-08-29, 19:01:12.773205 [debug] - have new task, queue is of length 1
+0000848 | 2020-08-29, 19:01:12.773206 [debug] - 140552845686528 added event
+0000849 | 2020-08-29, 19:01:12.773219 [info] - trade message: Message type: Cancel
+0000850 | 2020-08-29, 19:01:12.773251 [debug] - have new task, queue is of length 1
+0000851 | 2020-08-29, 19:01:12.773252 [debug] - 140552845686528 added event
+0000852 | 2020-08-29, 19:01:12.773265 [info] - trade message: Message type: TradingHalt
+0000853 | 2020-08-29, 19:01:12.773278 [debug] - 140552854079232 added event
+0000854 | 2020-08-29, 19:01:12.773279 [debug] - have new task, queue is of length 1
+0000855 | 2020-08-29, 19:01:12.773299 [debug] - 140552845686528 added event
+0000856 | 2020-08-29, 19:01:12.773304 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000857 | 2020-08-29, 19:01:12.773322 [debug] - have new task, queue is of length 1
+0000858 | 2020-08-29, 19:01:12.773334 [info] - trade message: Message type: TradingHalt
+0000859 | 2020-08-29, 19:01:12.773342 [debug] - 140552845686528 added event
+0000860 | 2020-08-29, 19:01:12.773348 [debug] - have new task, queue is of length 1
+0000861 | 2020-08-29, 19:01:12.773366 [info] - trade message: Message type: Cancel
+0000862 | 2020-08-29, 19:01:12.773387 [debug] - have new task, queue is of length 1
+0000863 | 2020-08-29, 19:01:12.773388 [debug] - 140552845686528 added event
+0000864 | 2020-08-29, 19:01:12.773401 [info] - trade message: Message type: Cancel
+0000865 | 2020-08-29, 19:01:12.773438 [debug] - have new task, queue is of length 1
+0000866 | 2020-08-29, 19:01:12.773439 [debug] - 140552845686528 added event
+0000867 | 2020-08-29, 19:01:12.773452 [info] - trade message: Message type: Cancel
+0000868 | 2020-08-29, 19:01:12.773489 [debug] - have new task, queue is of length 1
+0000869 | 2020-08-29, 19:01:12.773489 [debug] - 140552845686528 added event
+0000870 | 2020-08-29, 19:01:12.773503 [info] - trade message: Message type: Cancel
+0000871 | 2020-08-29, 19:01:12.773539 [debug] - have new task, queue is of length 1
+0000872 | 2020-08-29, 19:01:12.773540 [debug] - 140552845686528 added event
+0000873 | 2020-08-29, 19:01:12.773553 [info] - trade message: Message type: Cancel
+0000874 | 2020-08-29, 19:01:12.773590 [debug] - have new task, queue is of length 1
+0000875 | 2020-08-29, 19:01:12.773591 [debug] - 140552845686528 added event
+0000876 | 2020-08-29, 19:01:12.773604 [info] - trade message: Message type: Execution
+0000877 | 2020-08-29, 19:01:12.773640 [debug] - have new task, queue is of length 1
+0000878 | 2020-08-29, 19:01:12.773641 [debug] - 140552845686528 added event
+0000879 | 2020-08-29, 19:01:12.773654 [info] - trade message: Message type: Cancel
+0000880 | 2020-08-29, 19:01:12.773663 [debug] - 140552854079232 added event
+0000881 | 2020-08-29, 19:01:12.773669 [debug] - have new task, queue is of length 1
+0000882 | 2020-08-29, 19:01:12.773688 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000883 | 2020-08-29, 19:01:12.773691 [debug] - 140552845686528 added event
+0000884 | 2020-08-29, 19:01:12.773708 [debug] - have new task, queue is of length 1
+0000885 | 2020-08-29, 19:01:12.773721 [info] - trade message: Message type: Execution
+0000886 | 2020-08-29, 19:01:12.773742 [debug] - have new task, queue is of length 1
+0000887 | 2020-08-29, 19:01:12.773743 [debug] - 140552845686528 added event
+0000888 | 2020-08-29, 19:01:12.773756 [info] - trade message: Message type: Cancel
+0000889 | 2020-08-29, 19:01:12.773793 [debug] - have new task, queue is of length 1
+0000890 | 2020-08-29, 19:01:12.773794 [debug] - 140552845686528 added event
+0000891 | 2020-08-29, 19:01:12.773807 [info] - trade message: Message type: Execution
+0000892 | 2020-08-29, 19:01:12.773843 [debug] - have new task, queue is of length 1
+0000893 | 2020-08-29, 19:01:12.773844 [debug] - 140552845686528 added event
+0000894 | 2020-08-29, 19:01:12.773857 [info] - trade message: Message type: Execution
+0000895 | 2020-08-29, 19:01:12.773894 [debug] - have new task, queue is of length 1
+0000896 | 2020-08-29, 19:01:12.773894 [debug] - 140552845686528 added event
+0000897 | 2020-08-29, 19:01:12.773909 [info] - trade message: Message type: Execution
+0000898 | 2020-08-29, 19:01:12.773945 [debug] - have new task, queue is of length 1
+0000899 | 2020-08-29, 19:01:12.773946 [debug] - 140552845686528 added event
+0000900 | 2020-08-29, 19:01:12.773959 [info] - trade message: Message type: Execution
+0000901 | 2020-08-29, 19:01:12.773996 [debug] - have new task, queue is of length 1
+0000902 | 2020-08-29, 19:01:12.773997 [debug] - 140552845686528 added event
+0000903 | 2020-08-29, 19:01:12.774010 [info] - trade message: Message type: Execution
+0000904 | 2020-08-29, 19:01:12.774046 [debug] - have new task, queue is of length 2
+0000905 | 2020-08-29, 19:01:12.774047 [debug] - 140552854079232 added event
+0000907 | 2020-08-29, 19:01:12.774060 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000906 | 2020-08-29, 19:01:12.774047 [debug] - 140552845686528 added event
+0000908 | 2020-08-29, 19:01:12.774079 [debug] - have new task, queue is of length 1
+0000909 | 2020-08-29, 19:01:12.774092 [info] - trade message: Message type: Execution
+0000910 | 2020-08-29, 19:01:12.774113 [debug] - have new task, queue is of length 1
+0000911 | 2020-08-29, 19:01:12.774114 [debug] - 140552845686528 added event
+0000912 | 2020-08-29, 19:01:12.774127 [info] - trade message: Message type: Cancel
+0000913 | 2020-08-29, 19:01:12.774164 [debug] - have new task, queue is of length 1
+0000914 | 2020-08-29, 19:01:12.774165 [debug] - 140552845686528 added event
+0000915 | 2020-08-29, 19:01:12.774178 [info] - trade message: Message type: Execution
+0000916 | 2020-08-29, 19:01:12.774214 [debug] - have new task, queue is of length 1
+0000917 | 2020-08-29, 19:01:12.774215 [debug] - 140552845686528 added event
+0000918 | 2020-08-29, 19:01:12.774228 [info] - trade message: Message type: Cancel
+0000919 | 2020-08-29, 19:01:12.774265 [debug] - have new task, queue is of length 1
+0000920 | 2020-08-29, 19:01:12.774266 [debug] - 140552845686528 added event
+0000921 | 2020-08-29, 19:01:12.774279 [info] - trade message: Message type: Execution
+0000922 | 2020-08-29, 19:01:12.774353 [debug] - have new task, queue is of length 1
+0000923 | 2020-08-29, 19:01:12.774354 [debug] - 140552845686528 added event
+0000924 | 2020-08-29, 19:01:12.774373 [info] - trade message: Message type: Cancel
+0000925 | 2020-08-29, 19:01:12.774409 [debug] - have new task, queue is of length 1
+0000926 | 2020-08-29, 19:01:12.774410 [debug] - 140552845686528 added event
+0000927 | 2020-08-29, 19:01:12.774423 [info] - trade message: Message type: Cancel
+0000928 | 2020-08-29, 19:01:12.774461 [debug] - have new task, queue is of length 1
+0000929 | 2020-08-29, 19:01:12.774462 [debug] - 140552845686528 added event
+0000930 | 2020-08-29, 19:01:12.774472 [debug] - 140552854079232 added event
+0000931 | 2020-08-29, 19:01:12.774475 [info] - trade message: Message type: Cancel
+0000932 | 2020-08-29, 19:01:12.774501 [debug] - have new task, queue is of length 1
+0000933 | 2020-08-29, 19:01:12.774512 [debug] - 140552845686528 added event
+0000934 | 2020-08-29, 19:01:12.774514 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000935 | 2020-08-29, 19:01:12.774539 [debug] - have new task, queue is of length 1
+0000936 | 2020-08-29, 19:01:12.774552 [info] - trade message: Message type: Cancel
+0000937 | 2020-08-29, 19:01:12.774558 [debug] - 140552845686528 added event
+0000938 | 2020-08-29, 19:01:12.774566 [debug] - have new task, queue is of length 1
+0000939 | 2020-08-29, 19:01:12.774578 [info] - trade message: Message type: Cancel
+0000940 | 2020-08-29, 19:01:12.774601 [debug] - have new task, queue is of length 1
+0000941 | 2020-08-29, 19:01:12.774602 [debug] - 140552845686528 added event
+0000942 | 2020-08-29, 19:01:12.774616 [info] - trade message: Message type: Cancel
+0000943 | 2020-08-29, 19:01:12.774654 [debug] - have new task, queue is of length 1
+0000944 | 2020-08-29, 19:01:12.774654 [debug] - 140552845686528 added event
+0000945 | 2020-08-29, 19:01:12.774668 [info] - trade message: Message type: Execution
+0000946 | 2020-08-29, 19:01:12.774716 [debug] - have new task, queue is of length 1
+0000947 | 2020-08-29, 19:01:12.774717 [debug] - 140552845686528 added event
+0000948 | 2020-08-29, 19:01:12.774731 [info] - trade message: Message type: Cancel
+0000949 | 2020-08-29, 19:01:12.774768 [debug] - have new task, queue is of length 1
+0000950 | 2020-08-29, 19:01:12.774769 [debug] - 140552845686528 added event
+0000951 | 2020-08-29, 19:01:12.774782 [info] - trade message: Message type: Cancel
+0000952 | 2020-08-29, 19:01:12.774818 [debug] - have new task, queue is of length 1
+0000953 | 2020-08-29, 19:01:12.774819 [debug] - 140552845686528 added event
+0000954 | 2020-08-29, 19:01:12.774832 [info] - trade message: Message type: Cancel
+0000955 | 2020-08-29, 19:01:12.774857 [debug] - have new task, queue is of length 1
+0000956 | 2020-08-29, 19:01:12.774858 [debug] - 140552854079232 added event
+0000957 | 2020-08-29, 19:01:12.774869 [debug] - 140552845686528 added event
+0000958 | 2020-08-29, 19:01:12.774871 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000959 | 2020-08-29, 19:01:12.774896 [debug] - have new task, queue is of length 1
+0000960 | 2020-08-29, 19:01:12.774909 [info] - trade message: Message type: Execution
+0000961 | 2020-08-29, 19:01:12.774916 [debug] - 140552845686528 added event
+0000962 | 2020-08-29, 19:01:12.774923 [debug] - have new task, queue is of length 1
+0000963 | 2020-08-29, 19:01:12.774937 [info] - trade message: Message type: Execution
+0000964 | 2020-08-29, 19:01:12.774960 [debug] - have new task, queue is of length 1
+0000965 | 2020-08-29, 19:01:12.774960 [debug] - 140552845686528 added event
+0000966 | 2020-08-29, 19:01:12.774974 [info] - trade message: Message type: Execution
+0000967 | 2020-08-29, 19:01:12.775011 [debug] - have new task, queue is of length 1
+0000968 | 2020-08-29, 19:01:12.775011 [debug] - 140552845686528 added event
+0000969 | 2020-08-29, 19:01:12.775025 [info] - trade message: Message type: Execution
+0000970 | 2020-08-29, 19:01:12.775061 [debug] - have new task, queue is of length 1
+0000971 | 2020-08-29, 19:01:12.775062 [debug] - 140552845686528 added event
+0000972 | 2020-08-29, 19:01:12.775075 [info] - trade message: Message type: Cancel
+0000973 | 2020-08-29, 19:01:12.775111 [debug] - have new task, queue is of length 1
+0000974 | 2020-08-29, 19:01:12.775112 [debug] - 140552845686528 added event
+0000975 | 2020-08-29, 19:01:12.775125 [info] - trade message: Message type: Cancel
+0000976 | 2020-08-29, 19:01:12.775161 [debug] - have new task, queue is of length 1
+0000977 | 2020-08-29, 19:01:12.775162 [debug] - 140552845686528 added event
+0000978 | 2020-08-29, 19:01:12.775175 [info] - trade message: Message type: Cancel
+0000979 | 2020-08-29, 19:01:12.775211 [debug] - have new task, queue is of length 1
+0000980 | 2020-08-29, 19:01:12.775212 [debug] - 140552845686528 added event
+0000981 | 2020-08-29, 19:01:12.775225 [info] - trade message: Message type: Cancel
+0000982 | 2020-08-29, 19:01:12.775244 [debug] - have new task, queue is of length 1
+0000983 | 2020-08-29, 19:01:12.775245 [debug] - 140552854079232 added event
+0000985 | 2020-08-29, 19:01:12.775263 [debug] - 140552845686528 added event
+0000984 | 2020-08-29, 19:01:12.775258 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0000986 | 2020-08-29, 19:01:12.775290 [debug] - have new task, queue is of length 1
+0000987 | 2020-08-29, 19:01:12.775303 [info] - trade message: Message type: Cancel
+0000988 | 2020-08-29, 19:01:12.775309 [debug] - 140552845686528 added event
+0000989 | 2020-08-29, 19:01:12.775317 [debug] - have new task, queue is of length 1
+0000990 | 2020-08-29, 19:01:12.775329 [info] - trade message: Message type: Execution
+0000991 | 2020-08-29, 19:01:12.775353 [debug] - have new task, queue is of length 1
+0000992 | 2020-08-29, 19:01:12.775353 [debug] - 140552845686528 added event
+0000993 | 2020-08-29, 19:01:12.775367 [info] - trade message: Message type: HiddenExecution
+0000994 | 2020-08-29, 19:01:12.775404 [debug] - have new task, queue is of length 1
+0000995 | 2020-08-29, 19:01:12.775404 [debug] - 140552845686528 added event
+0000996 | 2020-08-29, 19:01:12.775424 [info] - trade message: Message type: HiddenExecution
+0000997 | 2020-08-29, 19:01:12.775460 [debug] - have new task, queue is of length 1
+0000998 | 2020-08-29, 19:01:12.775460 [debug] - 140552845686528 added event
+0000999 | 2020-08-29, 19:01:12.775474 [info] - trade message: Message type: Cancel
+0001000 | 2020-08-29, 19:01:12.775510 [debug] - have new task, queue is of length 1
+0001001 | 2020-08-29, 19:01:12.775511 [debug] - 140552845686528 added event
+0001002 | 2020-08-29, 19:01:12.775524 [info] - trade message: Message type: Execution
+0001003 | 2020-08-29, 19:01:12.775560 [debug] - have new task, queue is of length 1
+0001004 | 2020-08-29, 19:01:12.775561 [debug] - 140552845686528 added event
+0001005 | 2020-08-29, 19:01:12.775574 [info] - trade message: Message type: Execution
+0001006 | 2020-08-29, 19:01:12.775610 [debug] - have new task, queue is of length 1
+0001007 | 2020-08-29, 19:01:12.775611 [debug] - 140552845686528 added event
+0001008 | 2020-08-29, 19:01:12.775624 [info] - trade message: Message type: Execution
+0001009 | 2020-08-29, 19:01:12.775632 [debug] - 140552854079232 added event
+0001010 | 2020-08-29, 19:01:12.775639 [debug] - have new task, queue is of length 1
+0001011 | 2020-08-29, 19:01:12.775658 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001012 | 2020-08-29, 19:01:12.775662 [debug] - 140552845686528 added event
+0001013 | 2020-08-29, 19:01:12.775678 [debug] - have new task, queue is of length 1
+0001014 | 2020-08-29, 19:01:12.775692 [info] - trade message: Message type: Execution
+0001015 | 2020-08-29, 19:01:12.775712 [debug] - have new task, queue is of length 1
+0001016 | 2020-08-29, 19:01:12.775713 [debug] - 140552845686528 added event
+0001017 | 2020-08-29, 19:01:12.775726 [info] - trade message: Message type: Execution
+0001018 | 2020-08-29, 19:01:12.775763 [debug] - have new task, queue is of length 1
+0001019 | 2020-08-29, 19:01:12.775763 [debug] - 140552845686528 added event
+0001020 | 2020-08-29, 19:01:12.775777 [info] - trade message: Message type: HiddenExecution
+0001021 | 2020-08-29, 19:01:12.775813 [debug] - have new task, queue is of length 1
+0001022 | 2020-08-29, 19:01:12.775813 [debug] - 140552845686528 added event
+0001023 | 2020-08-29, 19:01:12.775827 [info] - trade message: Message type: Cancel
+0001024 | 2020-08-29, 19:01:12.775863 [debug] - have new task, queue is of length 1
+0001025 | 2020-08-29, 19:01:12.775863 [debug] - 140552845686528 added event
+0001026 | 2020-08-29, 19:01:12.775876 [info] - trade message: Message type: Cancel
+0001027 | 2020-08-29, 19:01:12.775913 [debug] - have new task, queue is of length 1
+0001028 | 2020-08-29, 19:01:12.775914 [debug] - 140552845686528 added event
+0001029 | 2020-08-29, 19:01:12.775927 [info] - trade message: Message type: Cancel
+0001030 | 2020-08-29, 19:01:12.775963 [debug] - have new task, queue is of length 1
+0001031 | 2020-08-29, 19:01:12.775964 [debug] - 140552845686528 added event
+0001032 | 2020-08-29, 19:01:12.775977 [info] - trade message: Message type: Cancel
+0001033 | 2020-08-29, 19:01:12.776014 [debug] - have new task, queue is of length 2
+0001034 | 2020-08-29, 19:01:12.776015 [debug] - 140552845686528 added event
+0001036 | 2020-08-29, 19:01:12.776028 [info] - trade message: Message type: Cancel
+0001035 | 2020-08-29, 19:01:12.776017 [debug] - 140552854079232 added event
+0001037 | 2020-08-29, 19:01:12.776044 [debug] - have new task, queue is of length 1
+0001038 | 2020-08-29, 19:01:12.776057 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001039 | 2020-08-29, 19:01:12.776066 [debug] - 140552845686528 added event
+0001040 | 2020-08-29, 19:01:12.776073 [debug] - have new task, queue is of length 1
+0001041 | 2020-08-29, 19:01:12.776087 [info] - trade message: Message type: Cancel
+0001042 | 2020-08-29, 19:01:12.776110 [debug] - have new task, queue is of length 1
+0001043 | 2020-08-29, 19:01:12.776111 [debug] - 140552845686528 added event
+0001044 | 2020-08-29, 19:01:12.776124 [info] - trade message: Message type: Execution
+0001045 | 2020-08-29, 19:01:12.776167 [debug] - have new task, queue is of length 1
+0001046 | 2020-08-29, 19:01:12.776168 [debug] - 140552845686528 added event
+0001047 | 2020-08-29, 19:01:12.776182 [info] - trade message: Message type: Cancel
+0001048 | 2020-08-29, 19:01:12.776219 [debug] - have new task, queue is of length 1
+0001049 | 2020-08-29, 19:01:12.776219 [debug] - 140552845686528 added event
+0001050 | 2020-08-29, 19:01:12.776232 [info] - trade message: Message type: HiddenExecution
+0001051 | 2020-08-29, 19:01:12.776269 [debug] - have new task, queue is of length 1
+0001052 | 2020-08-29, 19:01:12.776270 [debug] - 140552845686528 added event
+0001053 | 2020-08-29, 19:01:12.776283 [info] - trade message: Message type: HiddenExecution
+0001054 | 2020-08-29, 19:01:12.776319 [debug] - have new task, queue is of length 1
+0001055 | 2020-08-29, 19:01:12.776320 [debug] - 140552845686528 added event
+0001056 | 2020-08-29, 19:01:12.776333 [info] - trade message: Message type: Cancel
+0001057 | 2020-08-29, 19:01:12.776370 [debug] - have new task, queue is of length 1
+0001058 | 2020-08-29, 19:01:12.776371 [debug] - 140552845686528 added event
+0001059 | 2020-08-29, 19:01:12.776384 [info] - trade message: Message type: Execution
+0001060 | 2020-08-29, 19:01:12.776414 [debug] - have new task, queue is of length 1
+0001061 | 2020-08-29, 19:01:12.776415 [debug] - 140552854079232 added event
+0001062 | 2020-08-29, 19:01:12.776421 [debug] - 140552845686528 added event
+0001063 | 2020-08-29, 19:01:12.776428 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001064 | 2020-08-29, 19:01:12.776456 [debug] - have new task, queue is of length 1
+0001065 | 2020-08-29, 19:01:12.776470 [info] - trade message: Message type: Execution
+0001066 | 2020-08-29, 19:01:12.776476 [debug] - 140552845686528 added event
+0001067 | 2020-08-29, 19:01:12.776483 [debug] - have new task, queue is of length 1
+0001068 | 2020-08-29, 19:01:12.776502 [info] - trade message: Message type: Execution
+0001069 | 2020-08-29, 19:01:12.776523 [debug] - have new task, queue is of length 1
+0001070 | 2020-08-29, 19:01:12.776524 [debug] - 140552845686528 added event
+0001071 | 2020-08-29, 19:01:12.776537 [info] - trade message: Message type: Cancel
+0001072 | 2020-08-29, 19:01:12.776570 [debug] - have new task, queue is of length 1
+0001073 | 2020-08-29, 19:01:12.776571 [debug] - 140552845686528 added event
+0001074 | 2020-08-29, 19:01:12.776584 [info] - trade message: Message type: TradingHalt
+0001075 | 2020-08-29, 19:01:12.776618 [debug] - have new task, queue is of length 1
+0001076 | 2020-08-29, 19:01:12.776618 [debug] - 140552845686528 added event
+0001077 | 2020-08-29, 19:01:12.776632 [info] - trade message: Message type: TradingHalt
+0001078 | 2020-08-29, 19:01:12.776667 [debug] - have new task, queue is of length 1
+0001079 | 2020-08-29, 19:01:12.776668 [debug] - 140552845686528 added event
+0001080 | 2020-08-29, 19:01:12.776681 [info] - trade message: Message type: Cancel
+0001081 | 2020-08-29, 19:01:12.776718 [debug] - have new task, queue is of length 1
+0001082 | 2020-08-29, 19:01:12.776719 [debug] - 140552845686528 added event
+0001083 | 2020-08-29, 19:01:12.776732 [info] - trade message: Message type: Cancel
+0001084 | 2020-08-29, 19:01:12.776769 [debug] - have new task, queue is of length 1
+0001085 | 2020-08-29, 19:01:12.776770 [debug] - 140552845686528 added event
+0001086 | 2020-08-29, 19:01:12.776783 [info] - trade message: Message type: Cancel
+0001087 | 2020-08-29, 19:01:12.776802 [debug] - have new task, queue is of length 1
+0001088 | 2020-08-29, 19:01:12.776803 [debug] - 140552854079232 added event
+0001090 | 2020-08-29, 19:01:12.776820 [debug] - 140552845686528 added event
+0001089 | 2020-08-29, 19:01:12.776816 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001091 | 2020-08-29, 19:01:12.776847 [debug] - have new task, queue is of length 1
+0001092 | 2020-08-29, 19:01:12.776860 [info] - trade message: Message type: Cancel
+0001093 | 2020-08-29, 19:01:12.776866 [debug] - 140552845686528 added event
+0001094 | 2020-08-29, 19:01:12.776874 [debug] - have new task, queue is of length 1
+0001095 | 2020-08-29, 19:01:12.776894 [info] - trade message: Message type: Cancel
+0001096 | 2020-08-29, 19:01:12.776916 [debug] - have new task, queue is of length 1
+0001097 | 2020-08-29, 19:01:12.776917 [debug] - 140552845686528 added event
+0001098 | 2020-08-29, 19:01:12.776930 [info] - trade message: Message type: Cancel
+0001099 | 2020-08-29, 19:01:12.776968 [debug] - have new task, queue is of length 1
+0001100 | 2020-08-29, 19:01:12.776968 [debug] - 140552845686528 added event
+0001101 | 2020-08-29, 19:01:12.776982 [info] - trade message: Message type: Cancel
+0001102 | 2020-08-29, 19:01:12.777017 [debug] - have new task, queue is of length 1
+0001103 | 2020-08-29, 19:01:12.777018 [debug] - 140552845686528 added event
+0001104 | 2020-08-29, 19:01:12.777031 [info] - trade message: Message type: Cancel
+0001105 | 2020-08-29, 19:01:12.777067 [debug] - have new task, queue is of length 1
+0001106 | 2020-08-29, 19:01:12.777068 [debug] - 140552845686528 added event
+0001107 | 2020-08-29, 19:01:12.777081 [info] - trade message: Message type: Cancel
+0001108 | 2020-08-29, 19:01:12.777116 [debug] - have new task, queue is of length 1
+0001109 | 2020-08-29, 19:01:12.777117 [debug] - 140552845686528 added event
+0001110 | 2020-08-29, 19:01:12.777130 [info] - trade message: Message type: Cancel
+0001111 | 2020-08-29, 19:01:12.777166 [debug] - have new task, queue is of length 1
+0001112 | 2020-08-29, 19:01:12.777167 [debug] - 140552845686528 added event
+0001113 | 2020-08-29, 19:01:12.777180 [info] - trade message: Message type: Cancel
+0001114 | 2020-08-29, 19:01:12.777190 [debug] - 140552854079232 added event
+0001115 | 2020-08-29, 19:01:12.777195 [debug] - have new task, queue is of length 1
+0001117 | 2020-08-29, 19:01:12.777217 [debug] - 140552845686528 added event
+0001116 | 2020-08-29, 19:01:12.777215 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001118 | 2020-08-29, 19:01:12.777243 [debug] - have new task, queue is of length 1
+0001119 | 2020-08-29, 19:01:12.777256 [info] - trade message: Message type: Cancel
+0001120 | 2020-08-29, 19:01:12.777262 [debug] - 140552845686528 added event
+0001121 | 2020-08-29, 19:01:12.777270 [debug] - have new task, queue is of length 1
+0001122 | 2020-08-29, 19:01:12.777282 [info] - trade message: Message type: Cancel
+0001123 | 2020-08-29, 19:01:12.777304 [debug] - have new task, queue is of length 1
+0001124 | 2020-08-29, 19:01:12.777305 [debug] - 140552845686528 added event
+0001125 | 2020-08-29, 19:01:12.777318 [info] - trade message: Message type: Cancel
+0001126 | 2020-08-29, 19:01:12.777354 [debug] - have new task, queue is of length 1
+0001127 | 2020-08-29, 19:01:12.777355 [debug] - 140552845686528 added event
+0001128 | 2020-08-29, 19:01:12.777368 [info] - trade message: Message type: Cancel
+0001129 | 2020-08-29, 19:01:12.777402 [debug] - have new task, queue is of length 1
+0001130 | 2020-08-29, 19:01:12.777403 [debug] - 140552845686528 added event
+0001131 | 2020-08-29, 19:01:12.777416 [info] - trade message: Message type: Cancel
+0001132 | 2020-08-29, 19:01:12.777452 [debug] - have new task, queue is of length 1
+0001133 | 2020-08-29, 19:01:12.777453 [debug] - 140552845686528 added event
+0001134 | 2020-08-29, 19:01:12.777466 [info] - trade message: Message type: Cancel
+0001135 | 2020-08-29, 19:01:12.777520 [debug] - have new task, queue is of length 1
+0001136 | 2020-08-29, 19:01:12.777520 [debug] - 140552845686528 added event
+0001137 | 2020-08-29, 19:01:12.777534 [info] - trade message: Message type: Cancel
+0001138 | 2020-08-29, 19:01:12.777587 [debug] - have new task, queue is of length 1
+0001139 | 2020-08-29, 19:01:12.777587 [debug] - 140552845686528 added event
+0001140 | 2020-08-29, 19:01:12.777601 [info] - trade message: Message type: Cancel
+0001141 | 2020-08-29, 19:01:12.777608 [debug] - 140552854079232 added event
+0001142 | 2020-08-29, 19:01:12.777615 [debug] - have new task, queue is of length 1
+0001143 | 2020-08-29, 19:01:12.777633 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001144 | 2020-08-29, 19:01:12.777636 [debug] - 140552845686528 added event
+0001145 | 2020-08-29, 19:01:12.777657 [debug] - have new task, queue is of length 1
+0001146 | 2020-08-29, 19:01:12.777671 [info] - trade message: Message type: Cancel
+0001147 | 2020-08-29, 19:01:12.777690 [debug] - have new task, queue is of length 1
+0001148 | 2020-08-29, 19:01:12.777691 [debug] - 140552845686528 added event
+0001149 | 2020-08-29, 19:01:12.777704 [info] - trade message: Message type: Cancel
+0001150 | 2020-08-29, 19:01:12.777739 [debug] - have new task, queue is of length 1
+0001151 | 2020-08-29, 19:01:12.777740 [debug] - 140552845686528 added event
+0001152 | 2020-08-29, 19:01:12.777754 [info] - trade message: Message type: Cancel
+0001153 | 2020-08-29, 19:01:12.777790 [debug] - have new task, queue is of length 1
+0001154 | 2020-08-29, 19:01:12.777791 [debug] - 140552845686528 added event
+0001155 | 2020-08-29, 19:01:12.777804 [info] - trade message: Message type: Cancel
+0001156 | 2020-08-29, 19:01:12.777838 [debug] - have new task, queue is of length 1
+0001157 | 2020-08-29, 19:01:12.777839 [debug] - 140552845686528 added event
+0001158 | 2020-08-29, 19:01:12.777853 [info] - trade message: Message type: Cancel
+0001159 | 2020-08-29, 19:01:12.777888 [debug] - have new task, queue is of length 1
+0001160 | 2020-08-29, 19:01:12.777889 [debug] - 140552845686528 added event
+0001161 | 2020-08-29, 19:01:12.777902 [info] - trade message: Message type: Cancel
+0001162 | 2020-08-29, 19:01:12.777936 [debug] - have new task, queue is of length 1
+0001163 | 2020-08-29, 19:01:12.777937 [debug] - 140552845686528 added event
+0001164 | 2020-08-29, 19:01:12.777950 [info] - trade message: Message type: Cancel
+0001165 | 2020-08-29, 19:01:12.777986 [debug] - have new task, queue is of length 1
+0001167 | 2020-08-29, 19:01:12.777991 [debug] - 140552854079232 added event
+0001168 | 2020-08-29, 19:01:12.778001 [info] - trade message: Message type: Cancel
+0001166 | 2020-08-29, 19:01:12.777987 [debug] - 140552845686528 added event
+0001169 | 2020-08-29, 19:01:12.778016 [debug] - have new task, queue is of length 1
+0001170 | 2020-08-29, 19:01:12.778029 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001171 | 2020-08-29, 19:01:12.778050 [debug] - have new task, queue is of length 1
+0001172 | 2020-08-29, 19:01:12.778051 [debug] - 140552845686528 added event
+0001173 | 2020-08-29, 19:01:12.778065 [info] - trade message: Message type: Cancel
+0001174 | 2020-08-29, 19:01:12.778100 [debug] - have new task, queue is of length 1
+0001175 | 2020-08-29, 19:01:12.778101 [debug] - 140552845686528 added event
+0001176 | 2020-08-29, 19:01:12.778114 [info] - trade message: Message type: Cancel
+0001177 | 2020-08-29, 19:01:12.778149 [debug] - have new task, queue is of length 1
+0001178 | 2020-08-29, 19:01:12.778150 [debug] - 140552845686528 added event
+0001179 | 2020-08-29, 19:01:12.778163 [info] - trade message: Message type: Cancel
+0001180 | 2020-08-29, 19:01:12.778199 [debug] - have new task, queue is of length 1
+0001181 | 2020-08-29, 19:01:12.778200 [debug] - 140552845686528 added event
+0001182 | 2020-08-29, 19:01:12.778213 [info] - trade message: Message type: Cancel
+0001184 | 2020-08-29, 19:01:12.778249 [debug] - 140552845686528 added event
+0001183 | 2020-08-29, 19:01:12.778248 [debug] - have new task, queue is of length 1
+0001185 | 2020-08-29, 19:01:12.778277 [info] - trade message: Message type: Cancel
+0001186 | 2020-08-29, 19:01:12.778318 [debug] - 140552845686528 added event
+0001187 | 2020-08-29, 19:01:12.778320 [debug] - have new task, queue is of length 1
+0001188 | 2020-08-29, 19:01:12.778365 [info] - trade message: Message type: Cancel
+0001189 | 2020-08-29, 19:01:12.778383 [debug] - 140552845686528 added event
+0001190 | 2020-08-29, 19:01:12.778386 [debug] - have new task, queue is of length 1
+0001191 | 2020-08-29, 19:01:12.778411 [info] - trade message: Message type: Cancel
+0001192 | 2020-08-29, 19:01:12.778420 [debug] - 140552854079232 added event
+0001193 | 2020-08-29, 19:01:12.778429 [debug] - 140552845686528 added event
+0001194 | 2020-08-29, 19:01:12.778432 [debug] - have new task, queue is of length 2
+0001195 | 2020-08-29, 19:01:12.778466 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001196 | 2020-08-29, 19:01:12.778484 [debug] - 140552845686528 added event
+0001197 | 2020-08-29, 19:01:12.778495 [debug] - have new task, queue is of length 2
+0001198 | 2020-08-29, 19:01:12.778515 [info] - trade message: Message type: Cancel
+0001199 | 2020-08-29, 19:01:12.778529 [debug] - 140552845686528 added event
+0001200 | 2020-08-29, 19:01:12.778536 [debug] - have new task, queue is of length 2
+0001201 | 2020-08-29, 19:01:12.778555 [info] - trade message: Message type: Cancel
+0001202 | 2020-08-29, 19:01:12.778572 [debug] - 140552845686528 added event
+0001203 | 2020-08-29, 19:01:12.778578 [debug] - have new task, queue is of length 2
+0001204 | 2020-08-29, 19:01:12.778598 [info] - trade message: Message type: Cancel
+0001205 | 2020-08-29, 19:01:12.778615 [debug] - 140552845686528 added event
+0001206 | 2020-08-29, 19:01:12.778620 [debug] - have new task, queue is of length 2
+0001207 | 2020-08-29, 19:01:12.778641 [info] - trade message: Message type: Cancel
+0001208 | 2020-08-29, 19:01:12.778656 [debug] - 140552845686528 added event
+0001209 | 2020-08-29, 19:01:12.778663 [debug] - have new task, queue is of length 2
+0001210 | 2020-08-29, 19:01:12.778684 [info] - trade message: Message type: Cancel
+0001211 | 2020-08-29, 19:01:12.778699 [debug] - 140552845686528 added event
+0001212 | 2020-08-29, 19:01:12.778706 [debug] - have new task, queue is of length 2
+0001213 | 2020-08-29, 19:01:12.778725 [info] - trade message: Message type: Cancel
+0001214 | 2020-08-29, 19:01:12.778741 [debug] - 140552845686528 added event
+0001215 | 2020-08-29, 19:01:12.778745 [debug] - have new task, queue is of length 2
+0001216 | 2020-08-29, 19:01:12.778769 [info] - trade message: Message type: Cancel
+0001217 | 2020-08-29, 19:01:12.778788 [debug] - 140552845686528 added event
+0001218 | 2020-08-29, 19:01:12.778790 [debug] - have new task, queue is of length 2
+0001219 | 2020-08-29, 19:01:12.778809 [debug] - 140552854079232 added event
+0001220 | 2020-08-29, 19:01:12.778815 [info] - trade message: Message type: Cancel
+0001221 | 2020-08-29, 19:01:12.778832 [debug] - 140552845686528 added event
+0001222 | 2020-08-29, 19:01:12.778835 [debug] - have new task, queue is of length 3
+0001223 | 2020-08-29, 19:01:12.778859 [info] - trade message: Message type: Cancel
+0001224 | 2020-08-29, 19:01:12.778879 [debug] - 140552845686528 added event
+0001225 | 2020-08-29, 19:01:12.778879 [debug] - have new task, queue is of length 3
+0001226 | 2020-08-29, 19:01:12.778905 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001227 | 2020-08-29, 19:01:12.778923 [debug] - 140552845686528 added event
+0001228 | 2020-08-29, 19:01:12.778931 [debug] - have new task, queue is of length 3
+0001229 | 2020-08-29, 19:01:12.778949 [info] - trade message: Message type: Cancel
+0001230 | 2020-08-29, 19:01:12.778965 [debug] - 140552845686528 added event
+0001231 | 2020-08-29, 19:01:12.778971 [debug] - have new task, queue is of length 3
+0001232 | 2020-08-29, 19:01:12.778992 [info] - trade message: Message type: Cancel
+0001233 | 2020-08-29, 19:01:12.779006 [debug] - 140552845686528 added event
+0001234 | 2020-08-29, 19:01:12.779014 [debug] - have new task, queue is of length 3
+0001235 | 2020-08-29, 19:01:12.779034 [info] - trade message: Message type: Cancel
+0001236 | 2020-08-29, 19:01:12.779048 [debug] - 140552845686528 added event
+0001237 | 2020-08-29, 19:01:12.779056 [debug] - have new task, queue is of length 3
+0001238 | 2020-08-29, 19:01:12.779077 [info] - trade message: Message type: Cancel
+0001239 | 2020-08-29, 19:01:12.779090 [debug] - 140552845686528 added event
+0001240 | 2020-08-29, 19:01:12.779099 [debug] - have new task, queue is of length 3
+0001241 | 2020-08-29, 19:01:12.779119 [info] - trade message: Message type: Cancel
+0001242 | 2020-08-29, 19:01:12.779131 [debug] - 140552845686528 added event
+0001243 | 2020-08-29, 19:01:12.779141 [debug] - have new task, queue is of length 3
+0001244 | 2020-08-29, 19:01:12.779169 [info] - trade message: Message type: Cancel
+0001246 | 2020-08-29, 19:01:12.779190 [debug] - 140552854079232 added event
+0001245 | 2020-08-29, 19:01:12.779173 [debug] - 140552845686528 added event
+0001247 | 2020-08-29, 19:01:12.779197 [debug] - have new task, queue is of length 4
+0001248 | 2020-08-29, 19:01:12.779228 [info] - trade message: Message type: Cancel
+0001249 | 2020-08-29, 19:01:12.779245 [debug] - 140552845686528 added event
+0001250 | 2020-08-29, 19:01:12.779251 [debug] - have new task, queue is of length 4
+0001251 | 2020-08-29, 19:01:12.779272 [info] - trade message: Message type: Cancel
+0001252 | 2020-08-29, 19:01:12.779288 [debug] - 140552845686528 added event
+0001253 | 2020-08-29, 19:01:12.779294 [debug] - have new task, queue is of length 4
+0001254 | 2020-08-29, 19:01:12.779315 [info] - trade message: Message type: Cancel
+0001255 | 2020-08-29, 19:01:12.779330 [debug] - 140552845686528 added event
+0001256 | 2020-08-29, 19:01:12.779337 [debug] - have new task, queue is of length 4
+0001257 | 2020-08-29, 19:01:12.779358 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001258 | 2020-08-29, 19:01:12.779371 [debug] - 140552845686528 added event
+0001259 | 2020-08-29, 19:01:12.779388 [debug] - have new task, queue is of length 4
+0001260 | 2020-08-29, 19:01:12.779409 [info] - trade message: Message type: Cancel
+0001261 | 2020-08-29, 19:01:12.779420 [debug] - 140552845686528 added event
+0001262 | 2020-08-29, 19:01:12.779430 [debug] - have new task, queue is of length 4
+0001263 | 2020-08-29, 19:01:12.779449 [info] - trade message: Message type: Cancel
+0001264 | 2020-08-29, 19:01:12.779463 [debug] - 140552845686528 added event
+0001265 | 2020-08-29, 19:01:12.779468 [debug] - have new task, queue is of length 4
+0001266 | 2020-08-29, 19:01:12.779486 [info] - trade message: Message type: Cancel
+0001267 | 2020-08-29, 19:01:12.779504 [debug] - have new task, queue is of length 4
+0001268 | 2020-08-29, 19:01:12.779506 [debug] - 140552845686528 added event
+0001269 | 2020-08-29, 19:01:12.779524 [info] - trade message: Message type: Cancel
+0001270 | 2020-08-29, 19:01:12.779546 [debug] - have new task, queue is of length 3
+0001271 | 2020-08-29, 19:01:12.779560 [debug] - 140552845686528 added event
+0001272 | 2020-08-29, 19:01:12.779566 [info] - trade message: Message type: Cancel
+0001273 | 2020-08-29, 19:01:12.779574 [debug] - 140552854079232 added event
+0001274 | 2020-08-29, 19:01:12.779587 [debug] - have new task, queue is of length 4
+0001275 | 2020-08-29, 19:01:12.779604 [debug] - 140552845686528 added event
+0001276 | 2020-08-29, 19:01:12.779605 [info] - trade message: Message type: Cancel
+0001277 | 2020-08-29, 19:01:12.779634 [debug] - have new task, queue is of length 4
+0001278 | 2020-08-29, 19:01:12.779650 [debug] - 140552845686528 added event
+0001279 | 2020-08-29, 19:01:12.779653 [info] - trade message: Message type: Cancel
+0001280 | 2020-08-29, 19:01:12.779676 [debug] - have new task, queue is of length 4
+0001281 | 2020-08-29, 19:01:12.779693 [debug] - 140552845686528 added event
+0001282 | 2020-08-29, 19:01:12.779697 [info] - trade message: Message type: Cancel
+0001283 | 2020-08-29, 19:01:12.779720 [debug] - have new task, queue is of length 4
+0001284 | 2020-08-29, 19:01:12.779735 [debug] - 140552845686528 added event
+0001285 | 2020-08-29, 19:01:12.779741 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001286 | 2020-08-29, 19:01:12.779770 [debug] - have new task, queue is of length 4
+0001287 | 2020-08-29, 19:01:12.779776 [debug] - 140552845686528 added event
+0001288 | 2020-08-29, 19:01:12.779795 [info] - trade message: Message type: Cancel
+0001289 | 2020-08-29, 19:01:12.779818 [debug] - have new task, queue is of length 4
+0001290 | 2020-08-29, 19:01:12.779831 [debug] - 140552845686528 added event
+0001291 | 2020-08-29, 19:01:12.779838 [info] - trade message: Message type: Cancel
+0001292 | 2020-08-29, 19:01:12.779860 [debug] - have new task, queue is of length 4
+0001293 | 2020-08-29, 19:01:12.779875 [debug] - 140552845686528 added event
+0001294 | 2020-08-29, 19:01:12.779880 [info] - trade message: Message type: Cancel
+0001295 | 2020-08-29, 19:01:12.779909 [debug] - have new task, queue is of length 4
+0001296 | 2020-08-29, 19:01:12.779918 [debug] - 140552845686528 added event
+0001297 | 2020-08-29, 19:01:12.779933 [info] - trade message: Message type: Cancel
+0001298 | 2020-08-29, 19:01:12.779954 [debug] - have new task, queue is of length 5
+0001300 | 2020-08-29, 19:01:12.779970 [debug] - 140552845686528 added event
+0001301 | 2020-08-29, 19:01:12.779976 [info] - trade message: Message type: Cancel
+0001299 | 2020-08-29, 19:01:12.779957 [debug] - 140552854079232 added event
+0001302 | 2020-08-29, 19:01:12.779999 [debug] - have new task, queue is of length 5
+0001303 | 2020-08-29, 19:01:12.780015 [debug] - 140552845686528 added event
+0001304 | 2020-08-29, 19:01:12.780018 [info] - trade message: Message type: Execution
+0001305 | 2020-08-29, 19:01:12.780047 [debug] - have new task, queue is of length 5
+0001306 | 2020-08-29, 19:01:12.780063 [debug] - 140552845686528 added event
+0001307 | 2020-08-29, 19:01:12.780067 [info] - trade message: Message type: Execution
+0001308 | 2020-08-29, 19:01:12.780088 [debug] - have new task, queue is of length 5
+0001310 | 2020-08-29, 19:01:12.780107 [debug] - 140552845686528 added event
+0001309 | 2020-08-29, 19:01:12.780106 [info] - trade message: Message type: Execution
+0001311 | 2020-08-29, 19:01:12.780136 [debug] - have new task, queue is of length 5
+0001312 | 2020-08-29, 19:01:12.780151 [debug] - 140552845686528 added event
+0001313 | 2020-08-29, 19:01:12.780156 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001314 | 2020-08-29, 19:01:12.780184 [debug] - have new task, queue is of length 5
+0001315 | 2020-08-29, 19:01:12.780195 [debug] - 140552845686528 added event
+0001316 | 2020-08-29, 19:01:12.780205 [info] - trade message: Message type: Execution
+0001317 | 2020-08-29, 19:01:12.780245 [debug] - have new task, queue is of length 5
+0001318 | 2020-08-29, 19:01:12.780257 [debug] - 140552845686528 added event
+0001319 | 2020-08-29, 19:01:12.780264 [info] - trade message: Message type: Execution
+0001320 | 2020-08-29, 19:01:12.780286 [debug] - have new task, queue is of length 5
+0001321 | 2020-08-29, 19:01:12.780302 [debug] - 140552845686528 added event
+0001322 | 2020-08-29, 19:01:12.780306 [info] - trade message: Message type: Execution
+0001323 | 2020-08-29, 19:01:12.780327 [debug] - have new task, queue is of length 5
+0001324 | 2020-08-29, 19:01:12.780342 [info] - trade message: Message type: Execution
+0001325 | 2020-08-29, 19:01:12.780347 [debug] - 140552845686528 added event
+0001326 | 2020-08-29, 19:01:12.780358 [debug] - have new task, queue is of length 5
+0001327 | 2020-08-29, 19:01:12.780372 [info] - trade message: Message type: Cancel
+0001328 | 2020-08-29, 19:01:12.780387 [debug] - have new task, queue is of length 4
+0001329 | 2020-08-29, 19:01:12.780391 [debug] - 140552845686528 added event
+0001330 | 2020-08-29, 19:01:12.780404 [info] - trade message: Message type: Cancel
+0001331 | 2020-08-29, 19:01:12.780409 [debug] - 140552854079232 added event
+0001332 | 2020-08-29, 19:01:12.780421 [debug] - have new task, queue is of length 5
+0001334 | 2020-08-29, 19:01:12.780444 [debug] - 140552845686528 added event
+0001333 | 2020-08-29, 19:01:12.780436 [info] - trade message: Message type: Cancel
+0001335 | 2020-08-29, 19:01:12.780486 [debug] - have new task, queue is of length 6
+0001336 | 2020-08-29, 19:01:12.780489 [debug] - 140552845686528 added event
+0001337 | 2020-08-29, 19:01:12.780502 [info] - trade message: Message type: Execution
+0001338 | 2020-08-29, 19:01:12.780520 [debug] - have new task, queue is of length 5
+0001339 | 2020-08-29, 19:01:12.780537 [info] - trade message: Message type: Cancel
+0001340 | 2020-08-29, 19:01:12.780541 [debug] - 140552845686528 added event
+0001341 | 2020-08-29, 19:01:12.780563 [debug] - have new task, queue is of length 5
+0001342 | 2020-08-29, 19:01:12.780581 [info] - trade message: Message type: Cancel
+0001343 | 2020-08-29, 19:01:12.780597 [debug] - have new task, queue is of length 5
+0001344 | 2020-08-29, 19:01:12.780598 [debug] - 140552845686528 added event
+0001345 | 2020-08-29, 19:01:12.780619 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001346 | 2020-08-29, 19:01:12.780645 [debug] - have new task, queue is of length 4
+0001347 | 2020-08-29, 19:01:12.780659 [info] - trade message: Message type: Execution
+0001348 | 2020-08-29, 19:01:12.780663 [debug] - 140552845686528 added event
+0001349 | 2020-08-29, 19:01:12.780673 [debug] - have new task, queue is of length 4
+0001350 | 2020-08-29, 19:01:12.780686 [info] - trade message: Message type: Execution
+0001351 | 2020-08-29, 19:01:12.780700 [debug] - have new task, queue is of length 3
+0001353 | 2020-08-29, 19:01:12.780713 [info] - trade message: Message type: Execution
+0001352 | 2020-08-29, 19:01:12.780708 [debug] - 140552845686528 added event
+0001354 | 2020-08-29, 19:01:12.780729 [debug] - have new task, queue is of length 3
+0001355 | 2020-08-29, 19:01:12.780742 [info] - trade message: Message type: Cancel
+0001356 | 2020-08-29, 19:01:12.780756 [debug] - have new task, queue is of length 2
+0001357 | 2020-08-29, 19:01:12.780767 [debug] - 140552845686528 added event
+0001358 | 2020-08-29, 19:01:12.780769 [info] - trade message: Message type: Cancel
+0001359 | 2020-08-29, 19:01:12.780795 [debug] - have new task, queue is of length 2
+0001360 | 2020-08-29, 19:01:12.780810 [info] - trade message: Message type: Cancel
+0001361 | 2020-08-29, 19:01:12.780815 [debug] - 140552845686528 added event
+0001363 | 2020-08-29, 19:01:12.780824 [debug] - have new task, queue is of length 3
+0001362 | 2020-08-29, 19:01:12.780822 [debug] - 140552854079232 added event
+0001364 | 2020-08-29, 19:01:12.780841 [info] - trade message: Message type: Cancel
+0001365 | 2020-08-29, 19:01:12.780863 [debug] - 140552845686528 added event
+0001366 | 2020-08-29, 19:01:12.780865 [debug] - have new task, queue is of length 3
+0001367 | 2020-08-29, 19:01:12.780888 [info] - trade message: Message type: Cancel
+0001368 | 2020-08-29, 19:01:12.780903 [debug] - have new task, queue is of length 2
+0001369 | 2020-08-29, 19:01:12.780911 [debug] - 140552845686528 added event
+0001370 | 2020-08-29, 19:01:12.780916 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001371 | 2020-08-29, 19:01:12.780940 [debug] - have new task, queue is of length 2
+0001372 | 2020-08-29, 19:01:12.780955 [info] - trade message: Message type: Execution
+0001373 | 2020-08-29, 19:01:12.780959 [debug] - 140552845686528 added event
+0001374 | 2020-08-29, 19:01:12.780970 [debug] - have new task, queue is of length 2
+0001375 | 2020-08-29, 19:01:12.780987 [info] - trade message: Message type: Execution
+0001376 | 2020-08-29, 19:01:12.781004 [debug] - have new task, queue is of length 1
+0001377 | 2020-08-29, 19:01:12.781010 [debug] - 140552845686528 added event
+0001378 | 2020-08-29, 19:01:12.781021 [info] - trade message: Message type: Execution
+0001379 | 2020-08-29, 19:01:12.781044 [debug] - have new task, queue is of length 1
+0001380 | 2020-08-29, 19:01:12.781081 [info] - trade message: Message type: Execution
+0001381 | 2020-08-29, 19:01:12.781083 [debug] - 140552845686528 added event
+0001382 | 2020-08-29, 19:01:12.781104 [debug] - have new task, queue is of length 1
+0001383 | 2020-08-29, 19:01:12.781121 [info] - trade message: Message type: Execution
+0001384 | 2020-08-29, 19:01:12.781147 [debug] - have new task, queue is of length 1
+0001385 | 2020-08-29, 19:01:12.781148 [debug] - 140552845686528 added event
+0001386 | 2020-08-29, 19:01:12.781171 [info] - trade message: Message type: Execution
+0001387 | 2020-08-29, 19:01:12.781215 [debug] - have new task, queue is of length 1
+0001388 | 2020-08-29, 19:01:12.781216 [debug] - 140552845686528 added event
+0001389 | 2020-08-29, 19:01:12.781240 [info] - trade message: Message type: Execution
+0001391 | 2020-08-29, 19:01:12.781288 [debug] - 140552845686528 added event
+0001390 | 2020-08-29, 19:01:12.781288 [debug] - have new task, queue is of length 1
+0001393 | 2020-08-29, 19:01:12.781328 [info] - trade message: Message type: Execution
+0001392 | 2020-08-29, 19:01:12.781325 [debug] - 140552854079232 added event
+0001394 | 2020-08-29, 19:01:12.781359 [debug] - have new task, queue is of length 2
+0001395 | 2020-08-29, 19:01:12.781361 [debug] - 140552845686528 added event
+0001396 | 2020-08-29, 19:01:12.781415 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001397 | 2020-08-29, 19:01:12.781439 [debug] - have new task, queue is of length 1
+0001398 | 2020-08-29, 19:01:12.781451 [info] - trade message: Message type: Cancel
+0001399 | 2020-08-29, 19:01:12.781455 [debug] - 140552845686528 added event
+0001400 | 2020-08-29, 19:01:12.781465 [debug] - have new task, queue is of length 1
+0001401 | 2020-08-29, 19:01:12.781485 [info] - trade message: Message type: Cancel
+0001402 | 2020-08-29, 19:01:12.781508 [debug] - have new task, queue is of length 1
+0001403 | 2020-08-29, 19:01:12.781510 [debug] - 140552845686528 added event
+0001404 | 2020-08-29, 19:01:12.781521 [info] - trade message: Message type: Cancel
+0001405 | 2020-08-29, 19:01:12.781561 [debug] - have new task, queue is of length 1
+0001406 | 2020-08-29, 19:01:12.781583 [debug] - 140552845686528 added event
+0001407 | 2020-08-29, 19:01:12.781598 [info] - trade message: Message type: Cancel
+0001408 | 2020-08-29, 19:01:12.781654 [debug] - have new task, queue is of length 1
+0001409 | 2020-08-29, 19:01:12.781655 [debug] - 140552845686528 added event
+0001410 | 2020-08-29, 19:01:12.781668 [info] - trade message: Message type: Cancel
+0001411 | 2020-08-29, 19:01:12.781705 [debug] - have new task, queue is of length 1
+0001412 | 2020-08-29, 19:01:12.781705 [debug] - 140552845686528 added event
+0001413 | 2020-08-29, 19:01:12.781718 [info] - trade message: Message type: Cancel
+0001414 | 2020-08-29, 19:01:12.781755 [debug] - have new task, queue is of length 1
+0001415 | 2020-08-29, 19:01:12.781756 [debug] - 140552845686528 added event
+0001416 | 2020-08-29, 19:01:12.781769 [info] - trade message: Message type: Cancel
+0001417 | 2020-08-29, 19:01:12.781806 [debug] - have new task, queue is of length 1
+0001418 | 2020-08-29, 19:01:12.781807 [debug] - 140552845686528 added event
+0001419 | 2020-08-29, 19:01:12.781820 [info] - trade message: Message type: Cancel
+0001420 | 2020-08-29, 19:01:12.781857 [debug] - have new task, queue is of length 1
+0001421 | 2020-08-29, 19:01:12.781858 [debug] - 140552845686528 added event
+0001422 | 2020-08-29, 19:01:12.781871 [info] - trade message: Message type: Execution
+0001423 | 2020-08-29, 19:01:12.781908 [debug] - have new task, queue is of length 1
+0001424 | 2020-08-29, 19:01:12.781909 [debug] - 140552845686528 added event
+0001425 | 2020-08-29, 19:01:12.781922 [info] - trade message: Message type: Execution
+0001426 | 2020-08-29, 19:01:12.781959 [debug] - have new task, queue is of length 1
+0001427 | 2020-08-29, 19:01:12.781960 [debug] - 140552845686528 added event
+0001428 | 2020-08-29, 19:01:12.781973 [info] - trade message: Message type: Execution
+0001429 | 2020-08-29, 19:01:12.781998 [debug] - have new task, queue is of length 1
+0001431 | 2020-08-29, 19:01:12.782011 [debug] - 140552845686528 added event
+0001430 | 2020-08-29, 19:01:12.782002 [debug] - 140552854079232 added event
+0001432 | 2020-08-29, 19:01:12.782011 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001433 | 2020-08-29, 19:01:12.782052 [debug] - have new task, queue is of length 1
+0001434 | 2020-08-29, 19:01:12.782057 [debug] - 140552845686528 added event
+0001435 | 2020-08-29, 19:01:12.782066 [info] - trade message: Message type: HiddenExecution
+0001436 | 2020-08-29, 19:01:12.782080 [debug] - have new task, queue is of length 1
+0001437 | 2020-08-29, 19:01:12.782092 [info] - trade message: Message type: Execution
+0001438 | 2020-08-29, 19:01:12.782101 [debug] - 140552845686528 added event
+0001439 | 2020-08-29, 19:01:12.782106 [debug] - have new task, queue is of length 1
+0001440 | 2020-08-29, 19:01:12.782125 [info] - trade message: Message type: Execution
+0001441 | 2020-08-29, 19:01:12.782145 [debug] - have new task, queue is of length 1
+0001442 | 2020-08-29, 19:01:12.782146 [debug] - 140552845686528 added event
+0001443 | 2020-08-29, 19:01:12.782159 [info] - trade message: Message type: Execution
+0001444 | 2020-08-29, 19:01:12.782196 [debug] - have new task, queue is of length 1
+0001445 | 2020-08-29, 19:01:12.782197 [debug] - 140552845686528 added event
+0001446 | 2020-08-29, 19:01:12.782212 [info] - trade message: Message type: Cancel
+0001447 | 2020-08-29, 19:01:12.782249 [debug] - have new task, queue is of length 1
+0001448 | 2020-08-29, 19:01:12.782250 [debug] - 140552845686528 added event
+0001449 | 2020-08-29, 19:01:12.782263 [info] - trade message: Message type: Cancel
+0001450 | 2020-08-29, 19:01:12.782330 [debug] - have new task, queue is of length 1
+0001451 | 2020-08-29, 19:01:12.782330 [debug] - 140552845686528 added event
+0001452 | 2020-08-29, 19:01:12.782369 [info] - trade message: Message type: Execution
+0001453 | 2020-08-29, 19:01:12.782407 [debug] - have new task, queue is of length 1
+0001454 | 2020-08-29, 19:01:12.782408 [debug] - 140552845686528 added event
+0001455 | 2020-08-29, 19:01:12.782422 [info] - trade message: Message type: Cancel
+0001456 | 2020-08-29, 19:01:12.782459 [debug] - have new task, queue is of length 1
+0001457 | 2020-08-29, 19:01:12.782460 [debug] - 140552845686528 added event
+0001458 | 2020-08-29, 19:01:12.782473 [info] - trade message: Message type: Cancel
+0001459 | 2020-08-29, 19:01:12.782510 [debug] - have new task, queue is of length 1
+0001460 | 2020-08-29, 19:01:12.782511 [debug] - 140552845686528 added event
+0001461 | 2020-08-29, 19:01:12.782524 [info] - trade message: Message type: Cancel
+0001462 | 2020-08-29, 19:01:12.782560 [debug] - have new task, queue is of length 1
+0001463 | 2020-08-29, 19:01:12.782561 [debug] - 140552845686528 added event
+0001464 | 2020-08-29, 19:01:12.782574 [info] - trade message: Message type: Cancel
+0001465 | 2020-08-29, 19:01:12.782610 [debug] - have new task, queue is of length 1
+0001466 | 2020-08-29, 19:01:12.782611 [debug] - 140552845686528 added event
+0001467 | 2020-08-29, 19:01:12.782624 [info] - trade message: Message type: Cancel
+0001468 | 2020-08-29, 19:01:12.782656 [debug] - have new task, queue is of length 2
+0001470 | 2020-08-29, 19:01:12.782660 [debug] - 140552845686528 added event
+0001471 | 2020-08-29, 19:01:12.782669 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001469 | 2020-08-29, 19:01:12.782659 [debug] - 140552854079232 added event
+0001472 | 2020-08-29, 19:01:12.782688 [debug] - have new task, queue is of length 1
+0001473 | 2020-08-29, 19:01:12.782708 [debug] - 140552845686528 added event
+0001474 | 2020-08-29, 19:01:12.782709 [info] - trade message: Message type: Cancel
+0001475 | 2020-08-29, 19:01:12.782733 [debug] - have new task, queue is of length 1
+0001476 | 2020-08-29, 19:01:12.782746 [info] - trade message: Message type: Cancel
+0001477 | 2020-08-29, 19:01:12.782753 [debug] - 140552845686528 added event
+0001478 | 2020-08-29, 19:01:12.782760 [debug] - have new task, queue is of length 1
+0001479 | 2020-08-29, 19:01:12.782773 [info] - trade message: Message type: Cancel
+0001480 | 2020-08-29, 19:01:12.782796 [debug] - have new task, queue is of length 1
+0001481 | 2020-08-29, 19:01:12.782796 [debug] - 140552845686528 added event
+0001482 | 2020-08-29, 19:01:12.782810 [info] - trade message: Message type: Cancel
+0001483 | 2020-08-29, 19:01:12.782847 [debug] - have new task, queue is of length 1
+0001484 | 2020-08-29, 19:01:12.782847 [debug] - 140552845686528 added event
+0001485 | 2020-08-29, 19:01:12.782861 [info] - trade message: Message type: Cancel
+0001486 | 2020-08-29, 19:01:12.782897 [debug] - have new task, queue is of length 1
+0001487 | 2020-08-29, 19:01:12.782898 [debug] - 140552845686528 added event
+0001488 | 2020-08-29, 19:01:12.782911 [info] - trade message: Message type: Cancel
+0001489 | 2020-08-29, 19:01:12.782947 [debug] - have new task, queue is of length 1
+0001490 | 2020-08-29, 19:01:12.782948 [debug] - 140552845686528 added event
+0001491 | 2020-08-29, 19:01:12.782961 [info] - trade message: Message type: Cancel
+0001492 | 2020-08-29, 19:01:12.782997 [debug] - have new task, queue is of length 1
+0001493 | 2020-08-29, 19:01:12.782998 [debug] - 140552845686528 added event
+0001494 | 2020-08-29, 19:01:12.783012 [info] - trade message: Message type: Cancel
+0001495 | 2020-08-29, 19:01:12.783056 [debug] - have new task, queue is of length 1
+0001496 | 2020-08-29, 19:01:12.783057 [debug] - 140552845686528 added event
+0001497 | 2020-08-29, 19:01:12.783071 [info] - trade message: Message type: HiddenExecution
+0001498 | 2020-08-29, 19:01:12.783108 [debug] - have new task, queue is of length 1
+0001499 | 2020-08-29, 19:01:12.783109 [debug] - 140552845686528 added event
+0001500 | 2020-08-29, 19:01:12.783122 [info] - trade message: Message type: HiddenExecution
+0001501 | 2020-08-29, 19:01:12.783159 [debug] - have new task, queue is of length 1
+0001502 | 2020-08-29, 19:01:12.783160 [debug] - 140552845686528 added event
+0001503 | 2020-08-29, 19:01:12.783173 [info] - trade message: Message type: HiddenExecution
+0001504 | 2020-08-29, 19:01:12.783210 [debug] - have new task, queue is of length 1
+0001505 | 2020-08-29, 19:01:12.783211 [debug] - 140552845686528 added event
+0001506 | 2020-08-29, 19:01:12.783224 [info] - trade message: Message type: HiddenExecution
+0001507 | 2020-08-29, 19:01:12.783261 [debug] - have new task, queue is of length 1
+0001508 | 2020-08-29, 19:01:12.783261 [debug] - 140552845686528 added event
+0001510 | 2020-08-29, 19:01:12.783276 [debug] - 140552854079232 added event
+0001509 | 2020-08-29, 19:01:12.783275 [info] - trade message: Message type: Cancel
+0001511 | 2020-08-29, 19:01:12.783310 [debug] - have new task, queue is of length 2
+0001512 | 2020-08-29, 19:01:12.783312 [debug] - 140552845686528 added event
+0001513 | 2020-08-29, 19:01:12.783325 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001514 | 2020-08-29, 19:01:12.783344 [debug] - have new task, queue is of length 1
+0001515 | 2020-08-29, 19:01:12.783356 [info] - trade message: Message type: Cancel
+0001516 | 2020-08-29, 19:01:12.783363 [debug] - 140552845686528 added event
+0001517 | 2020-08-29, 19:01:12.783370 [debug] - have new task, queue is of length 1
+0001518 | 2020-08-29, 19:01:12.783389 [info] - trade message: Message type: HiddenExecution
+0001519 | 2020-08-29, 19:01:12.783409 [debug] - have new task, queue is of length 1
+0001520 | 2020-08-29, 19:01:12.783410 [debug] - 140552845686528 added event
+0001521 | 2020-08-29, 19:01:12.783423 [info] - trade message: Message type: HiddenExecution
+0001522 | 2020-08-29, 19:01:12.783460 [debug] - have new task, queue is of length 1
+0001523 | 2020-08-29, 19:01:12.783461 [debug] - 140552845686528 added event
+0001524 | 2020-08-29, 19:01:12.783474 [info] - trade message: Message type: Cancel
+0001525 | 2020-08-29, 19:01:12.783510 [debug] - have new task, queue is of length 1
+0001526 | 2020-08-29, 19:01:12.783511 [debug] - 140552845686528 added event
+0001527 | 2020-08-29, 19:01:12.783524 [info] - trade message: Message type: Cancel
+0001528 | 2020-08-29, 19:01:12.783560 [debug] - have new task, queue is of length 1
+0001529 | 2020-08-29, 19:01:12.783561 [debug] - 140552845686528 added event
+0001530 | 2020-08-29, 19:01:12.783575 [info] - trade message: Message type: Execution
+0001531 | 2020-08-29, 19:01:12.783611 [debug] - have new task, queue is of length 1
+0001532 | 2020-08-29, 19:01:12.783612 [debug] - 140552845686528 added event
+0001533 | 2020-08-29, 19:01:12.783625 [info] - trade message: Message type: Execution
+0001534 | 2020-08-29, 19:01:12.783662 [debug] - have new task, queue is of length 1
+0001535 | 2020-08-29, 19:01:12.783664 [debug] - 140552845686528 added event
+0001536 | 2020-08-29, 19:01:12.783675 [info] - trade message: Message type: Execution
+0001537 | 2020-08-29, 19:01:12.783710 [debug] - have new task, queue is of length 1
+0001538 | 2020-08-29, 19:01:12.783711 [debug] - 140552845686528 added event
+0001539 | 2020-08-29, 19:01:12.783724 [info] - trade message: Message type: Cancel
+0001540 | 2020-08-29, 19:01:12.783761 [debug] - have new task, queue is of length 1
+0001541 | 2020-08-29, 19:01:12.783762 [debug] - 140552845686528 added event
+0001542 | 2020-08-29, 19:01:12.783775 [info] - trade message: Message type: Cancel
+0001543 | 2020-08-29, 19:01:12.783811 [debug] - have new task, queue is of length 1
+0001544 | 2020-08-29, 19:01:12.783811 [debug] - 140552845686528 added event
+0001545 | 2020-08-29, 19:01:12.783831 [info] - trade message: Message type: Cancel
+0001546 | 2020-08-29, 19:01:12.783847 [debug] - have new task, queue is of length 1
+0001548 | 2020-08-29, 19:01:12.783859 [info] - subscriberbest ask Buy37@5.8e+06 best bid Buy37@5.8e+06
+0001549 | 2020-08-29, 19:01:12.783868 [debug] - 140552845686528 added event
+0001547 | 2020-08-29, 19:01:12.783849 [debug] - 140552854079232 added event
+0001550 | 2020-08-29, 19:01:12.783878 [debug] - have new task, queue is of length 1
+0001551 | 2020-08-29, 19:01:12.783908 [info] - trade message: Message type: Cancel
+0001552 | 2020-08-29, 19:01:12.783914 [debug] - 140552845686528 added event
+0001553 | 2020-08-29, 19:01:12.783923 [debug] - have new task, queue is of length 1
+0001554 | 2020-08-29, 19:01:12.783935 [info] - trade message: Message type: Cancel
+0001555 | 2020-08-29, 19:01:12.783956 [debug] - have new task, queue is of length 1
+0001556 | 2020-08-29, 19:01:12.783957 [debug] - 140552845686528 added event
+0001557 | 2020-08-29, 19:01:12.783970 [info] - trade message: Message type: Cancel
+0001558 | 2020-08-29, 19:01:12.784009 [debug] - have new task, queue is of length 1
+0001559 | 2020-08-29, 19:01:12.784010 [debug] - 140552845686528 added event
+0001560 | 2020-08-29, 19:01:12.784023 [info] - trade message: Message type: Cancel
+0001561 | 2020-08-29, 19:01:12.784061 [debug] - have new task, queue is of length 1
+0001562 | 2020-08-29, 19:01:12.784062 [debug] - 140552845686528 added event
+0001563 | 2020-08-29, 19:01:12.784075 [info] - trade message: Message type: Cancel
+0001564 | 2020-08-29, 19:01:12.784109 [debug] - have new task, queue is of length 1
+0001565 | 2020-08-29, 19:01:12.784110 [debug] - 140552845686528 added event
+0001566 | 2020-08-29, 19:01:12.784124 [info] - trade message: Message type: TradingHalt
+0001567 | 2020-08-29, 19:01:12.784161 [debug] - have new task, queue is of length 1
+0001568 | 2020-08-29, 19:01:12.784162 [debug] - 140552845686528 added event
+0001569 | 2020-08-29, 19:01:12.784176 [info] - trade message: Message type: Execution
+0001570 | 2020-08-29, 19:01:12.784213 [debug] - have new task, queue is of length 1
+0001571 | 2020-08-29, 19:01:12.784214 [debug] - 140552845686528 added event
+0001572 | 2020-08-29, 19:01:12.784228 [info] - trade message: Message type: Cancel
+0001573 | 2020-08-29, 19:01:12.784266 [debug] - have new task, queue is of length 1
+0001574 | 2020-08-29, 19:01:12.784267 [debug] - 140552845686528 added event
+0001575 | 2020-08-29, 19:01:12.784280 [info] - trade message: Message type: Execution
+0001576 | 2020-08-29, 19:01:12.784317 [debug] - have new task, queue is of length 1
+0001577 | 2020-08-29, 19:01:12.784318 [debug] - 140552845686528 added event
+0001578 | 2020-08-29, 19:01:12.784332 [info] - trade message: Message type: Cancel
+0001579 | 2020-08-29, 19:01:12.784369 [debug] - have new task, queue is of length 1
+0001580 | 2020-08-29, 19:01:12.784370 [debug] - 140552845686528 added event
+0001581 | 2020-08-29, 19:01:12.784383 [info] - trade message: Message type: Cancel
+0001582 | 2020-08-29, 19:01:12.784419 [debug] - have new task, queue is of length 1
+0001583 | 2020-08-29, 19:01:12.784420 [debug] - 140552845686528 added event
+0001584 | 2020-08-29, 19:01:12.784434 [info] - trade message: Message type: Execution
+0001585 | 2020-08-29, 19:01:12.784471 [debug] - have new task, queue is of length 17
+0001586 | 2020-08-29, 19:01:12.784472 [debug] - 140552845686528 added event
+0001588 | 2020-08-29, 19:01:12.784486 [info] - trade message: Message type: Execution
+0001587 | 2020-08-29, 19:01:12.784475 [debug] - 140552854079232 added event
+0001589 | 2020-08-29, 19:01:12.784503 [debug] - have new task, queue is of length 16
+0001590 | 2020-08-29, 19:01:12.784525 [debug] - have new task, queue is of length 16
+0001591 | 2020-08-29, 19:01:12.784528 [debug] - 140552845686528 added event
+0001592 | 2020-08-29, 19:01:12.784542 [debug] - have new task, queue is of length 15
+0001593 | 2020-08-29, 19:01:12.784557 [debug] - have new task, queue is of length 14
+0001595 | 2020-08-29, 19:01:12.784579 [debug] - have new task, queue is of length 14
+0001594 | 2020-08-29, 19:01:12.784579 [debug] - 140552845686528 added event
+0001596 | 2020-08-29, 19:01:12.784596 [debug] - have new task, queue is of length 13
+0001597 | 2020-08-29, 19:01:12.784611 [debug] - have new task, queue is of length 12
+0001598 | 2020-08-29, 19:01:12.784624 [debug] - have new task, queue is of length 11
+0001599 | 2020-08-29, 19:01:12.784631 [debug] - 140552845686528 added event
+0001600 | 2020-08-29, 19:01:12.784637 [debug] - have new task, queue is of length 11
+0001601 | 2020-08-29, 19:01:12.784658 [debug] - have new task, queue is of length 10
+0001602 | 2020-08-29, 19:01:12.784672 [debug] - have new task, queue is of length 9
+0001604 | 2020-08-29, 19:01:12.784686 [debug] - have new task, queue is of length 9

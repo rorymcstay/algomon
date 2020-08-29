@@ -18,6 +18,8 @@ private:
     Side _side;
 
 public:
+    Quote(){}
+    ~Quote(){}
     Side getside() const { return _side; }
     void setside(Side side) { _side = side; }
 

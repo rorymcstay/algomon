@@ -4,6 +4,7 @@
 #include <Enums.h>
 #include "Publisher.h"
 #include "Threaded.h"
+#include <logger.h>
 #include <map>
 
 namespace engine
@@ -22,12 +23,24 @@ public:
     {
         _publishers[evt_] = publisher_;
     }
+    void linkPublishers(domain::EventType leader_, domain::EventType follower_)
+    {
+        if(_publishers.find(follower_) != _publishers.end() && _publishers.find(leader_) != _publishers.end())
+        {            
+            _publishers[leader_]->setlinkedThread(_publishers[follower_]);
+        }
+        else
+        {
+            LOG_ERROR("Publishers not initialised.");
+        }
+    }
 
     void runPublishers()
     {
         for (auto& pub : _publishers)
         {
-            pub.second->initalise();
+            std::string thread_name = enum2str(pub.first);
+            pub.second->initalise(thread_name);
         }
     }
 };
