@@ -15,3 +15,8 @@ else()
     target_include_directories(domain PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 endif()
 
+install(TARGETS domain
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib/static)
+

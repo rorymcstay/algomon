@@ -5,12 +5,12 @@ set (CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_BUILD_TYPE Debug)
 
-set(CMAKE_CXX_COMPILER /usr/bin/g++-8)
 add_compile_options(
     -Wall -gdwarf-2 -ggdb -g3 # debug flags
     -DBOOST_LOG_DYN_LINK -lboost_log 
     -lboost_thread -lboost_log_setup # boost loggin reqs
     -lpthread -lboost_system 
+    -ljsoncpp -DCURL_STATICLIB
 )
 find_package (Threads)
 
@@ -42,6 +42,18 @@ if (Boost_FOUND)
   include_directories (SYSTEM ${Boost_INCLUDE_DIR})
 endif()
 
+##################
+# find json module
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(JSONCPP jsoncpp)
+if (PkgConfig_FOUND)
+    message("   jsoncpp include: ${JSONCPP_INCLUDE_DIRS}")
+    message("   jsoncpp libraries: ${JSONCPP_LIBRARIES}")
+endif()
+
+
+include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)
+
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_CURRENT_SOURCE_DIR}/bin)
@@ -50,10 +62,14 @@ SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/lib)
 SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/lib)
 SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/lib)
 
-
 add_subdirectory(utils)
 add_subdirectory(domain)
 add_subdirectory(engine)
+add_subdirectory(iex_api)
+add_subdirectory(iex_provider)
 add_subdirectory(app)
+
+
+
 
 

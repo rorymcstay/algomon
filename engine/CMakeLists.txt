@@ -1,4 +1,3 @@
-
 set(LIB_SOURCES 
         Subscriber.cpp
         Threaded.cpp
@@ -16,3 +15,7 @@ else()
     target_link_libraries(engine LINK_PUBLIC utils domain)
     target_include_directories(engine PUBLIC ${DOMAIN_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR})
 endif()
+install(TARGETS engine 
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib/static)

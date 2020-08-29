@@ -6,7 +6,6 @@ set(LIB_SOURCES
         logger.cpp
 )
 
-
 find_package (Boost 1.55.0 REQUIRED COMPONENTS log log_setup system filesystem)
 
 if(TARGET utils)
@@ -26,3 +25,7 @@ else()
 
 endif()
 
+install(TARGETS utils
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib/static)
