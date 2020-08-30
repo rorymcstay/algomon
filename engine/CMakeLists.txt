@@ -6,6 +6,10 @@ set(LIB_SOURCES
         Task.cpp
         Worker.cpp
         ThreadPool.cpp
+
+        StrategyEngine.h
+        Strategy.h
+        ConfigManager.h
 )
 
 if(TARGET engine)
