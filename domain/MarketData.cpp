@@ -8,9 +8,13 @@ namespace domain
 {
     MarketData::MarketData(const std::vector<std::string>& data)
     :   Event(EventType::MarketData, TimeType::Linked)
+    ,   EMPTY_QUOTE()
+    ,   _bids()
+    ,   _asks()
+    ,   _levels(0)
     {
-        int level(1);
-        int i(0);
+        uint64_t level(1);
+        uint64_t i(0);
         _levels = 30;
         _asks.reserve(_levels);
         _bids.reserve(_levels);

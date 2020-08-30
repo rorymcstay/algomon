@@ -20,11 +20,11 @@ public:
 
     GETSET(Quotes,      bids);
     GETSET(Quotes,      asks);
-    GETSET(int,         levels);
+    GETSET(uint64_t,         levels);
 
     MarketData(const std::vector<std::string>& data);
     ~MarketData(){}
-    inline const Quote& askLevel(int level) const 
+    inline const Quote& askLevel(uint64_t level) const 
     {
         if (!_asks.empty() && _asks.size() <= level)
         {
@@ -35,7 +35,7 @@ public:
             return EMPTY_QUOTE;
         }
     }
-    inline const Quote& bidLevel(int level) const
+    inline const Quote& bidLevel(uint64_t level) const
     {
         if (!_bids.empty() && _bids.size() <= level)
         {
@@ -50,7 +50,7 @@ public:
 
 inline std::ostream& operator << (std::ostream& out, const MarketData& md)
 {
-    int level = 1;
+    uint64_t level = 1;
     while (level <= md.getlevels())
     {
         out << "level: " << md.askLevel(level-1);
@@ -61,7 +61,7 @@ inline std::ostream& operator << (std::ostream& out, const MarketData& md)
 
 inline std::ostream& operator << (std::ostream& out, const MarketData* md)
 {
-    int level = 1;
+    uint64_t level = 1;
     while (level <= md->getlevels())
     {
         out << "level: " << md->askLevel(level-1);

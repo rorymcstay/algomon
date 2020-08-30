@@ -49,10 +49,14 @@ public:
 
     Publisher(std::shared_ptr<ThreadPool> threadPool_,
               const std::string& connectionString)
-    :   _threadPool(threadPool_)
+    :   _run_lock()
+    ,   _thread()
+    ,   _threadPool(threadPool_)
     ,   _connectionString(connectionString)
-    ,   _increment(1)
+    ,   _paused()
+    ,   _time()
     ,   _msgNum(0)
+    ,   _increment(1)
     {
         LOG_INFO("publisher for " << connectionString << " created.");
     }
@@ -62,7 +66,7 @@ public:
 
 private:
     virtual const void updateSubscribers(const std::shared_ptr<const DataType>& data_)
-    { 
+    {
         _threadPool->queueEvent<DataType>(data_);
         LOG_DEBUG(std::this_thread::get_id() <<" added event");
         _msgNum++;
