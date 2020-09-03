@@ -4,6 +4,7 @@ project(algomon C CXX)
 set(LIB_SOURCES 
         include.hpp 
         logger.cpp
+        cli_opts.h
 )
 
 find_package (Boost 1.55.0 REQUIRED COMPONENTS log log_setup system filesystem)

@@ -38,6 +38,7 @@ inline std::string getThreadName()
 #define LOG_DEBUG(message)   LOG(debug) << message << LOG_POST_FIX
 #define LOG_INFO(message)    LOG(info) << message << LOG_POST_FIX
 #define LOG_WARNING(message) LOG(warning) << message << LOG_POST_FIX
+#define LOG_WARN(message)    LOG_WARNING(message)
 #define LOG_ERROR(message)   LOG(error) << message << LOG_POST_FIX
 #define LOG_FATAL(message)   LOG(fatal) << message << LOG_POST_FIX
 
@@ -50,9 +51,9 @@ inline std::string getThreadName()
 #define LOCK_DEBUG(message)\
     {\
          std::lock_guard<std::mutex> lk(io_mutex);\
-         LOG(trace) << __FILE__<< ":" << __LINE__ << #message <<" got lock";\
+         LOG(trace) << __FILENAME__<< ":" << __LINE__ << #message <<" got lock";\
     }
-
+#define LOG_VAR(var) #var"='" << var  << "', "
 
 #endif
 
