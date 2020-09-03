@@ -1,34 +1,35 @@
 <AlgomonConfig>
-    <proto topicname="market_data" type="MarketData"/>
-    <proto topicname="trade_message" type="TradeMessage"/>
-    <FeedManager eventtype="MarketData">
-        <Feed
+    <proto>
+        <Topic name="market_data" filter="*"/>
+        <Topic name="trade_message" filter="*"/>
+    </proto>
+    <FeedConfigs>
+        <FeedConfig
             library="csvfeed_plugin"
+            name="appl_book"
             factorymethod="registerCsvFeedHandler"
             connectionstring="file:///home/rory/dev/algomon/data/filename"
             eventtype="MarketData"
             topicname="market_data"
             strategykey="AAPL"
             enabled="False" />
-        <Feed
+        <FeedConfig
             library="csvfeed_plugin"
+            name="appl_messages"
             factorymethod="registerCsvFeedHandler"
             connectionstring="file:///home/rory/dev/algomon/data/filename"
             eventtype="TradeMessage"
             topicname="trade_message"
             strategykey="AAPL"
             enabled="False" />
-    </FeedManager>
+    </FeedConfigs>
     <EngineConfig
         name="analytic_engine"
+        library="strategy"
         factorymethod="registerAnalyticStrategy"
         strategykey="ticker"
         strategythreads="4"
         >
-        <Topics>
-            <Topic name="MarketData" filter="*"/>
-            <Topic name="TradeMessage" filter="*"/>
-        <Topics/>
     </EngineConfig>
 </AlgomonConfig>
 

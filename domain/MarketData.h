@@ -14,14 +14,16 @@ namespace domain {
 class MarketData : public Event
 {
 
+
+
 public:
     typedef std::vector<Quote> Quotes;
     Quote EMPTY_QUOTE;
-
-    GETSET(Quotes,      bids);
-    GETSET(Quotes,      asks);
-    GETSET(uint64_t,         levels);
-
+private:
+    GETSET(Quotes,          bids);
+    GETSET(Quotes,          asks);
+    GETSET(uint64_t,        levels);
+public:
     MarketData(const std::vector<std::string>& data);
     ~MarketData(){}
     inline const Quote& askLevel(uint64_t level) const 

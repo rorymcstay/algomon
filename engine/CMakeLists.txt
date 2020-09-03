@@ -7,17 +7,26 @@ set(LIB_SOURCES
         Worker.cpp
         ThreadPool.cpp
 
-        StrategyEngine.h
-        Strategy.h
-        ConfigManager.h
+        StrategyEngine.cpp
+        Strategy.cpp
+        ConfigManager.cpp
 )
 
 if(TARGET engine)
     message("publisher already defined")
 else()
     add_library(engine SHARED ${LIB_SOURCES})
-    target_link_libraries(engine LINK_PUBLIC utils domain)
-    target_include_directories(engine PUBLIC ${DOMAIN_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR})
+    target_link_libraries(engine LINK_PUBLIC 
+        utils 
+        domain 
+        tinyxml2 
+        PocoFoundation
+        PocoEncodings
+        PocoNet
+        PocoNetSSL
+        fix8 
+        fix)
+    target_include_directories(engine PUBLIC ${DOMAIN_INCLUDES} ${FIX_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR})
 endif()
 install(TARGETS engine 
         RUNTIME DESTINATION bin

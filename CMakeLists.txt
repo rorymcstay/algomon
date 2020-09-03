@@ -9,8 +9,8 @@ add_compile_options(
     -Wall -gdwarf-2 -ggdb -g3 # debug flags
     -DBOOST_LOG_DYN_LINK -lboost_log 
     -lboost_thread -lboost_log_setup # boost loggin reqs
-    -lpthread -lboost_system 
-    -ljsoncpp -DCURL_STATICLIB
+    -lpthread -lboost_system -lfix8
+    -ljsoncpp -DCURL_STATICLIB -fPIC
 )
 find_package (Threads)
 
@@ -51,6 +51,8 @@ if (PkgConfig_FOUND)
     message("   jsoncpp libraries: ${JSONCPP_LIBRARIES}")
 endif()
 
+include_directories(/home/rory/dev/fix8-1.4.1/stocklib)
+
 
 include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)
 
@@ -63,13 +65,11 @@ SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/lib
 SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/lib)
 
 add_subdirectory(utils)
+add_subdirectory(fix)
 add_subdirectory(domain)
 add_subdirectory(engine)
 add_subdirectory(iex_api)
 add_subdirectory(iex_provider)
 add_subdirectory(app)
-
-
-
 
 

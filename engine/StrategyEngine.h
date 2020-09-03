@@ -1,17 +1,55 @@
+#ifndef STRATEGYENGINE_H
+#define STRATEGYENGINE_H
 #include <string>
 #include <map>
-#include "Strategy.h"
+#include <fix8/f8includes.hpp>
+#include <FIX44_types.hpp>
+#include <FIX44_router.hpp>
+#include <FIX44_classes.hpp>
+
+#include "ConfigManager.h"
 
 
-class StrategyEngine
+namespace engine 
+{
+
+class SessionImpl;
+class Strategy;
+class Allocation;
+using StrategyPtr = std::shared_ptr<Strategy>;
+using AllocationPtr = std::shared_ptr<Allocation>;
+
+// TODO extract fix44 types to includes. using FIX44_Router = FIXRouter
+class StrategyEngine : public FIX8::FIX44::FIX44_Router
 {
 
 public:
-    StrategyEngine();
-    ~StrategyEngine();
+    using Ptr=std::shared_ptr<StrategyEngine>;
+
+    StrategyEngine(SessionImpl& session_, cfg::ConfigManager::Ptr configManager_);
+
+    ~StrategyEngine(){};
     void initialise();
-    Strategy::Ptr getOrCreateStrategy(const std::string& key);
+    const StrategyPtr& getOrCreateStrategy(const std::string& key);
+    const StrategyPtr getStrategyPtr(const std::string& key) const;
+    const StrategyPtr& getStrategyByMessage(const FIX8::Message* msg) const;
+
 private:
-    std::map<std::string, Strategy::Ptr>;
+    SessionImpl&                            _session;
+    cfg::ConfigManager::Ptr                 _configManager;
+    std::map<std::string, StrategyPtr>      _strategies;
+    GETSET(bool,                            enforceSeqCheck)
+    GETSET(domain::StrategyKey,             strategykey);
+
+    bool sendOrderSingle(AllocationPtr& alloc_);
+
+public:
+    virtual bool operator() (const FIX8::FIX44::ExecutionReport *msg) const;
+
+
     
 };
+
+}
+
+#endif

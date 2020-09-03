@@ -54,6 +54,7 @@ inline std::string getThreadName()
          LOG(trace) << __FILENAME__<< ":" << __LINE__ << #message <<" got lock";\
     }
 #define LOG_VAR(var) #var"='" << var  << "', "
+#define LOG_NVP(name_, val_) #name_"='" << val_ << "', "
 
 #endif
 
