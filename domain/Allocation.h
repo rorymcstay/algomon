@@ -28,11 +28,14 @@ public:
     ,   _side(side_)
     ,   _symbol(symbol_)
     {
-        LOG_DEBUG("Created allocation: " << LOG_VAR(this));
+        LOG_DEBUG("Created allocation: " << LOG_NVP("Price", getprice())   
+                                         << LOG_NVP("Qty", getqty()) 
+                                         << LOG_NVP("Side", getside()) 
+                                         << LOG_NVP("Symbol", getsymbol()));
     }
-
 };
 
+/*
 std::ostream& operator<<(std::ostream& stream_, Allocation::Ptr& alloc_)
 {
     return stream_ << LOG_NVP("Price", alloc_->getprice()) 
@@ -40,6 +43,7 @@ std::ostream& operator<<(std::ostream& stream_, Allocation::Ptr& alloc_)
                    << LOG_NVP("Side", alloc_->getside()) 
                    << LOG_NVP("Symbol", alloc_->getsymbol());
 }
+*/
 }
 
 #endif
