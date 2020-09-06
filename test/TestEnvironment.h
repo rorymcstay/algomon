@@ -5,6 +5,7 @@
 #include <memory>
 #include <chrono>
 #include <thread>
+#include <future>
 
 // fix 8
 #include <fix8/f8includes.hpp>
@@ -157,6 +158,7 @@ class TestEnvironment
 public:
     using TestServerInstance = FIX8::SessionInstance<TestFixServer>;
     using TestServerSession= FIX8::ServerSession<TestFixServer>;
+    using EngineSession = FIX8::ClientSession<engine::SessionImpl>;
 private:
     GETSET(unsigned,                                      next_send)
     GETSET(unsigned,                                      next_receive)
@@ -173,8 +175,14 @@ private:
     std::unique_ptr<TestServerSession>                    _session;
     std::thread                                           _server_thread;
 
+    std::unique_ptr<FIX8::FilePersister>                  _filePersister;
+
     cfg::ConfigManager::Ptr                               _configManager;
 
+private:
+    void initalise_server_process(FIX8::ServerSession<TestFixServer>* srv);
+    void server_process(FIX8::ServerSession<TestFixServer> *srv);
+    TestServerInstance* getTestServerInstancePtr(TestServerSession* srv);
 
 public:
     // TODO extract common between Test and Real into factory so that we can change config file locations.
@@ -187,21 +195,38 @@ public:
     ,   _client_config_file("/home/rory/dev/algomon/test/myfix_client.xml")
     ,   _server_config_file("/home/rory/dev/algomon/test/myfix_server.xml")
     ,   _session(std::unique_ptr<TestServerSession>(new TestServerSession(FIX44::ctx(), _server_config_file, "TEST_SERVER")))
+    //,   _server_thread()
+    ,   _filePersister(std::make_unique<FilePersister>(1))
     ,   _configManager()
     {
-        const FIX8::SessionID my_session("TEST_SESSION");
-        // TODO call server_process in seperate thread.
-        //initalise_server_process(_session.get());
-        _server_thread = std::thread(&TestEnvironment::server_process, this, _session.get());
+
+        auto futurePtr = std::async(&TestEnvironment::getTestServerInstancePtr, this, _session.get());
+
+
+        LOG_INFO("client() connection established.");
 
         // TODO poll _server_instance for activation info. Then start client
-        std::unique_ptr<FIX8::ClientSessionBase> mc(new ClientSession<engine::SessionImpl>(
-                   FIX44::ctx(), _client_config_file, "TEST_SESSION"));
+        std::unique_ptr<EngineSession> mc(new EngineSession(
+                   FIX44::ctx(), _client_config_file, "TEST_SESSION" /*, _filePersister.get()*/
+        ));
+
+        /*
+        while(!_server_session and !_server_session->activation_check(0,nullptr))
+            FIX8::hypersleep<FIX8::h_microseconds>(100);
+        while(!mc->session_ptr()->get_connection())
+            FIX8::hypersleep<FIX8::h_microseconds>(100);
+        */
         //_server_thread.join();
         mc->session_ptr()->control() |= Session::printnohb;
         // TODO wait_complete method on client to kill server thread.
         // TODO call client_process in seperate thread and join in wait_tests_complete method.
+
         mc->start(false, _next_send, _next_receive, mc->session_ptr()->get_login_parameters()._davi());
+        _server_instance = futurePtr.get();
+        _server_session = dynamic_cast<TestFixServer*>(_server_instance->session_ptr());
+        _server_session->getRouter().setmessageQueue(_receivedMsgs);
+        _server_instance->session_ptr()->control() |= Session::print;
+        _server_thread = std::thread(&TestEnvironment::server_process, this, _session.get());
     }
 
     template<typename T>
@@ -325,9 +350,7 @@ public:
         }
         return EnvMessage(msg_);
     }
-private:
-    void initalise_server_process(FIX8::ServerSession<TestFixServer>* srv);
-    void server_process(FIX8::ServerSession<TestFixServer> *srv);
+    
 
 };
 

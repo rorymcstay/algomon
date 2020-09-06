@@ -52,15 +52,19 @@ public:
 
 class TestFixServer : public FIX8::Session
 {
-    TestServerRouter _router;
-
+    TestServerRouter      _router;
+    FIX8::FilePersister*  _persistence;
 public:
     TestFixServer(const FIX8::F8MetaCntx& ctx, 
             const FIX8::sender_comp_id& sci,
             FIX8::Persister *persist=nullptr,
             FIX8::Logger *logger=nullptr, FIX8::Logger *plogger=nullptr) 
     :   Session(ctx, sci, persist, logger, plogger)
-    ,   _router(*this) {}
+    ,   _router(*this) 
+    {
+        LOG_INFO("Made fix server!");
+
+    }
 
     TestServerRouter& getRouter() {return _router;}
 

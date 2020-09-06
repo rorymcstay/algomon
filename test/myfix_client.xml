@@ -90,7 +90,7 @@
 		<server name="Host_02" ip="192.168.1.122" port="12345" max_retries="3"/>
 		<server name="Host_04" ip="192.168.1.124" port="12345" max_retries="3"/>
 		<server name="Host_05" ip="192.168.1.125" port="12345" max_retries="3"/>
-		<server name="Host_06" ip="127.0.0.1" port="11001" max_retries="3"/>
+		<server name="Host_06" ip="127.0.0.1" port="11001" max_retries="100"/>
 		<server name="Host_03" ip="192.168.1.123" port="12345" max_retries="3" active="false"/>
 	</server_group>
 
