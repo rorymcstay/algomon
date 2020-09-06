@@ -26,10 +26,10 @@ class StrategyEngine : public FIX8::FIX44::FIX44_Router
 public:
     using Ptr=std::shared_ptr<StrategyEngine>;
 
-    StrategyEngine(SessionImpl& session_, cfg::ConfigManager::Ptr configManager_);
+    StrategyEngine(SessionImpl& session_);
 
     ~StrategyEngine(){};
-    void initialise();
+    void initialise(cfg::ConfigManager::Ptr configManager_);
     const StrategyPtr& getOrCreateStrategy(const std::string& key);
     const StrategyPtr getStrategyPtr(const std::string& key) const;
     const StrategyPtr& getStrategyByMessage(const FIX8::Message* msg) const;
@@ -45,6 +45,7 @@ private:
 
 public:
     virtual bool operator() (const FIX8::FIX44::ExecutionReport *msg) const;
+    virtual bool operator() (const FIX8::FIX44::NewOrderSingle* msg) const;
 
 
     

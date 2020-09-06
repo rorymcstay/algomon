@@ -52,6 +52,9 @@ if (PkgConfig_FOUND)
 endif()
 
 include_directories(/home/rory/dev/fix8-1.4.1/stocklib)
+set(ENGINE_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/engine/*.h)
+set(UTILS_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/utils)
+set(DOMAIN_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/domain)
 
 
 include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)
@@ -71,5 +74,6 @@ add_subdirectory(engine)
 add_subdirectory(iex_api)
 add_subdirectory(iex_provider)
 add_subdirectory(app)
+add_subdirectory(test)
 
 

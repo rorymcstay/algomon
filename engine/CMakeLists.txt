@@ -6,16 +6,18 @@ set(LIB_SOURCES
         Task.cpp
         Worker.cpp
         ThreadPool.cpp
-
+        SessionImpl.cpp
         StrategyEngine.cpp
         Strategy.cpp
         ConfigManager.cpp
 )
 
+set(ENGINE_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR})
 if(TARGET engine)
     message("publisher already defined")
 else()
     add_library(engine SHARED ${LIB_SOURCES})
+
     target_link_libraries(engine LINK_PUBLIC 
         utils 
         domain 

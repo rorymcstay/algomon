@@ -182,7 +182,7 @@ private:
     const ConfigEntry::Ptr getConfigEntry(const std::string& name_); 
 public:
     ConfigManager();
-    void initialise(std::string& configfile_);
+    void initialise(const std::string& configfile_);
     using Ptr = std::shared_ptr<ConfigManager>; 
 private:
     template<typename T> bool loadConfig(

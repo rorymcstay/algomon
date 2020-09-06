@@ -13,9 +13,8 @@ using namespace domain;
 
 namespace engine {
 
-StrategyEngine::StrategyEngine(SessionImpl& session_, cfg::ConfigManager::Ptr configManager_)
+StrategyEngine::StrategyEngine(SessionImpl& session_)
 :   _session(session_)
-,   _configManager(std::move(configManager_))
 {
     EngineConfig::Ptr engineConfig = _configManager->getengineConfig();
 
@@ -59,7 +58,12 @@ const StrategyPtr& StrategyEngine::getStrategyByMessage(const FIX8::Message* msg
     }
 }
 
-void StrategyEngine::initialise(){}
+void StrategyEngine::initialise(
+        cfg::ConfigManager::Ptr configManager_
+)
+{
+    _configManager = configManager_;
+}
 
 const StrategyPtr StrategyEngine::getStrategyPtr(const std::string& name_) const
 {
@@ -81,6 +85,17 @@ const StrategyPtr& StrategyEngine::getOrCreateStrategy(const std::string& name_)
 }
 
 bool StrategyEngine::operator() (const FIX8::FIX44::ExecutionReport *msg) const
+{
+    //TODO Make ExecutionMessage
+    const StrategyPtr strat = getStrategyByMessage(msg);
+    // should use allocator.
+    EvalContext::Ptr ctxt_ = std::make_unique<EvalContext>(domain::EvalEventType::ExecMsg, msg);
+    if (!strat)
+        LOG_WARN("No strategy found for " << LOG_VAR(msg));
+        return false;
+    return strat->evaluate(ctxt_); // TODO Strategy::evaluate to return ReturnType
+}
+bool StrategyEngine::operator() (const FIX8::FIX44::NewOrderSingle* msg) const
 {
     //TODO Make ExecutionMessage
     const StrategyPtr strat = getStrategyByMessage(msg);

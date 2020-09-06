@@ -13,6 +13,8 @@ TARGET_LINK_LIBRARIES(algomon PUBLIC
     ${CMAKE_THREAD_LIBS_INIT}
 )
 
+
+
 add_executable(iex iex.cpp)
 target_link_libraries(iex PUBLIC         
     utils

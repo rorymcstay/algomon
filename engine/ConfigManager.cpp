@@ -14,7 +14,7 @@ ConfigManager::ConfigManager()
     
 }
 
-void ConfigManager::initialise(std::string& configfile_)
+void ConfigManager::initialise(const std::string& configfile_)
 {
     _config.LoadFile(configfile_.c_str());
     _config_root_ptr = _config.FirstChildElement();
