@@ -1,11 +1,12 @@
-find_package (Boost 1.55.0 REQUIRED COMPONENTS log log_setup system filesystem thread)
 set(LIB_SOURCES 
     FixServer.cpp
+    TestEnvironment.cpp
 )
 
 if(TARGET testAlgomon)
     message("publisher already defined")
 else()
+    message("Using engine includes: ${ENGINE_INCLUDES}")
     add_library(testfwk SHARED ${LIB_SOURCES})
     target_include_directories(testfwk PUBLIC 
         ${DOMAIN_INCLUDES} 
@@ -14,15 +15,11 @@ else()
         ${CMAKE_CURRENT_SOURCE_DIR}
     )
     target_link_libraries(testfwk LINK_PUBLIC 
-        utils
-        domain
-        PocoFoundation
-        PocoEncodings
-        PocoNet
-        PocoNetSSL
-        fix8
-        fix
-        )
+        engine
+        ${COMMON_LIBS}
+        ${COMMON_TPP_LIBS}
+        ${COMMON_FIX_LIBS}
+    )
 endif()
 
 if(TARGET testAlgomon)
@@ -36,18 +33,12 @@ else()
         ${ENGINE_INCLUDES} 
         ${CMAKE_CURRENT_SOURCE_DIR}
     )
-
     target_link_libraries( testAlgomon PUBLIC
-        utils
+        testfwk
         engine
-        ${CMAKE_THREAD_LIBS_INIT}
-        ${Boost_LOG_LIBRARY} 
-        ${Boost_SYSTEM_LIBRARY}
-        ${Boost_THREAD_LIBRARY}
-        ${Boost_LOG_SETUP_LIBRARY} 
-        ${CMAKE_THREAD_LIBS_INIT}
-        fix8
-        fix
+        ${COMMON_TPP_LIBS}
+        ${COMMON_FIX_LIBS}
+        ${COMMON_LIBS}
     )
 endif()
 install(TARGETS testfwk

@@ -16,23 +16,6 @@ namespace engine {
 StrategyEngine::StrategyEngine(SessionImpl& session_)
 :   _session(session_)
 {
-    EngineConfig::Ptr engineConfig = _configManager->getengineConfig();
-
-    _enforceSeqCheck = engineConfig->enforceSeqCheck;
-    _strategykey = engineConfig->strategykey;
-
-    for (auto& strategy : _configManager->getstrategyConfigs())
-    {
-        StrategyPtr stratPtr = getOrCreateStrategy(strategy.first);
-        if (stratPtr)
-        {
-            LOG_INFO("Succesfully created strategy. " << LOG_VAR(strategy.first));
-        }
-        else
-        {
-            LOG_INFO("Failed to create strategy " << LOG_VAR(strategy.first));
-        }
-    }
 }
 
 const StrategyPtr& StrategyEngine::getStrategyByMessage(const FIX8::Message* msg) const
@@ -62,7 +45,24 @@ void StrategyEngine::initialise(
         cfg::ConfigManager::Ptr configManager_
 )
 {
+    LOG_INFO("Initializing StrategyEngine");
     _configManager = configManager_;
+    EngineConfig::Ptr engineConfig = _configManager->getengineConfig();
+    _enforceSeqCheck = engineConfig->enforceSeqCheck;
+    _strategykey = engineConfig->strategykey;
+
+    for (auto& strategy : _configManager->getstrategyConfigs())
+    {
+        StrategyPtr stratPtr = getOrCreateStrategy(strategy.first);
+        if (stratPtr)
+        {
+            LOG_INFO("Succesfully created strategy. " << LOG_VAR(strategy.first));
+        }
+        else
+        {
+            LOG_INFO("Failed to create strategy " << LOG_VAR(strategy.first));
+        }
+    }
 }
 
 const StrategyPtr StrategyEngine::getStrategyPtr(const std::string& name_) const

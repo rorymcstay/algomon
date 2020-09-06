@@ -174,14 +174,13 @@ public:
     {
         const FIX8::SessionID my_session("TEST_SESSION");
         // TODO call server_process in seperate thread.
-        server_process<TestFixServer>(_session.get());
+        server_process(_session.get());
 
         std::unique_ptr<FIX8::ClientSessionBase> mc(new ClientSession<engine::SessionImpl>(
                    FIX44::ctx(), _client_config_file, "TEST_SESSION"));
         mc->session_ptr()->control() |= Session::printnohb;
         mc->start(false, _next_send, _next_receive, mc->session_ptr()->get_login_parameters()._davi());
         // TODO call client_process in seperate thread.
-        client_process<engine::SessionImpl>(mc.get());
     }
 
     template<typename T>
@@ -288,12 +287,7 @@ public:
         }
     }
 private:
-    template<typename T>
-    void server_process(ServerSessionBase *srv);
-
-    template<typename T>
-    void client_process(ClientSessionBase *mc);
-
+    void server_process(FIX8::ServerSessionBase *srv);
 
 };
 

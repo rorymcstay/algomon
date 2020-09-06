@@ -7,8 +7,6 @@ set(LIB_SOURCES
         cli_opts.h
 )
 
-find_package (Boost 1.55.0 REQUIRED COMPONENTS log log_setup system filesystem)
-
 if(TARGET utils)
     message("utils already defined")
 else()
@@ -18,10 +16,8 @@ else()
         ${CMAKE_CURRENT_SOURCE_DIR}
         ${Boost_INCLUDE_DIR}
     )
-    target_link_libraries( utils PUBLIC
-        ${Boost_LOG_LIBRARY} 
-        ${Boost_LOG_SETUP_LIBRARY} 
-        ${CMAKE_THREAD_LIBS_INIT}
+    target_link_libraries( utils PRIVATE 
+        ${COMMON_TPP_LIBS}
     )
 
 endif()

@@ -18,17 +18,16 @@ if(TARGET engine)
 else()
     add_library(engine SHARED ${LIB_SOURCES})
 
-    target_link_libraries(engine LINK_PUBLIC 
-        utils 
-        domain 
-        tinyxml2 
-        PocoFoundation
-        PocoEncodings
-        PocoNet
-        PocoNetSSL
-        fix8 
-        fix)
-    target_include_directories(engine PUBLIC ${DOMAIN_INCLUDES} ${FIX_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR})
+    target_link_libraries(engine PRIVATE 
+        ${COMMON_TPP_LIBS}
+        ${COMMON_FIX_LIBS}
+        ${COMMON_LIBS}
+    )
+    target_include_directories(engine PUBLIC 
+        ${DOMAIN_INCLUDES}
+        ${FIX_INCLUDES}
+        ${CMAKE_CURRENT_SOURCE_DIR}
+    )
 endif()
 install(TARGETS engine 
         RUNTIME DESTINATION bin

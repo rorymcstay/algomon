@@ -1,21 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 
-PROJECT(algomon C CXX)
-set (CMAKE_CXX_STANDARD 17)
-
-set(CMAKE_BUILD_TYPE Debug)
-
-add_compile_options(
-    -Wall -gdwarf-2 -ggdb -g3 # debug flags
-    -DBOOST_LOG_DYN_LINK -lboost_log 
-    -lboost_thread -lboost_log_setup # boost loggin reqs
-    -lpthread -lboost_system -lfix8
-    -ljsoncpp -DCURL_STATICLIB -fPIC
-)
-find_package (Threads)
-
-set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
-
 
 MACRO(MACRO_ENSURE_OUT_OF_SOURCE_BUILD MSG)
      STRING(COMPARE EQUAL "${CMAKE_SOURCE_DIR}"
@@ -32,7 +16,26 @@ MACRO_ENSURE_OUT_OF_SOURCE_BUILD(
     "${CMAKE_PROJECT_NAME} requires an out of source build."
 )
 
-find_package (Boost 1.55.0 REQUIRED COMPONENTS system filesystem)
+PROJECT(algomon C CXX)
+set (CMAKE_CXX_STANDARD 17)
+
+set(CMAKE_BUILD_TYPE Debug)
+
+add_compile_options(
+    -Wall -gdwarf-2 -ggdb -g3 # debug flags
+    -DBOOST_LOG_DYN_LINK -lboost_log 
+    -lboost_thread -lboost_log_setup # boost loggin reqs
+    -lpthread -lboost_system 
+    -lfix8 -lFIX44 # fix libs
+    -ljsoncpp -DCURL_STATICLIB 
+    -fPIC
+)
+find_package (Threads)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
+
+
+find_package (Boost 1.55.0 REQUIRED COMPONENTS system filesystem log log_setup thread)
 if (Boost_FOUND)
   # From the offical documentation:
   # Add include directories to the build. [...] If the SYSTEM option is given,
@@ -42,17 +45,31 @@ if (Boost_FOUND)
   include_directories (SYSTEM ${Boost_INCLUDE_DIR})
 endif()
 
-##################
-# find json module
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(JSONCPP jsoncpp)
-if (PkgConfig_FOUND)
-    message("   jsoncpp include: ${JSONCPP_INCLUDE_DIRS}")
-    message("   jsoncpp libraries: ${JSONCPP_LIBRARIES}")
-endif()
+
+# define common libraries
+set(COMMON_TPP_LIBS 
+    ${CMAKE_THREAD_LIBS_INIT}
+    ${Boost_LOG_LIBRARY} 
+    ${Boost_LOG_SETUP_LIBRARY} 
+    ${Boost_SYSTEM_LIBRARY}
+    ${Boost_THREAD_LIBRARY}
+)
+set(COMMON_FIX_LIBS
+        tinyxml2 
+        PocoFoundation
+        PocoEncodings
+        PocoNet
+        PocoNetSSL
+        fix8 
+        FIX44
+)
+set(COMMON_LIBS
+    utils
+    domain
+)
 
 include_directories(/home/rory/dev/fix8-1.4.1/stocklib)
-set(ENGINE_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/engine/*.h)
+set(ENGINE_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/engine)
 set(UTILS_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/utils)
 set(DOMAIN_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/domain)
 
@@ -68,7 +85,6 @@ SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/lib
 SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/lib)
 
 add_subdirectory(utils)
-add_subdirectory(fix)
 add_subdirectory(domain)
 add_subdirectory(engine)
 add_subdirectory(iex_api)

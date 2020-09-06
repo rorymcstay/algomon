@@ -1,18 +1,24 @@
 #define BOOST_LOG_DYN_LINK 1 // necessary when linking the boost_log library dynamically
+// std
 #include <iostream>
+#include <memory>
+#include <thread>
+#include <mutex>
+
 // engine
 #include <Publisher.h>
-#include <memory>
 #include <ThreadPool.h>
 #include <MarketData.h>
 #include <Subscriber.h>
-#include <thread>
 #include <PublisherController.h>
-#include <mutex>
-#include <logger.h>
-#include "cli_opts.h"
 #include <ConfigManager.h>
 
+//utils
+#include <logger.h>
+#include "cli_opts.h"
+
+
+//CLI Opts
 #define CONFIG_FILE     "--config-file"
 #define DRY_RUN         "--dry-run"
 

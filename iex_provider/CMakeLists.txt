@@ -4,8 +4,8 @@ set(LIB_SOURCES
 
 add_library(iex_provider SHARED ${LIB_SOURCES})
 
-TARGET_LINK_LIBRARIES(iex_provider LINK_PUBLIC 
-    utils 
+TARGET_LINK_LIBRARIES(iex_provider PRIVATE
+    utils
     iex_api
 )
 
