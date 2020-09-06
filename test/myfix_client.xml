@@ -19,19 +19,13 @@
 				tabsize="3"
 				persist="file0" />
 
-	<session name="DLD1"
-				sender_comp_id="DLD_TEX"
-				target_comp_id="TEX1_DLD"
+	<session name="TEST_SESSION"
+				sender_comp_id="TEST_SESSION"
+				target_comp_id="TEST_SERVER"
 				tcp_recv_buffer="100663296"
 				tcp_send_buffer="100663296"
 				port="11001"
 				noport="1001"
-				active="true" />
-
-	<session name="DLD2"
-				sender_comp_id="DLD2_TEX"
-				target_comp_id="TEX2_DLD2"
-				port="11002"
 				active="true" />
 
 	<persist name="file0"

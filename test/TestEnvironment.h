@@ -1,20 +1,26 @@
 #ifndef TESTENVIRONMENT_H
 #define TESTENVIRONMENT_H
+// std
 #include <queue>
 #include <memory>
 #include <chrono>
+#include <thread>
+
+// fix 8
 #include <fix8/f8includes.hpp>
 #include <FIX44_types.hpp>
 #include <FIX44_router.hpp>
 #include <FIX44_classes.hpp>
 
-
+//test
 #include "FixServer.h"
 
+//utils/domain
 #include <include.hpp>
 #include <Enums.h>
-#include <ConfigManager.h>
 
+// engine
+#include <ConfigManager.h>
 #include "SessionImpl.h"
 
 /* Tokenizing a string */
@@ -70,6 +76,10 @@ public:
             case(EnvMessageType::MarketData):
             {
                 assert(false && "MarketData events have not yet been implemented");
+            }
+            case(EnvMessageType::UnknownEnvMessageType):
+            {
+                LOG_ERROR("UnknownEnvMessageType!");
             }
         }
         // msg type
@@ -144,20 +154,27 @@ bool compareValues(std::string& msg_, double exp_, double rec_)
 class TestEnvironment
 {
 
-    GETSET(unsigned,                next_send)
-    GETSET(unsigned,                next_receive)
-    GETSET(FIX8::tty_save_state,    save_tty)
-    f8_atomic<bool>                                 _term_received;
+public:
+    using TestServerInstance = FIX8::SessionInstance<TestFixServer>;
+    using TestServerSession= FIX8::ServerSession<TestFixServer>;
+private:
+    GETSET(unsigned,                                      next_send)
+    GETSET(unsigned,                                      next_receive)
+    GETSET(FIX8::tty_save_state,                          save_tty)
+    f8_atomic<bool>                                       _term_received;
 
-    std::queue<const FIX8::Message*>                      _upstreamMessages;
     std::shared_ptr<std::queue<const FIX8::Message*>>     _receivedMsgs;
+    std::string                                           _client_config_file;
+    std::string                                           _server_config_file;
 
-    std::unique_ptr<FIX8::ServerSessionBase>        _session;
-    TestFixServer*                                  _server_session;
-    std::unique_ptr<engine::SessionImpl>            _client_session;
-    cfg::ConfigManager::Ptr                         _configManager;
-    std::string                                     _client_config_file;
-    std::string                                     _server_config_file;
+    TestFixServer*                                        _server_session;
+    TestServerInstance*                                   _server_instance;
+    std::unique_ptr<engine::SessionImpl>                  _client_session;
+    std::unique_ptr<TestServerSession>                    _session;
+    std::thread                                           _server_thread;
+
+    cfg::ConfigManager::Ptr                               _configManager;
+
 
 public:
     // TODO extract common between Test and Real into factory so that we can change config file locations.
@@ -167,20 +184,24 @@ public:
     ,   _save_tty(0)
     ,   _term_received(false)
     ,   _receivedMsgs()
-    ,   _session(std::unique_ptr<ServerSessionBase>(new ServerSession<TestFixServer>(FIX44::ctx(), _server_config_file, "TEST_SERVER")))
+    ,   _client_config_file("/home/rory/dev/algomon/test/myfix_client.xml")
+    ,   _server_config_file("/home/rory/dev/algomon/test/myfix_server.xml")
+    ,   _session(std::unique_ptr<TestServerSession>(new TestServerSession(FIX44::ctx(), _server_config_file, "TEST_SERVER")))
     ,   _configManager()
-    ,   _client_config_file("my_client.xml")
-    ,   _server_config_file("my_server.xml")
     {
         const FIX8::SessionID my_session("TEST_SESSION");
         // TODO call server_process in seperate thread.
-        server_process(_session.get());
+        //initalise_server_process(_session.get());
+        _server_thread = std::thread(&TestEnvironment::server_process, this, _session.get());
 
+        // TODO poll _server_instance for activation info. Then start client
         std::unique_ptr<FIX8::ClientSessionBase> mc(new ClientSession<engine::SessionImpl>(
                    FIX44::ctx(), _client_config_file, "TEST_SESSION"));
+        //_server_thread.join();
         mc->session_ptr()->control() |= Session::printnohb;
+        // TODO wait_complete method on client to kill server thread.
+        // TODO call client_process in seperate thread and join in wait_tests_complete method.
         mc->start(false, _next_send, _next_receive, mc->session_ptr()->get_login_parameters()._davi());
-        // TODO call client_process in seperate thread.
     }
 
     template<typename T>
@@ -246,15 +267,26 @@ public:
                 switch(msg->gettype())
                 {
                     case(EnvMessageType::NewOrderSingle):
+                    {
                         LOG_ERROR("Invalid " << LOG_VAR(msg->gettype()) << " for " << msg->getenvSource());
                         //_session->sendOrderSingle(static_cast<const FIX44::NewOrderSingle*>(msg->getmessage())); 
                         break;
+                    }
                     case(EnvMessageType::ExecutionReport):  
+                    {
                         _server_session->sendExecutionReport(static_cast<const FIX44::ExecutionReport*>(msg->getmessage()));
                         break;
+                    }
                     case(EnvMessageType::MarketData):
+                    {
                         _server_session->sendMarketData(msg); // TODO this should be on the _client instead
                         break;
+                    }
+                    case(EnvMessageType::UnknownEnvMessageType):
+                    {
+                        LOG_ERROR("UnknownEnvMessageType!");
+                        return EnvMessage(msg_);
+                    }
                 }
                 break;
             }
@@ -275,19 +307,27 @@ public:
                     case(EnvMessageType::MarketData):
                     {
                         LOG_ERROR("Invalid " << LOG_VAR(msg->gettype()) << " for " << msg->getenvSource() );
-                        break;
+                        return EnvMessage(msg_);
                     }
                     default:
                     {
                         LOG_ERROR("Unknown msgtype!");
+                        return EnvMessage(msg_);
                     }
                 }
                 break;
             }
+            case(EnvSource::UnknownEnvSource):
+            {
+                LOG_ERROR("Invalid EnvSource supplied!");
+                return EnvMessage(msg_);
+            }
         }
+        return EnvMessage(msg_);
     }
 private:
-    void server_process(FIX8::ServerSessionBase *srv);
+    void initalise_server_process(FIX8::ServerSession<TestFixServer>* srv);
+    void server_process(FIX8::ServerSession<TestFixServer> *srv);
 
 };
 

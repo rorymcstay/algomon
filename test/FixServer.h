@@ -33,9 +33,9 @@ class TestServerRouter : public FIX8::FIX44::FIX44_Router
     TestFixServer&                                              _session;
 
 public:
+    TestServerRouter(FIX8::Session& session_);
     TestFixServer& getSession() {return _session;}
 
-    TestServerRouter(TestFixServer& session) : _session(session) {}
 
     virtual bool operator() (const FIX8::FIX44::NewOrderSingle *msg) const
     {
@@ -87,11 +87,12 @@ public:
 
     bool sendMarketData(const EnvMessagePtr msg)
     {
+        return true;
     }
 
-    bool rejectOrderSingle(const FIX44::ExecutionReport* msg){};
-    bool sendExecutionReport(const FIX44::ExecutionReport* msg){};
-    bool cancelOrderSingle(const FIX44::ExecutionReport* msg){};
+    bool rejectOrderSingle(const FIX44::ExecutionReport* msg){ return true; };
+    bool sendExecutionReport(const FIX44::ExecutionReport* msg){return true;};
+    bool cancelOrderSingle(const FIX44::ExecutionReport* msg){return true;};
 }; 
 
 }

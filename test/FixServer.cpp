@@ -1,6 +1,11 @@
 #include "FixServer.h"
+
 namespace testfwk
 {
+    TestServerRouter::TestServerRouter(FIX8::Session& session) : _session(dynamic_cast<TestFixServer&>(session)) {
+        //_session.set_persister(nullptr);
+    }
+
     /*
 bool TestServerRouter::operator() (const FIX8::FIX44::NewOrderSingle *msg) const
 {        

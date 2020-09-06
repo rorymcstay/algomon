@@ -5,26 +5,33 @@
 namespace testfwk
 {
 
+void TestEnvironment::initalise_server_process(TestServerSession* srv)
+{
 
-void TestEnvironment::server_process(FIX8::ServerSessionBase *srv)
+}
+
+void TestEnvironment::server_process(TestServerSession* srv)
 {
     int scnt(0);
-    std::unique_ptr<SessionInstanceBase> inst(srv->create_server_instance());
-    _server_session = dynamic_cast<TestFixServer*>(inst->session_ptr());
-	inst->session_ptr()->control() |= Session::print;
+    LOG_INFO("Initialising server process");
+    _server_instance = dynamic_cast<TestServerInstance*>(srv->create_server_instance());
+    _server_session = dynamic_cast<TestFixServer*>(_server_instance->session_ptr());
     _server_session->getRouter().setmessageQueue(_receivedMsgs);
+	_server_instance->session_ptr()->control() |= Session::print;
 	glout_info << "client(" << scnt << ") connection established.";
+    LOG_INFO("Initialization of server process complete");
 	const ProcessModel pm(srv->get_process_model(srv->_ses));
-	inst->start(pm == pm_pipeline, _next_send, _next_receive);
-	if (inst->session_ptr()->get_connection()->is_secure())
+    LOG_INFO("starting server session.");
+	_server_instance->start(pm == pm_pipeline, _next_send, _next_receive);
+	if (_server_session->get_connection()->is_secure())
 		LOG_INFO("Session is secure (SSL)");
     TimerEvent<FIX8::Session> sample_callback(static_cast<bool (FIX8::Session::*)()>(&TestFixServer::sample_scheduler_callback), true);
-    inst->session_ptr()->get_timer().schedule(sample_callback, 60000); // call sample_scheduler_callback every minute forever	
+    _server_session->get_timer().schedule(sample_callback, 60000); // call sample_scheduler_callback every minute forever	
 	if (pm != pm_pipeline)
-		while (!inst->session_ptr()->is_shutdown())
+		while (!_server_session->is_shutdown())
 			FIX8::hypersleep<h_milliseconds>(100);
-	LOG_INFO("Session(" << std::to_string(scnt) << ") finished.");
-	inst->stop();
+	LOG_INFO("Session finished.");
+	_server_instance->stop();
 }
 
 } // testfwk

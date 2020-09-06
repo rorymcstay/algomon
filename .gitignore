@@ -67,6 +67,9 @@ CMakeCache.txt
 
 *.swp
 .gdb_history
+*.log.*
+*.log
+run
 
 
 Makefile
