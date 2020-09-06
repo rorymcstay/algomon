@@ -7,7 +7,9 @@
 int main(int argc, char* argv[])
 {
     auto configManager = std::make_shared<cfg::ConfigManager>();
+    FIX8::GlobalLogger::set_global_filename("test.fix");
     std::string strategy_config_file = "config/main.xml";
     configManager->initialise(strategy_config_file);
     auto env = testfwk::TestEnvironment(configManager);
+    env << "UPSTREAM NewOrderSingle Price=0.9 Symbol=AAPL ExDestination=NYSE OrderQty=1000";
 }

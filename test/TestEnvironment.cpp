@@ -28,9 +28,9 @@ void TestEnvironment::server_process(TestServerSession* srv)
     char name[16];
     pthread_setname_np(pthread_self(), s.c_str()); // set the name (pthread_self() returns the pthread_t of the current thread)    
     pthread_getname_np(pthread_self(), &name[0], sizeof(name));   
-    LOG_INFO(name << "Initialization of server process complete");
+    LOG_INFO(name << ": Initialization of server process complete");
 	const ProcessModel pm(srv->get_process_model(srv->_ses));
-    LOG_INFO(name << "starting server session.");
+    LOG_INFO(name << ": starting server session. pipeline=" << ((pm==pm_pipeline) ? "IsPipeline" : "NotPipeline"));
 	_server_instance->start(pm == pm_pipeline, _next_send, _next_receive);
 	if (_server_session->get_connection()->is_secure())
 		LOG_INFO(name << "Session is secure (SSL)");

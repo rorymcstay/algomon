@@ -174,6 +174,7 @@ private:
     std::unique_ptr<engine::SessionImpl>                  _client_session;
     std::unique_ptr<TestServerSession>                    _session;
     std::thread                                           _server_thread;
+    std::thread                                           _client_thread;
 
     std::unique_ptr<FIX8::FilePersister>                  _filePersister;
 
@@ -207,7 +208,7 @@ public:
 
         // TODO poll _server_instance for activation info. Then start client
         std::unique_ptr<EngineSession> mc(new EngineSession(
-                   FIX44::ctx(), _client_config_file, "TEST_SESSION" /*, _filePersister.get()*/
+                   FIX44::ctx(), _client_config_file, "TEST_SESSION" 
         ));
 
         /*
@@ -221,12 +222,18 @@ public:
         // TODO wait_complete method on client to kill server thread.
         // TODO call client_process in seperate thread and join in wait_tests_complete method.
 
-        mc->start(false, _next_send, _next_receive, mc->session_ptr()->get_login_parameters()._davi());
+        _client_thread = std::thread(&EngineSession::start, mc.get(), /*Do not wait until returns*/true, _next_send, _next_receive, mc->session_ptr()->get_login_parameters()._davi());
         _server_instance = futurePtr.get();
         _server_session = dynamic_cast<TestFixServer*>(_server_instance->session_ptr());
         _server_session->getRouter().setmessageQueue(_receivedMsgs);
         _server_instance->session_ptr()->control() |= Session::print;
         _server_thread = std::thread(&TestEnvironment::server_process, this, _session.get());
+        auto session = dynamic_cast<EngineSession*>(mc.get());
+        session->session_ptr()->set_persister(nullptr);
+        _server_thread.detach();
+        _client_thread.detach();
+        LOG_INFO("Environment is up.");
+        //session->set_persister(_filePersister.get());
     }
 
     template<typename T>

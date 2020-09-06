@@ -70,6 +70,8 @@ CMakeCache.txt
 *.log.*
 *.log
 run
+test.fix.*
+test.fix
 
 
 Makefile
