@@ -11,5 +11,6 @@ int main(int argc, char* argv[])
     std::string strategy_config_file = "config/main.xml";
     configManager->initialise(strategy_config_file);
     auto env = testfwk::TestEnvironment(configManager);
+    LOG_INFO("UPSTREAM NewOrderSingle Price=0.9 Symbol=AAPL ExDestination=NYSE OrderQty=1000");
     env << "UPSTREAM NewOrderSingle Price=0.9 Symbol=AAPL ExDestination=NYSE OrderQty=1000";
 }

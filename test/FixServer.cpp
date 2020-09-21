@@ -3,13 +3,9 @@
 namespace testfwk
 {
     // Router
-    TestServerRouter::TestServerRouter(FIX8::Session& session) : _session(dynamic_cast<TestFixServer&>(session)) 
+    TestServerRouter::TestServerRouter(TestFixServer& session) : _session(session) 
     {
         LOG_INFO("Initiated FIX session!");
-        if (&_session)
-        {
-            LOG_ERROR("Error _session is null");
-        }
     }
  
     // Server

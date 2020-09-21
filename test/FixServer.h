@@ -33,7 +33,7 @@ class TestServerRouter : public FIX8::FIX44::FIX44_Router
     TestFixServer&                                              _session;
 
 public:
-    TestServerRouter(FIX8::Session& session_);
+    TestServerRouter(TestFixServer& session_);
     TestFixServer& getSession() {return _session;}
 
 
@@ -63,7 +63,6 @@ public:
     ,   _router(*this) 
     {
         LOG_INFO("Made fix server!");
-
     }
 
     TestServerRouter& getRouter() {return _router;}
