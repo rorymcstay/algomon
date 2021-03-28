@@ -72,6 +72,7 @@ include_directories(/home/rory/dev/fix8-1.4.1/stocklib)
 set(ENGINE_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/engine)
 set(UTILS_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/utils)
 set(DOMAIN_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/domain)
+set(IEX_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR}/iex_provider)
 
 
 include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)

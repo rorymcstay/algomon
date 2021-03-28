@@ -6,7 +6,10 @@ TARGET_LINK_LIBRARIES(algomon PUBLIC
     ${COMMON_FIX_LIBS}
 )
 
+add_executable(iex_publisher iex.cpp)
 
+message("IEX_INCLUDE=${IEX_INCLUDE}")
+include_directories(${IEX_INCLUDE})
 
 #add_executable(iex iex.cpp)
 #target_link_libraries(iex PUBLIC         
